@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { Button } from 'semantic-ui-react'
-import Layout from '../components/layout'
+import { Button } from 'semantic-ui-react';
+import HomepageLayout from '../layouts/HomepageLayout';
 
 const IndexPage = () => (
-  <Layout>
+  <HomepageLayout>
     <h2>
       <span role="img" aria-label="Waving hand">
         👋
@@ -30,7 +30,7 @@ const IndexPage = () => (
     </p>
 
     <Button primary>I'm a button!</Button>
-  </Layout>
+  </HomepageLayout>
 )
 
 export default IndexPage

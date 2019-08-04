@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Semantic UI Starter',
+    title: 'HanhNgiox',
   },
   plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-less'],
 }

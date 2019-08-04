@@ -1,11 +1,11 @@
 import React from 'react'
-import Layout from '../components/layout'
+import HomepageLayout from '../layouts/HomepageLayout'
 
 const NotFoundPage = () => (
-  <Layout>
+  <HomepageLayout>
     <h2><span role="img" aria-label="Forbidden sign">🚫</span> Not found</h2>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  </HomepageLayout>
 )
 
 export default NotFoundPage
