@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import {
-  Button,
   Container,
   Header,
   Icon,
@@ -13,10 +12,10 @@ import {
  * such things.
  */
 const HomepageHeading = ({ mobile }) => (
-  <Container text>
+  <Container fluid>
     <Header
       as='h1'
-      content='Imagine-a-Company'
+      content='漢語方言拼音輸入'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -27,7 +26,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as='h2'
-      content='Do whatever you want when you want to.'
+      content='拼音，不只屬於普通話'
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
@@ -35,10 +34,8 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-    <Button primary size='huge'>
-      Get Started
-      <Icon name='right arrow' />
-    </Button>
+    
+    <Icon name='chevron down' size='huge'/>
   </Container>
 )
 

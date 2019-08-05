@@ -3,12 +3,15 @@ import React, { Component } from 'react'
 import {
   Button,
   Container,
+  Dropdown,
   Icon,
   Menu,
   Responsive,
   Segment,
   Sidebar,
 } from 'semantic-ui-react'
+
+import { Link } from 'gatsby';
 
 import HomepageHeading from './HomepageHeading';
 
@@ -47,14 +50,22 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as='a' active>
-            Home
+          <Menu.Item as={Link} to='/install'>
+            <Icon name='compass'/>
+            開始
           </Menu.Item>
-          <Menu.Item as='a'>Work</Menu.Item>
-          <Menu.Item as='a'>Company</Menu.Item>
-          <Menu.Item as='a'>Careers</Menu.Item>
-          <Menu.Item as='a'>Log in</Menu.Item>
-          <Menu.Item as='a'>Sign Up</Menu.Item>
+          <Menu.Item as={Link} to='/schema'>
+            <Icon name='th'/>
+            拼音方案
+          </Menu.Item>
+          <Menu.Item as={Link} to='/blog'>
+            <Icon name='book'/>
+            雜談
+          </Menu.Item>
+          <Menu.Item as={Link} to='/about'>
+            <Icon name='question circle'/>
+            關於
+          </Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -69,14 +80,22 @@ class MobileContainer extends Component {
                 <Menu.Item onClick={this.handleToggle}>
                   <Icon name='sidebar' />
                 </Menu.Item>
-                <Menu.Item position='right'>
-                  <Button as='a' inverted>
-                    Log in
-                  </Button>
-                  <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
-                    Sign Up
-                  </Button>
-                </Menu.Item>
+                <Dropdown item simple text='界面語言'>
+                  <Dropdown.Menu position='right'>
+                    <Dropdown.Item>國語（普通話）- 繁體</Dropdown.Item>
+                    <Dropdown.Item>国语（普通话）- 简体</Dropdown.Item>
+                    <Dropdown.Divider />
+                    <Dropdown.Header>Header Item</Dropdown.Header>
+                    <Dropdown.Item>
+                      <i className='dropdown icon' />
+                      <span className='text'>Submenu</span>
+                      <Dropdown.Menu>
+                        <Dropdown.Item>List Item</Dropdown.Item>
+                        <Dropdown.Item>List Item</Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
               </Menu>
             </Container>
             <HomepageHeading mobile />

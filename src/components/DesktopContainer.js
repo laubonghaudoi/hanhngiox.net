@@ -1,8 +1,13 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
+
+import { Link } from 'gatsby';
 import {
   Button,
   Container,
+  Dropdown,
+  Icon,
+  Image,
   Menu,
   Responsive,
   Segment,
@@ -44,33 +49,56 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em' }}
+            style={{ minHeight: 700, padding: '1em 0em', backgroundImage: `url(${"/bk.png"})`,}}
             vertical
           >
             <Menu
               fixed={fixed ? 'top' : null}
               inverted={!fixed}
-              pointing={!fixed}
               secondary={!fixed}
               size='large'
             >
-              <Container>
-                <Menu.Item as='a' active>
-                  Home
+              <Menu.Menu>
+                <Menu.Item></Menu.Item>
+                <Menu.Item></Menu.Item>
+                <Menu.Item as={Link} to='/'>
+                  <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
+                  HanhNgiox
                 </Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
-                <Menu.Item position='right'>
-                  <Button as='a' inverted={!fixed}>
-                    Log in
-                  </Button>
-                  <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                    Sign Up
-                  </Button>
+              </Menu.Menu>
+
+              <Menu.Menu position='right'>
+                <Menu.Item as={Link} to='/install'>
+                  <Icon name='compass'/>
+                  開始
                 </Menu.Item>
-              </Container>
+                <Menu.Item as={Link} to='/schema'>
+                  <Icon name='th'/>
+                  拼音方案
+                </Menu.Item>
+                <Menu.Item as={Link} to='/blog'>
+                  <Icon name='book'/>
+                  雜談
+                </Menu.Item>
+                <Menu.Item as={Link} to='/about'>
+                  <Icon name='question circle'/>
+                  關於
+                </Menu.Item>
+
+                <Dropdown item simple text='界面語言'>
+                  <Dropdown.Menu color='blue'>
+                    <Dropdown.Item>國語（普通話）繁體</Dropdown.Item>
+                    <Dropdown.Item>国语（普通话）简体</Dropdown.Item>
+                    <Dropdown.Divider />
+                    <Dropdown.Item>粵語 繁體</Dropdown.Item>
+                    <Dropdown.Item>粤语 简体</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+                <Menu.Item></Menu.Item>
+                <Menu.Item></Menu.Item>
+              </Menu.Menu>
             </Menu>
+
             <HomepageHeading />
           </Segment>
         </Visibility>

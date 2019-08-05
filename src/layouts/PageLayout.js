@@ -5,7 +5,8 @@ import Helmet from 'react-helmet';
 import 'semantic-ui-less/semantic.less';
 import { Container, 
   Dropdown, 
-  Grid, 
+  Grid,
+  Icon,
   Image, 
   Menu} from 'semantic-ui-react';
 
@@ -36,7 +37,7 @@ const PageLayout = ({ children }) => (
           ]}
         />
 
-        <Menu inverted fixed='top'>
+        <Menu inverted pointing fixed='top' size='large'>
           <Container>
             <Menu.Item as={Link} to='/'>
               <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
@@ -44,12 +45,26 @@ const PageLayout = ({ children }) => (
             </Menu.Item>
 
             <Menu.Menu position='right'>
-              <Menu.Item as={Link} to='/page-2'>Page-2</Menu.Item>
-              <Menu.Item as={Link} to='/404'>404</Menu.Item>
-              <Dropdown item simple text='Dropdown'>
+              <Menu.Item as={Link} to='/install'>
+                <Icon name='compass'/>
+                開始
+              </Menu.Item>
+              <Menu.Item as={Link} to='/schema'>
+                <Icon name='th'/>
+                拼音方案
+              </Menu.Item>
+              <Menu.Item as={Link} to='/blog'>
+                <Icon name='book'/>
+                雜談
+              </Menu.Item>
+              <Menu.Item as={Link} to='/about'>
+                <Icon name='question circle'/>
+                關於
+              </Menu.Item>
+              <Dropdown item simple text='界面語言'>
                 <Dropdown.Menu>
-                  <Dropdown.Item>List Item</Dropdown.Item>
-                  <Dropdown.Item>List Item</Dropdown.Item>
+                  <Dropdown.Item>國語（普通話）- 繁體</Dropdown.Item>
+                  <Dropdown.Item>国语（普通话）- 简体</Dropdown.Item>
                   <Dropdown.Divider />
                   <Dropdown.Header>Header Item</Dropdown.Header>
                   <Dropdown.Item>
@@ -70,8 +85,8 @@ const PageLayout = ({ children }) => (
           <Grid relaxed stackable>
             <Grid.Column mobile={16} tablet={4} computer={4}>
               <Menu vertical fluid>
-                <LinkedItem to='/' exact>Home</LinkedItem>
-                <LinkedItem to='/page-2'>Second Page</LinkedItem>
+                <Menu.Item as={Link} to='/install'>開始</Menu.Item>
+                <Menu.Item as={Link} to='/schema'>拼音方案</Menu.Item>
                 <LinkedItem to='/404'>404 Example Page</LinkedItem>
               </Menu>
             </Grid.Column>

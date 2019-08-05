@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React from 'react'
 
 import DesktopContainer from './DesktopContainer';
 import MobileContainer from './MobileContainer';
