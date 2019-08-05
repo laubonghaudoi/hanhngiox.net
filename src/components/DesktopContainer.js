@@ -3,8 +3,6 @@ import React, { Component } from 'react'
 
 import { Link } from 'gatsby';
 import {
-  Button,
-  Container,
   Dropdown,
   Icon,
   Image,
@@ -85,7 +83,7 @@ class DesktopContainer extends Component {
                   關於
                 </Menu.Item>
 
-                <Dropdown item simple text='界面語言'>
+                <Dropdown item simple direction='left' text='界面語言'>
                   <Dropdown.Menu color='blue'>
                     <Dropdown.Item>國語（普通話）繁體</Dropdown.Item>
                     <Dropdown.Item>国语（普通话）简体</Dropdown.Item>
@@ -94,8 +92,6 @@ class DesktopContainer extends Component {
                     <Dropdown.Item>粤语 简体</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
-                <Menu.Item></Menu.Item>
-                <Menu.Item></Menu.Item>
               </Menu.Menu>
             </Menu>
 

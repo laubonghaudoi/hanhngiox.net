@@ -6,7 +6,6 @@ import {
   Grid,
   Header,
   Image,
-  List,
   Segment
  } from 'semantic-ui-react';
 
@@ -50,8 +49,13 @@ const IndexPage = () => (
               <Header as='h3' style={{ fontSize: '2em' }}>
                 我的家乡话也有拼音？
               </Header>
-              <p style={{ fontSize: '1.33em' }}>我们目前已经支持了最主流的汉语方言，快来看看自己的家乡话在不在右边的列表里</p>
+              <p style={{ fontSize: '1.33em' }}>我们目前已经支持了最主流的汉语方言，快来看看自己的家乡话在不在右边的列表里（点击箭头展开）</p>
+              <Header as='h4' style={{ fontSize: '1.5em' }}>
+                不在列表里？
+              </Header>
+              <p style={{ fontSize: '1.33em' }}>如果你的家乡话不在上表中，非常欢迎告诉我们，让我们可以尽快添加支持。</p>
             </Grid.Column>
+
             <Grid.Column style={{ padding: '5em'}}>
               <SchemaList/>
             </Grid.Column>
@@ -65,10 +69,10 @@ const IndexPage = () => (
             我也要用家乡话打字！
           </Header>
           <p style={{ fontSize: '1.33em' }}>
-            如果你的家乡话不在上表中，非常欢迎告诉我们，让我们可以尽快添加支持。
+            
           </p>
           <Button color='blue' as={ Link } to='/install' size='massive'>
-            开始
+            起
           </Button>
         </Container>
       </Segment>

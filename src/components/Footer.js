@@ -8,6 +8,7 @@ import {
   Segment
  } from 'semantic-ui-react';
 
+ import { Link } from 'gatsby';
 
 const Footer = () => (
   <Segment inverted vertical style={{ padding: '5em 0em' }}>
@@ -15,12 +16,24 @@ const Footer = () => (
       <Grid divided inverted stackable>
         <Grid.Row>
           <Grid.Column width={3}>
-            <Header inverted as='h4' content='About' />
+            <Header inverted as='h4' content='实用链接' />
             <List link inverted>
-              <List.Item as='a'>Sitemap</List.Item>
-              <List.Item as='a'>Contact Us</List.Item>
-              <List.Item as='a'>Religious Ceremonies</List.Item>
-              <List.Item as='a'>Gazebo Plans</List.Item>
+              <List.Item 
+                icon='mail'
+                content={<a href='mailto:laubonghaudoi@icloud.com'>联系邮箱</a>}
+              />
+              <List.Item
+                icon='twitter'
+                content={<a href='https://www.zhihu.com/people/lau-bong-hau-doi'>知乎私信</a>}
+              />
+              <List.Item
+                icon='facebook'
+                content={<a href='https://rime.im/'>中州韵官网</a>}
+              />
+              <List.Item 
+                icon='github'
+                content={<a href='https://github.com/laubonghaudoi/Chinese_Rime'>拼音方案收集项目</a>}
+              />
             </List>
           </Grid.Column>
           <Grid.Column width={3}>
