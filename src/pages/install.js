@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { css } from "@emotion/core"
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../utils/grandViewTypography"
 import TocPageLayout from "../layouts/TocPageLayout";
 
 export default ({ data }) => {

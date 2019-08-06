@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { css } from "@emotion/core"
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../utils/grandViewTypography"
 import TocPageLayout from "../layouts/TocPageLayout";
 
 export default ({ data }) => {
@@ -17,9 +17,13 @@ export default ({ data }) => {
         >
           雜談
         </h1>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+        <h4>{data.allMarkdownRemark.totalCount} 篇文章</h4>
+        
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
+          <div
+            key={node.id}
+            css={css`margin-bottom: ${rhythm(2)};`}
+          >
             <h3
               css={css`
                 margin-bottom: ${rhythm(1 / 4)};
@@ -34,6 +38,7 @@ export default ({ data }) => {
                 — {node.frontmatter.date}
               </span>
             </h3>
+
             <p>{node.excerpt}</p>
           </div>
         ))}

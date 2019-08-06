@@ -42,7 +42,7 @@ const IndexPage = () => (
       </Segment>
 
       <Segment style={{ padding: '0em' }} vertical>
-        <Grid celled='internally' columns='equal' stackable>
+        <Grid columns='equal' stackable>
           <Grid.Row>
             <Grid.Column style={{ padding: '5em' }} textAlign='center'>
               <Header as='h3' style={{ fontSize: '2em' }}>

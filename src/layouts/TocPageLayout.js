@@ -8,7 +8,6 @@ import {
 import 'semantic-ui-less/semantic.less';
 import { Link } from 'gatsby';
 
-import { rhythm } from "../utils/typography"
 import PageLayout from './PageLayout';
 
 const LinkedItem = ({ children, ...props }) => (

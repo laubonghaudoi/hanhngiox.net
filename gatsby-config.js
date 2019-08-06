@@ -7,7 +7,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/src/`,
+        path: `${__dirname}/src/markdown`,
       },
     },
     `gatsby-transformer-remark`,
@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        pathToConfigModule: `src/utils/grandViewTypography`,
       },
     },
   ],
