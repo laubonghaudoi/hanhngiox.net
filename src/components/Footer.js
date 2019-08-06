@@ -30,25 +30,29 @@ const Footer = () => (
               />
               <List.Item 
                 icon='github'
-                content={<a href='https://github.com/laubonghaudoi/Chinese_Rime'>拼音方案收集项目</a>}
+                content={<a href='https://github.com/laubonghaudoi/Chinese_Rime'>拼音方案支持项目</a>}
               />
             </List>
           </Grid.Column>
           <Grid.Column width={3}>
-            <Header inverted as='h4' content='Services' />
+            <Header inverted as='h4' content='资源' />
             <List link inverted>
-              <List.Item as='a'>Banana Pre-Order</List.Item>
-              <List.Item as='a'>DNA FAQ</List.Item>
-              <List.Item as='a'>How To Access</List.Item>
-              <List.Item as='a'>Favorite X-Men</List.Item>
+              <List.Item 
+                icon='download'
+                content={<a href='https://github.com/laubonghaudoi/Chinese_Rime'>拼音方案下载包</a>}
+              />
+              <List.Item
+                icon='google'
+                content={<a href='https://share.weiyun.com/5BqauQb'>拼音方案相关文件</a>}
+              />
             </List>
           </Grid.Column>
           <Grid.Column width={7}>
             <Header as='h4' inverted>
-              Footer Header
+            © 2019 by 劉邦後代
             </Header>
             <p>
-              Extra space for a call to action inside the footer that could help re-engage users.
+              Powered by: Gatsby, React, Semantic UI
             </p>
           </Grid.Column>
         </Grid.Row>
