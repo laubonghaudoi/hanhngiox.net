@@ -12,8 +12,6 @@ import {
   Visibility,
 } from 'semantic-ui-react'
 
-import HomepageHeading from './HomepageHeading';
-
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
 // For more advanced usage please check Responsive docs under the "Usage" section.
@@ -27,7 +25,7 @@ const getWidth = () => {
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
  * It can be more complicated, but you can create really flexible markup.
  */
-class DesktopContainer extends Component {
+class HomepageDesktopContainer extends Component {
   state = {}
 
   hideFixedMenu = () => this.setState({ fixed: false })
@@ -47,7 +45,6 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em', backgroundImage: `url(${"/bk.png"})`,}}
             vertical
           >
             <Menu
@@ -94,8 +91,6 @@ class DesktopContainer extends Component {
                 </Dropdown>
               </Menu.Menu>
             </Menu>
-
-            <HomepageHeading />
           </Segment>
         </Visibility>
 
@@ -105,8 +100,8 @@ class DesktopContainer extends Component {
   }
 }
 
-DesktopContainer.propTypes = {
+HomepageDesktopContainer.propTypes = {
   children: PropTypes.node,
 }
 
-export default DesktopContainer;
+export default HomepageDesktopContainer;

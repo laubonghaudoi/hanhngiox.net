@@ -13,7 +13,6 @@ import { Link } from 'gatsby';
 
 import HomepageLayout from '../layouts/HomepageLayout';
 import SchemaList from '../components/SchemaList';
-import Footer from '../components/Footer';
 
 const IndexPage = () => (
   <div>
@@ -75,9 +74,7 @@ const IndexPage = () => (
             起
           </Button>
         </Container>
-      </Segment>
-
-      <Footer/>
+      </Segment>      
     </HomepageLayout>
   </div>
 )

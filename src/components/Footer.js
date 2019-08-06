@@ -8,8 +8,6 @@ import {
   Segment
  } from 'semantic-ui-react';
 
- import { Link } from 'gatsby';
-
 const Footer = () => (
   <Segment inverted vertical style={{ padding: '5em 0em' }}>
     <Container>

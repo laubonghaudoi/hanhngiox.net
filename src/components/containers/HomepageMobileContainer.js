@@ -4,6 +4,7 @@ import {
   Container,
   Dropdown,
   Icon,
+  Image,
   Menu,
   Responsive,
   Segment,
@@ -12,7 +13,7 @@ import {
 
 import { Link } from 'gatsby';
 
-import HomepageHeading from './HomepageHeading';
+import HomepageHeading from '../HomepageHeading';
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
@@ -24,7 +25,7 @@ const getWidth = () => {
 }
 
 
-class MobileContainer extends Component {
+class HomepageMobileContainer extends Component {
   state = {}
 
   handleSidebarHide = () => this.setState({ sidebarOpened: false })
@@ -71,7 +72,7 @@ class MobileContainer extends Component {
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 350, padding: '1em 0em' }}
+            style={{ minHeight: 350, padding: '1em 0em', backgroundImage: `url(${"/bk.jpg"})`}}
             vertical
           >
             <Container>
@@ -79,22 +80,19 @@ class MobileContainer extends Component {
                 <Menu.Item onClick={this.handleToggle}>
                   <Icon name='sidebar' />
                 </Menu.Item>
-                <Dropdown item simple text='界面語言'>
-                  <Dropdown.Menu position='right'>
-                    <Dropdown.Item>國語（普通話）- 繁體</Dropdown.Item>
-                    <Dropdown.Item>国语（普通话）- 简体</Dropdown.Item>
-                    <Dropdown.Divider />
-                    <Dropdown.Header>Header Item</Dropdown.Header>
-                    <Dropdown.Item>
-                      <i className='dropdown icon' />
-                      <span className='text'>Submenu</span>
-                      <Dropdown.Menu>
-                        <Dropdown.Item>List Item</Dropdown.Item>
-                        <Dropdown.Item>List Item</Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
+                
+                <Menu.Menu position='right'>
+                  <Dropdown item simple direction='left' text='界面語言'>
+                    <Dropdown.Menu position='right' color='blue'>
+                      <Dropdown.Item>國語（普通話）繁體</Dropdown.Item>
+                      <Dropdown.Item>国语（普通话）简体</Dropdown.Item>
+                      <Dropdown.Divider />
+                      <Dropdown.Item>粵語 繁體</Dropdown.Item>
+                      <Dropdown.Item>粤语 简体</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </Menu.Menu>
+                
               </Menu>
             </Container>
             <HomepageHeading mobile />
@@ -107,8 +105,8 @@ class MobileContainer extends Component {
   }
 }
 
-MobileContainer.propTypes = {
+HomepageMobileContainer.propTypes = {
   children: PropTypes.node,
 }
 
-export default MobileContainer
+export default HomepageMobileContainer

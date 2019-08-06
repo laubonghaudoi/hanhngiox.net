@@ -2,13 +2,14 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import 'semantic-ui-less/semantic.less';
 
-import ResponsiveContainer from '../components/ResponsiveContainer';
-
+import HomepageContainer from '../components/containers/HomepageContainer';
+import Footer from '../components/Footer';
 
 const HomepageLayout = ({ children }) => (
-  <ResponsiveContainer>
+  <HomepageContainer>
     {children}
-  </ResponsiveContainer>
+    <Footer/>
+  </HomepageContainer>
 )
 
 HomepageLayout.propTypes = {
