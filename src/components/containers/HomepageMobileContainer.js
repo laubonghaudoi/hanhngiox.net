@@ -4,7 +4,6 @@ import {
   Container,
   Dropdown,
   Icon,
-  Image,
   Menu,
   Responsive,
   Segment,

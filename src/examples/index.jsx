@@ -2,19 +2,20 @@ import React from "react"
 import { graphql } from "gatsby"
 import { css } from "@emotion/core"
 import { rhythm } from "../utils/typography"
-import TocPageLayout from "../layouts/TocPageLayout";
+import Layout from "../components/layout"
 
 export default ({ data }) => {
   console.log(data)
   return (
-    <TocPageLayout>
+    <Layout>
       <div>
         <h1
           css={css`
             display: inline-block;
+            border-bottom: 1px solid;
           `}
         >
-          安裝教程
+          Amazing Pandas Eating Things
         </h1>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -37,7 +38,7 @@ export default ({ data }) => {
           </div>
         ))}
       </div>
-    </TocPageLayout>
+    </Layout>
   )
 }
 
