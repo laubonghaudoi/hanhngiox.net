@@ -80,10 +80,6 @@ class HomepageMobileContainer extends Component {
                   <Icon name='sidebar' />
                 </Menu.Item>
 
-                <Menu.Item as={Link} to='/'>
-                  <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
-                  HanhNgiox
-                </Menu.Item>
 
                 <Menu.Menu position='right'>
                   <Dropdown item simple direction='left' text='界面語言'>

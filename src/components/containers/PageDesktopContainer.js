@@ -57,7 +57,7 @@ class HomepageDesktopContainer extends Component {
                 <Menu.Item></Menu.Item>
                 <Menu.Item></Menu.Item>
                 <Menu.Item as={Link} to='/'>
-                  <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
+                  <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em', marginTop:'2em' }} />
                   HanhNgiox
                 </Menu.Item>
               </Menu.Menu>
