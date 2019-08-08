@@ -14,7 +14,7 @@ import {
   Message
 } from "semantic-ui-react";
 
-import "./App.css";
+import "../css/Homepage.css";
 
 class NotFoundPage extends Component {
   state = {
