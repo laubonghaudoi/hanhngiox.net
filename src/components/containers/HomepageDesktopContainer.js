@@ -39,15 +39,20 @@ class HomepageDesktopContainer extends Component {
 
     return (
       <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
-        <Visibility
+        {/* <Visibility
           once={false}
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
-        >
+        > */}
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em', backgroundImage: `url(${"/bk.jpg"})`,}}
+            style={{ 
+              padding: '1em 0em', 
+              backgroundImage: `url(${"/bk.jpg"})`,
+              backgroundSize: 'cover',
+              height: '100vh'
+            }}
             vertical
           >
             <Menu
@@ -55,10 +60,12 @@ class HomepageDesktopContainer extends Component {
               inverted={!fixed}
               secondary={!fixed}
               size='large'
+              style={{
+                paddingLeft: '6em',
+                paddingRight: '6em'
+              }}
             >
               <Menu.Menu>
-                <Menu.Item></Menu.Item>
-                <Menu.Item></Menu.Item>
                 <Menu.Item as={Link} to='/'>
                   <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em', marginTop:'2em'}} />
                   HanhNgiox
@@ -97,7 +104,7 @@ class HomepageDesktopContainer extends Component {
 
             <HomepageHeading />
           </Segment>
-        </Visibility>
+        {/* </Visibility> */}
 
         {children}
       </Responsive>
