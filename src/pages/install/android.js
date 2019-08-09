@@ -3,7 +3,9 @@ import React from 'react'
 import InstallPageLayout from '../../layouts/InstallPageLayout';
 
 const AndroidInstallPage = () => (
-  <InstallPageLayout>
+  <InstallPageLayout
+    activeItem='android'
+  >
     <h1>
       本頁爲Android安裝頁
     </h1>

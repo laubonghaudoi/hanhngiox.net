@@ -5,7 +5,6 @@ import { rhythm } from "../utils/grandViewTypography"
 import InstallPageLayout from "../layouts/InstallPageLayout";
 
 export default ({ data }) => {
-  console.log(data)
   return (
     <InstallPageLayout>
       <div>

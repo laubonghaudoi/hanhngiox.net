@@ -12,19 +12,27 @@ import PageLayout from '../layouts/PageLayout';
 import Toc from '../components/Toc';
 
 class InstallPageLayout extends Component {
-  state = {activeItem: 'intro'}
-  
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  constructor(props){
+    super(props);
+    this.handleActiveChange = this.handleActiveChange.bind(this);
+    this.state = { activeItem: this.props.activeItem};
+  }
+
+  handleActiveChange(name) {
+    this.setState({activeItem: name})
+  }
 
   render() {
-    const { children } = this.props
-    
+    const { children } = this.props;
+
     return (
       <PageLayout>
           <Container fluid>
             <Grid padded stackable>
               <Grid.Column width={3}>
-                <InstallMenu/>
+                <InstallMenu 
+                  activeItem={this.state.activeItem}
+                  onActiveChange={this.handleActiveChange}/>
               </Grid.Column>
               <Grid.Column width={10}>
                 {children}

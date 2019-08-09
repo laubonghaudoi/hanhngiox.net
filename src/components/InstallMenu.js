@@ -9,85 +9,91 @@ import { Link } from 'gatsby';
 
 
 class InstallMenu extends Component {
-  state = {
-    activeItem: this.state
-  };
+  constructor(props) {
+    super(props);
+    this.handleItemClick = this.handleItemClick.bind(this);
+  }
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  handleItemClick(e, { name }) {
+    console.log(name)
+    this.props.onActiveChange(name);
+  }
 
   render() {
-    const { activeItem } = this.state
     return (
-      <Menu vertical>
+      <Menu
+        vertical
+        inverted
+        style={{
+          marginLeft: '10%',
+          marginRight: '2em'
+        }}
+      >
         <Menu.Item
           as={Link}
-          to='/install'
+          to='/install/intro'
           name='intro'
-          active={activeItem === 'intro'}
+          color='teal'
+          active={this.props.activeItem === 'intro'}
           onClick={this.handleItemClick}
         >
           概述
         </Menu.Item>
-        <Menu.Item>
-          電腦
-          <Menu.Menu>
-            <Menu.Item
-              as={Link}
-              to='/install/windows'
-              name='windows'
-              active={activeItem === 'windows'}
-              onClick={this.handleItemClick}
-            >
-              <Icon name='windows' />
-              Windows
+        <Menu.Item
+          as={Link}
+          to='/install/windows'
+          name='windows'
+          color='blue'
+          active={this.props.activeItem === 'windows'}
+          onClick={this.handleItemClick}
+        >
+          <Icon name='windows' />
+          Windows
             </Menu.Item>
-            <Menu.Item
-              as={Link}
-              to='/install/mac'
-              name='mac'
-              active={activeItem === 'mac'}
-              onClick={this.handleItemClick}
-            >
-              <Icon name='apple' />
-              macOS
+        <Menu.Item
+          as={Link}
+          to='/install/mac'
+          name='mac'
+          color='grey'
+          active={this.props.activeItem === 'mac'}
+          onClick={this.handleItemClick}
+        >
+          <Icon name='apple' />
+          macOS
             </Menu.Item>
-            <Menu.Item
-              as={Link}
-              to='/install/linux'
-              name='linux'
-              active={activeItem === 'linux'}
-              onClick={this.handleItemClick}
-            >
-              <Icon name='linux' />
-              Linux
+        <Menu.Item
+          as={Link}
+          to='/install/linux'
+          name='linux'
+          color='orange'
+          active={this.props.activeItem === 'linux'}
+          onClick={this.handleItemClick}
+        >
+          <Icon name='linux' />
+          Linux
             </Menu.Item>
-          </Menu.Menu>
-        </Menu.Item>
-        <Menu.Item>
-          手機
-        <Menu.Menu>
-            <Menu.Item
-              as={Link}
-              to='/install/ios'
-              name='ios'
-              active={activeItem === 'ios'}
-              onClick={this.handleItemClick}
-            >
-              <Icon name='app store ios' />
-              iOS
+        <Menu.Item
+          as={Link}
+          to='/install/ios'
+          name='ios'
+          color='grey'
+          active={this.props.activeItem === 'ios'}
+          onClick={this.handleItemClick}
+        >
+          <Icon name='apple' />
+          iOS
           </Menu.Item>
-            <Menu.Item
-              as={Link}
-              to='/install/android'
-              name='android'
-              active={activeItem === 'android'}
-              onClick={this.handleItemClick}
-            >
-              <Icon name='android' />
-              Android
+        <Menu.Item
+          as={Link}
+          to='/install/android'
+          name='android'
+          color='green'
+          active={this.props.activeItem === 'android'}
+          onClick={this.handleItemClick}
+        >
+          <Icon name='android' />
+          Android
             </Menu.Item>
-          </Menu.Menu>
-        </Menu.Item>
       </Menu>
     )
   }

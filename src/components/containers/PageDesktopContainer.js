@@ -58,8 +58,8 @@ class HomepageDesktopContainer extends Component {
               color='black'
               style={{
                 height: '4em',
-                paddingLeft: '6em',
-                paddingRight:'6em'
+                paddingLeft: '5%',
+                paddingRight:'5%'
               }}
             >
               <Navbar/>

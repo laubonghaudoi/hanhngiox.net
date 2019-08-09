@@ -3,7 +3,9 @@ import React from 'react'
 import InstallPageLayout from '../../layouts/InstallPageLayout';
 
 const LinuxInstallPage = () => (
-  <InstallPageLayout>
+  <InstallPageLayout
+    activeItem='linux'
+  >
     <h1>
       本頁爲Linux安裝頁
     </h1>
