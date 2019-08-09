@@ -2,12 +2,12 @@ import React from "react"
 import { graphql } from "gatsby"
 import { css } from "@emotion/core"
 import { rhythm } from "../utils/grandViewTypography"
-import TocPageLayout from "../layouts/TocPageLayout";
+import InstallPageLayout from "../layouts/InstallPageLayout";
 
 export default ({ data }) => {
   console.log(data)
   return (
-    <TocPageLayout>
+    <InstallPageLayout>
       <div>
         <h1
           css={css`
@@ -43,7 +43,7 @@ export default ({ data }) => {
           </div>
         ))}
       </div>
-    </TocPageLayout>
+    </InstallPageLayout>
   )
 }
 

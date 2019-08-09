@@ -17,6 +17,7 @@ const HomepageHeading = ({ mobile }) => (
       as='h1'
       content='漢語方言拼音輸入'
       inverted
+      centered
       style={{
         fontSize: mobile ? '2em' : '4em',
         fontWeight: 'normal',

@@ -1,7 +1,6 @@
-    
 import React, { Component } from "react";
 
-// import "semantic-ui-css/semantic.min.css";
+import "semantic-ui-css/semantic.min.css";
 
 import {
   Button,
@@ -14,9 +13,9 @@ import {
   Message
 } from "semantic-ui-react";
 
-// import "./App.css";
+import "./App.css";
 
-class NotFoundPage extends Component {
+class App extends Component {
   state = {
     dropdownMenuStyle: {
       display: "none"
@@ -38,7 +37,7 @@ class NotFoundPage extends Component {
     return (
       <div className="App">
         <Grid padded className="tablet computer only">
-          <Menu inverted borderless fluid size="huge">
+          <Menu borderless fluid fixed="top" size="huge">
             <Container>
               <Menu.Item header as="a">
                 Project Name
@@ -71,16 +70,16 @@ class NotFoundPage extends Component {
               </Dropdown>
               <Menu.Menu position="right">
                 <Menu.Item as="a">Default</Menu.Item>
+                <Menu.Item as="a">Static top</Menu.Item>
                 <Menu.Item active as="a">
-                  Static top
+                  Fixed top
                 </Menu.Item>
-                <Menu.Item as="a">Fixed top</Menu.Item>
               </Menu.Menu>
             </Container>
           </Menu>
         </Grid>
         <Grid padded className="mobile only">
-          <Menu borderless fluid size="huge">
+          <Menu borderless fluid fixed="top" size="huge">
             <Menu.Item header as="a">
               Project Name
             </Menu.Item>
@@ -119,10 +118,10 @@ class NotFoundPage extends Component {
                 </Dropdown.Menu>
               </Dropdown>
               <Menu.Item as="a">Default</Menu.Item>
+              <Menu.Item as="a">Static top</Menu.Item>
               <Menu.Item active as="a">
-                Static top
+                Fixed top
               </Menu.Item>
-              <Menu.Item as="a">Fixed top</Menu.Item>
             </Menu>
           </Menu>
         </Grid>
@@ -147,4 +146,4 @@ class NotFoundPage extends Component {
   }
 }
 
-export default NotFoundPage;
+export default App;

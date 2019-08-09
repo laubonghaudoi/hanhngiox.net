@@ -10,7 +10,10 @@ import {
   Responsive,
   Segment,
   Visibility,
+  Container,
 } from 'semantic-ui-react'
+
+import Navbar from '../Navbar';
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
@@ -42,59 +45,38 @@ class HomepageDesktopContainer extends Component {
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
         >
-          <Segment
-            inverted
+          <Container
             textAlign='center'
             vertical
+            inverted
+            style={{color:'blue'}}
           >
             <Menu
-              fixed={fixed ? 'top' : null}
-              inverted={!fixed}
-              secondary={!fixed}
-              size='large'
+              fixed='top'
+              inverted
+              fluid
+              borderless
+              color='black'
+              style={{
+                paddingLeft: '6em',
+                paddingRight:'6em'
+              }}
             >
-              <Menu.Menu>
-                <Menu.Item></Menu.Item>
-                <Menu.Item></Menu.Item>
-                <Menu.Item as={Link} to='/'>
-                  <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em', marginTop:'2em' }} />
-                  HanhNgiox
-                </Menu.Item>
-              </Menu.Menu>
-
-              <Menu.Menu position='right'>
-                <Menu.Item as={Link} to='/install'>
-                  <Icon name='compass'/>
-                  開始
-                </Menu.Item>
-                <Menu.Item as={Link} to='/schema'>
-                  <Icon name='th'/>
-                  拼音方案
-                </Menu.Item>
-                <Menu.Item as={Link} to='/blog'>
-                  <Icon name='book'/>
-                  雜談
-                </Menu.Item>
-                <Menu.Item as={Link} to='/about'>
-                  <Icon name='question circle'/>
-                  關於
-                </Menu.Item>
-
-                <Dropdown item simple direction='left' text='界面語言'>
-                  <Dropdown.Menu color='blue'>
-                    <Dropdown.Item>國語（普通話）繁體</Dropdown.Item>
-                    <Dropdown.Item>国语（普通话）简体</Dropdown.Item>
-                    <Dropdown.Divider />
-                    <Dropdown.Item>粵語 繁體</Dropdown.Item>
-                    <Dropdown.Item>粤语 简体</Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </Menu.Menu>
+              <Navbar/>
             </Menu>
-          </Segment>
+          </Container>
         </Visibility>
-
-        {children}
+        <Container 
+          fluid 
+          borderless
+          style={{
+            marginTop:'10em',
+            marginBottom:'20em',
+            marginRight:'2em'
+          }}
+        >
+          {children}
+        </Container>
       </Responsive>
     )
   }
