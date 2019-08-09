@@ -49,7 +49,6 @@ class HomepageDesktopContainer extends Component {
             textAlign='center'
             vertical
             inverted
-            style={{color:'blue'}}
           >
             <Menu
               fixed='top'
@@ -58,6 +57,7 @@ class HomepageDesktopContainer extends Component {
               borderless
               color='black'
               style={{
+                height: '4em',
                 paddingLeft: '6em',
                 paddingRight:'6em'
               }}
@@ -70,9 +70,8 @@ class HomepageDesktopContainer extends Component {
           fluid 
           borderless
           style={{
-            marginTop:'10em',
-            marginBottom:'20em',
-            marginRight:'2em'
+            marginTop:'6em',
+            marginRight:'0em'
           }}
         >
           {children}

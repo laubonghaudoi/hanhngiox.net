@@ -62,6 +62,7 @@ class HomepageDesktopContainer extends Component {
               borderless
               fluid
               style={{
+                height:'3em',
                 paddingLeft: '6em',
                 paddingRight: '6em'
               }}

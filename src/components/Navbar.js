@@ -15,14 +15,23 @@ import {
 
 const Navbar = () => (
     <>
-        <Menu.Menu color='red'>
-            <Menu.Item as={Link} to='/'>
-                <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em', marginTop: '2em' }} />
+        <Menu.Menu>
+            <Menu.Item as={Link} to='/'
+                style={{
+                    height: '4em'
+                }}>
+                <Image
+                    size='mini'
+                    src='/logo.png'
+                    style={{
+                        marginRight: '1.5em',
+                        marginTop: '2em'
+                    }} />
                 HanhNgiox
             </Menu.Item>
         </Menu.Menu>
 
-        <Menu.Menu color='red' position='right'>
+        <Menu.Menu position='right'>
             <Menu.Item as={Link} to='/install'>
                 <Icon name='compass' />
                 開始
