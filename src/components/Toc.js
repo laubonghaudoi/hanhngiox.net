@@ -18,9 +18,9 @@ class Toc extends Component {
   render() {
     const { activeItem } = this.state
     return (
-      <Menu 
-        pointing
-        secondary
+      <Menu
+      secondary
+      pointing
         vertical
         >
         <Menu.Item
@@ -34,9 +34,7 @@ class Toc extends Component {
         </Menu.Item>
         <Menu.Item>
           電腦
-          <Menu.Menu
-            pointing
-            secondary>
+          <Menu.Menu>
             <Menu.Item
               as={Link}
               to='/install/windows'
@@ -71,9 +69,7 @@ class Toc extends Component {
         </Menu.Item>
         <Menu.Item>
           手機
-        <Menu.Menu
-          pointing
-          secondary>
+        <Menu.Menu>
             <Menu.Item
               as={Link}
               to='/install/ios'

@@ -12,24 +12,9 @@ import PageLayout from '../layouts/PageLayout';
 import Toc from '../components/Toc';
 
 class InstallPageLayout extends Component {
-
-  handleToggleDropdownMenu = () => {
-    let newState = Object.assign({}, this.state);
-    if (newState.dropdownMenuStyle.display === "none") {
-      newState.dropdownMenuStyle = { display: "flex" };
-    } else {
-      newState.dropdownMenuStyle = { display: "none" };
-    }
-
-    this.setState(newState);
-  };
-
-  handleToggleNav = () => {
-    let newState = Object.assign({}, this.state);
-    newState.sidebarVisible = !newState.sidebarVisible;
-
-    this.setState(newState);
-  };
+  state = {activeItem: 'intro'}
+  
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
     const { children } = this.props

@@ -18,7 +18,7 @@ class InstallMenu extends Component {
   render() {
     const { activeItem } = this.state
     return (
-      <Menu pointing secondary vertical>
+      <Menu vertical>
         <Menu.Item
           as={Link}
           to='/install'
