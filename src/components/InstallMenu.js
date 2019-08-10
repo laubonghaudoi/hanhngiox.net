@@ -5,7 +5,7 @@ import {
   Menu,
 } from 'semantic-ui-react'
 import 'semantic-ui-less/semantic.less';
-import { Link } from 'gatsby';
+import Link from 'gatsby-plugin-transition-link';
 
 
 class InstallMenu extends Component {
@@ -15,7 +15,6 @@ class InstallMenu extends Component {
   }
 
   handleItemClick(e, { name }) {
-    console.log(name)
     this.props.onActiveChange(name);
   }
 
@@ -29,16 +28,6 @@ class InstallMenu extends Component {
           marginRight: '2em'
         }}
       >
-        <Menu.Item
-          as={Link}
-          to='/install/intro'
-          name='intro'
-          color='teal'
-          active={this.props.activeItem === 'intro'}
-          onClick={this.handleItemClick}
-        >
-          概述
-        </Menu.Item>
         <Menu.Item
           as={Link}
           to='/install/windows'

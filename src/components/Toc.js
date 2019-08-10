@@ -5,7 +5,7 @@ import {
   Menu,
 } from 'semantic-ui-react'
 import 'semantic-ui-less/semantic.less';
-import { Link } from 'gatsby';
+import { Link } from 'gatsby-plugin-transition-link';
 
 
 class Toc extends Component {

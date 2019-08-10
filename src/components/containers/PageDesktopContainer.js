@@ -1,14 +1,9 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 
-import { Link } from 'gatsby';
 import {
-  Dropdown,
-  Icon,
-  Image,
   Menu,
   Responsive,
-  Segment,
   Visibility,
   Container,
 } from 'semantic-ui-react'
@@ -36,7 +31,6 @@ class HomepageDesktopContainer extends Component {
 
   render() {
     const { children } = this.props
-    const { fixed } = this.state
 
     return (
       <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>

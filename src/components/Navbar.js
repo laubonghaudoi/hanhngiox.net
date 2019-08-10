@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React from 'react'
 
 import { Link } from 'gatsby';
 import {
@@ -7,9 +7,6 @@ import {
     Icon,
     Image,
     Menu,
-    Responsive,
-    Segment,
-    Visibility,
 } from 'semantic-ui-react'
 
 
@@ -38,7 +35,7 @@ const Navbar = () => (
             </Menu.Item>
             <Menu.Item as={Link} to='/schema'>
                 <Icon name='th' />
-                拼音方案
+                方案
             </Menu.Item>
             <Menu.Item as={Link} to='/blog'>
                 <Icon name='book' />

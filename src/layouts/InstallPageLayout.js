@@ -28,16 +28,17 @@ class InstallPageLayout extends Component {
     return (
       <PageLayout>
           <Container fluid>
-            <Grid padded stackable>
-              <Grid.Column width={3}>
+            <Grid columns='equal' padded stackable>
+              <Grid.Column width={4}>
                 <InstallMenu 
                   activeItem={this.state.activeItem}
-                  onActiveChange={this.handleActiveChange}/>
+                  onActiveChange={this.handleActiveChange}
+                />
               </Grid.Column>
-              <Grid.Column width={10}>
+              <Grid.Column width={8}>
                 {children}
               </Grid.Column>
-              <Grid.Column width={3}>
+              <Grid.Column width={4}>
                 <Toc/>
               </Grid.Column>
             </Grid>

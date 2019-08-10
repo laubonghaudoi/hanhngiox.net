@@ -9,15 +9,21 @@ import {
   Segment
  } from 'semantic-ui-react';
 
-import { Link } from 'gatsby';
+import { Link } from 'gatsby-plugin-transition-link';
 
 import HomepageLayout from '../layouts/HomepageLayout';
 import SchemaList from '../components/SchemaList';
+import { hidden } from 'ansi-colors';
 
 const IndexPage = () => (
   <div>
     <HomepageLayout>
-      <Segment style={{ padding: '8em 0em' }} vertical>
+      <Segment 
+        style={{ 
+          padding: '8em 0em',
+          overflow: 'hidden'
+        }} 
+        vertical>
         <Grid container stackable verticalAlign='middle'>
           <Grid.Row>
             <Grid.Column width={8}>
@@ -41,7 +47,12 @@ const IndexPage = () => (
         </Grid>
       </Segment>
 
-      <Segment style={{ padding: '0em' }} vertical>
+      <Segment 
+        style={{ 
+          padding: '0em',
+          overflow: hidden
+        }} 
+        vertical>
         <Grid columns='equal' stackable>
           <Grid.Row>
             <Grid.Column style={{ padding: '5em' }} textAlign='center'>
@@ -62,7 +73,12 @@ const IndexPage = () => (
         </Grid>
       </Segment>
 
-      <Segment style={{ padding: '8em 0em' }} vertical>
+      <Segment 
+        style={{ 
+          padding: '8em 0em' ,
+          overflow: 'hidden'
+        }} 
+        vertical>
         <Container text textAlign='center'>
           <Header as='h3' style={{ fontSize: '2em' }}>
             我也要用家乡话打字！
@@ -74,7 +90,7 @@ const IndexPage = () => (
             起
           </Button>
         </Container>
-      </Segment>      
+      </Segment>
     </HomepageLayout>
   </div>
 )

@@ -1,7 +1,6 @@
 import { graphql, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Helmet from 'react-helmet';
 import 'semantic-ui-less/semantic.less';
 
 import PageContainer from '../components/containers/PageContainer';

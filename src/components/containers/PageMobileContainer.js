@@ -4,7 +4,6 @@ import {
   Container,
   Dropdown,
   Icon,
-  Image,
   Menu,
   Responsive,
   Segment,
@@ -54,7 +53,7 @@ class HomepageMobileContainer extends Component {
           </Menu.Item>
           <Menu.Item as={Link} to='/schema'>
             <Icon name='th'/>
-            拼音方案
+            方案
           </Menu.Item>
           <Menu.Item as={Link} to='/blog'>
             <Icon name='book'/>
@@ -79,8 +78,9 @@ class HomepageMobileContainer extends Component {
                 <Menu.Item onClick={this.handleToggle}>
                   <Icon name='sidebar' />
                 </Menu.Item>
-
-
+                <Menu.Item as={Link} to='/'>
+                HanhNgiox
+                </Menu.Item>
                 <Menu.Menu position='right'>
                   <Dropdown item simple direction='left' text='界面語言'>
                     <Dropdown.Menu position='right' color='blue'>

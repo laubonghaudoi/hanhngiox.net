@@ -10,6 +10,7 @@ module.exports = {
         path: `${__dirname}/src/markdown`,
       },
     },
+    `gatsby-plugin-transition-link`,
     `gatsby-transformer-remark`,
     'gatsby-plugin-react-helmet', 
     'gatsby-plugin-less',

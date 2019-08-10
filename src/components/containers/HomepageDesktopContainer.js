@@ -1,11 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 
-import { Link } from 'gatsby';
 import {
-  Dropdown,
-  Icon,
-  Image,
   Menu,
   Responsive,
   Segment,
@@ -51,7 +47,7 @@ class HomepageDesktopContainer extends Component {
             style={{ 
               backgroundImage: `url(${"/bk.jpg"})`,
               backgroundSize: 'cover',
-              height: '100vh'
+              height: '100vh',
             }}
             vertical
           >
