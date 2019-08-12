@@ -1,17 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: 'HanhNgiox',
+    title: 'Hanh Ngiox',
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/src/markdown`,
+        path: `${__dirname}/src/`,
       },
     },
-    `gatsby-plugin-transition-link`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-transition-link`,
     'gatsby-plugin-react-helmet', 
     'gatsby-plugin-less',
     `gatsby-plugin-emotion`,

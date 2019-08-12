@@ -9,7 +9,6 @@ import 'semantic-ui-less/semantic.less';
 
 import InstallMenu from '../components/InstallMenu';
 import PageLayout from '../layouts/PageLayout';
-import Toc from '../components/Toc';
 
 class InstallPageLayout extends Component {
   constructor(props){
@@ -35,11 +34,8 @@ class InstallPageLayout extends Component {
                   onActiveChange={this.handleActiveChange}
                 />
               </Grid.Column>
-              <Grid.Column width={8}>
+              <Grid.Column width={11}>
                 {children}
-              </Grid.Column>
-              <Grid.Column width={4}>
-                <Toc/>
               </Grid.Column>
             </Grid>
           </Container>

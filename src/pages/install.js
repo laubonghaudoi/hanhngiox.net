@@ -7,7 +7,6 @@ import {
   Header,
   Image,
  } from "semantic-ui-react"
-import Link from 'gatsby-plugin-transition-link';
 import { rhythm } from "../utils/grandViewTypography"
 import InstallPageLayout from "../layouts/InstallPageLayout";
 
@@ -35,22 +34,22 @@ export default () => {
           <li>部署你的方言的拼音方案（复制粘贴两个文件而已）</li>
         </ol>
       </Message>
-      
-      <Grid columns='equal' padded stackable divided='vertically'>
+      <Divider horizontal>选择平台</Divider>
+      <Grid 
+        columns='equal' 
+        padded 
+        stackable 
+        divided='vertically'
+      >
         <Grid.Row columns={3}>
           <Grid.Column>
             <Card href='/install/windows'>
-              <Image src='/windows.png' wrapped ui={false} />
+              <Image src='/windows.png' wrapped />
               <Card.Content>
                 <Card.Header>Windows</Card.Header>
                 <Card.Description>
                   以Win 10为例，安装小狼毫输入法并启用汉语方言拼音方案
                 </Card.Description>
-              </Card.Content>
-              <Card.Content extra>
-                <a>
-                  10 Friends
-                </a>
               </Card.Content>
             </Card>
           </Grid.Column>
@@ -63,11 +62,6 @@ export default () => {
                   以Mac为例，安装鼠须管输入法并启用汉语方言拼音方案
                 </Card.Description>
               </Card.Content>
-              <Card.Content extra>
-                <a>
-                  10 Friends
-                </a>
-              </Card.Content>
             </Card>
           </Grid.Column>
           <Grid.Column>
@@ -78,11 +72,6 @@ export default () => {
                 <Card.Description>
                   以Ubuntu 18.04为例，安装ibus-rime并启用汉语方言拼音方案
                 </Card.Description>
-              </Card.Content>
-              <Card.Content extra>
-                <a>
-                  10 Friends
-                </a>
               </Card.Content>
             </Card>
           </Grid.Column>
@@ -97,11 +86,6 @@ export default () => {
                   以iOS为例，安装iRime输入法并启用汉语方言拼音方案
                 </Card.Description>
               </Card.Content>
-              <Card.Content extra>
-                <a>
-                  10 Friends
-                </a>
-              </Card.Content>
             </Card>
           </Grid.Column>
           <Grid.Column>
@@ -112,11 +96,6 @@ export default () => {
                 <Card.Description>
                   以Android为例，安装同文输入法并启用汉语方言拼音方案
                 </Card.Description>
-              </Card.Content>
-              <Card.Content extra>
-                <a>
-                  10 Friends
-                </a>
               </Card.Content>
             </Card>
           </Grid.Column>

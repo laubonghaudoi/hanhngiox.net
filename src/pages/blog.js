@@ -1,10 +1,11 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { css } from "@emotion/core"
 import { rhythm } from "../utils/grandViewTypography"
 import InstallPageLayout from "../layouts/InstallPageLayout";
 
 export default ({ data }) => {
+  console.log(data)
   return (
     <InstallPageLayout>
       <div>
@@ -23,6 +24,13 @@ export default ({ data }) => {
             key={node.id}
             css={css`margin-bottom: ${rhythm(2)};`}
           >
+            <Link
+              to={node.fields.slug}
+              css={css`
+                text-decoration: none;
+                color: inherit;
+              `}
+            >
             <h3
               css={css`
                 margin-bottom: ${rhythm(1 / 4)};
@@ -39,6 +47,7 @@ export default ({ data }) => {
             </h3>
 
             <p>{node.excerpt}</p>
+            </Link>
           </div>
         ))}
       </div>
@@ -56,6 +65,9 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+          }
+          fields {
+            slug
           }
           excerpt
         }

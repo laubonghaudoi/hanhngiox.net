@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import {
   Icon,
@@ -86,11 +85,6 @@ class InstallMenu extends Component {
       </Menu>
     )
   }
-}
-
-
-InstallMenu.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default InstallMenu;
