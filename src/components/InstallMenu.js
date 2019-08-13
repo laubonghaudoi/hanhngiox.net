@@ -29,6 +29,16 @@ class InstallMenu extends Component {
       >
         <Menu.Item
           as={Link}
+          to='/install'
+          name='install'
+          color='white'
+          active={this.props.activeItem === 'install'}
+          onClick={this.handleItemClick}
+        >
+          概述
+        </Menu.Item>
+        <Menu.Item
+          as={Link}
           to='/install/windows'
           name='windows'
           color='blue'
@@ -36,8 +46,8 @@ class InstallMenu extends Component {
           onClick={this.handleItemClick}
         >
           <Icon name='windows' />
-          Windows
-            </Menu.Item>
+            Windows
+        </Menu.Item>
         <Menu.Item
           as={Link}
           to='/install/mac'
@@ -47,8 +57,8 @@ class InstallMenu extends Component {
           onClick={this.handleItemClick}
         >
           <Icon name='apple' />
-          macOS
-            </Menu.Item>
+           macOS
+        </Menu.Item>
         <Menu.Item
           as={Link}
           to='/install/linux'
@@ -58,8 +68,8 @@ class InstallMenu extends Component {
           onClick={this.handleItemClick}
         >
           <Icon name='linux' />
-          Linux
-            </Menu.Item>
+           Linux
+        </Menu.Item>
         <Menu.Item
           as={Link}
           to='/install/ios'
@@ -69,8 +79,8 @@ class InstallMenu extends Component {
           onClick={this.handleItemClick}
         >
           <Icon name='apple' />
-          iOS
-          </Menu.Item>
+           iOS
+        </Menu.Item>
         <Menu.Item
           as={Link}
           to='/install/android'
@@ -80,8 +90,8 @@ class InstallMenu extends Component {
           onClick={this.handleItemClick}
         >
           <Icon name='android' />
-          Android
-            </Menu.Item>
+            Android
+        </Menu.Item>
       </Menu>
     )
   }
