@@ -1,18 +1,82 @@
 import React from 'react'
-
+import { Link, graphql } from "gatsby"
+import { css } from "@emotion/core"
+import { rhythm } from "../utils/grandViewTypography"
 import PageLayout from '../layouts/PageLayout'
 
-const AboutPage = () => (
-  <PageLayout>
-    <h1>
-      本頁爲關於頁
-    </h1>
-    <h2><span role="img" aria-label="Eyes">👀</span> Hello from the second page.</h2>
-    <p>Before the data update, we use the 13 tables of kg_melded which are all from the english wikipedia pages. We know that the data table has two columns: name and ipa. The name column contain strings, while the ipa column contains the pronunciation in different languages. Because the 13 tables are all from English wikipedia, the name column is assumed to contain only legitimate English words (despite noisy data), while the ipa column are supposed to be mostly ipa transcriptions for the English language (there could be multiple ipa transcriptions for a single name, because many words such as Los Angeles can be pronounced in both an English or Spainish way). In short, the mappings we create are in the below format:</p>
-    <p>Before the data update, we use the 13 tables of kg_melded which are all from the english wikipedia pages. We know that the data table has two columns: name and ipa. The name column contain strings, while the ipa column contains the pronunciation in different languages. Because the 13 tables are all from English wikipedia, the name column is assumed to contain only legitimate English words (despite noisy data), while the ipa column are supposed to be mostly ipa transcriptions for the English language (there could be multiple ipa transcriptions for a single name, because many words such as Los Angeles can be pronounced in both an English or Spainish way). In short, the mappings we create are in the below format:</p>
-    <p>Before the data update, we use the 13 tables of kg_melded which are all from the english wikipedia pages. We know that the data table has two columns: name and ipa. The name column contain strings, while the ipa column contains the pronunciation in different languages. Because the 13 tables are all from English wikipedia, the name column is assumed to contain only legitimate English words (despite noisy data), while the ipa column are supposed to be mostly ipa transcriptions for the English language (there could be multiple ipa transcriptions for a single name, because many words such as Los Angeles can be pronounced in both an English or Spainish way). In short, the mappings we create are in the below format:</p>
-    <p>Before the data update, we use the 13 tables of kg_melded which are all from the english wikipedia pages. We know that the data table has two columns: name and ipa. The name column contain strings, while the ipa column contains the pronunciation in different languages. Because the 13 tables are all from English wikipedia, the name column is assumed to contain only legitimate English words (despite noisy data), while the ipa column are supposed to be mostly ipa transcriptions for the English language (there could be multiple ipa transcriptions for a single name, because many words such as Los Angeles can be pronounced in both an English or Spainish way). In short, the mappings we create are in the below format:</p>
+const AboutPage = ({ data }) => (
+  <PageLayout
+    css={css`
+    margin: 0 auto;
+    max-width: 700px;
+    padding: ${rhythm(2)};
+    padding-top: ${rhythm(1.5)};
+  `}>
+    <div>
+      <h1
+        css={css`
+          display: inline-block;
+          border-bottom: 1px solid;
+        `}
+      >
+        雜談
+      </h1>
+      <h4>{data.allMarkdownRemark.totalCount} 篇文章</h4>
+      
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <div
+          key={node.id}
+          css={css`margin-bottom: ${rhythm(2)};`}
+        >
+          <Link
+            to={node.fields.slug}
+            css={css`
+              text-decoration: none;
+              color: inherit;
+            `}
+          >
+          <h3
+            css={css`
+              margin-bottom: ${rhythm(1 / 4)};
+            `}
+          >
+            {node.frontmatter.title}{" "}
+            <span
+              css={css`
+                color: #bbb;
+              `}
+            >
+              — {node.frontmatter.date}
+            </span>
+          </h3>
+
+          <p>{node.excerpt}</p>
+          </Link>
+        </div>
+      ))}
+    </div>
   </PageLayout>
 )
+
+export const query = graphql`
+  query {
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`
 
 export default AboutPage;
