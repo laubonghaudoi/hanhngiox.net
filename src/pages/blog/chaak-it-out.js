@@ -14,7 +14,7 @@ export default () => (
       </Header.Content>
       <Header.Subheader>
         阿擇 （Chaaak）
-        原載於Medium https://link.medium.com/dkBdkN8H8Y
+        原載於Medium https://link.medium.com/TMFfMh1I8Y
       </Header.Subheader>
     </Header>
     <Divider/>

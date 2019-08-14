@@ -36,7 +36,7 @@ export default ({ children }) => {
                 to='/blog'
                 >
                 <Icon name='arrow left'/>
-                返回目录
+                  文章列表
               </Button>{" "}
               </Header.Content>
             </Header>

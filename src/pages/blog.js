@@ -94,12 +94,12 @@ export default () => {
               兒童書你都唔用全粵語，唔通連聽個故仔都要大人逐字翻譯？
             </blockquote>
             <Segment secondary>
-              <code>原載於Medium。原文鏈接：https://link.medium.com/AwUPNZdb8Y</code>
+              <code>原載於Medium https://link.medium.com/AwUPNZdb8Y</code>
             </Segment>
             <Button 
               color='blue'
               as={Link}
-              to='/blog/write_cantonese'>
+              to='/blog/why-no-one-writes-storybooks-in-cantonese'>
               读
             </Button>{" "}
             <Divider />
@@ -119,7 +119,7 @@ export default () => {
               不斷更新
             </blockquote>
             <Segment secondary>
-              <code>原載於Medium。原文鏈接：https://link.medium.com/TMFfMh1I8Y</code>
+              <code>原載於Medium https://link.medium.com/TMFfMh1I8Y</code>
             </Segment>
             <Button 
               color='blue'
@@ -135,7 +135,7 @@ export default () => {
             <Segment secondary>
               <Header as="h4">杂谈</Header>
               <p>
-              本板块将连载各种关于汉语方言拼音的资料和文章，帮助读者了解汉语方言拼音的知识。
+                本板块将连载各种关于汉语方言拼音的资料和文章，帮助读者了解汉语方言拼音的知识。
               </p>
             </Segment>
             <Header as="h4">Archives</Header>
