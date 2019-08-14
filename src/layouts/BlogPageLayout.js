@@ -8,9 +8,10 @@ import {
   Header,
   Icon,
   List,
+  Menu,
   Segment
 } from "semantic-ui-react"
-import Link from 'gatsby-plugin-transition-link'
+import { Link } from 'gatsby'
 import { rhythm } from "../utils/grandViewTypography"
 import PageLayout from "./PageLayout";
 
@@ -44,6 +45,21 @@ export default ({ children }) => {
         <Grid.Row>
           <Grid.Column width={11}>
             {children}
+            <Container
+              style={{
+                margin:'4em'
+              }}
+            >          
+              <Button
+                floated='right'
+                color='violet' 
+                as={Link}
+                to='/blog'
+              >
+                <Icon name='arrow up'/>
+                回到顶部
+              </Button>
+            </Container>
           </Grid.Column>
           <Grid.Column width={4} floated="right">
             <Segment secondary>
@@ -66,16 +82,6 @@ export default ({ children }) => {
               <List.Item as="a">Facebook</List.Item>
             </List>
           </Grid.Column>
-        </Grid.Row>
-        <Grid.Row>
-          <Button
-            color='violet' 
-            as={Link}
-            to='/blog'
-          >
-            <Icon name='arrow up'/>
-            回到顶部
-          </Button>{" "}
         </Grid.Row>
       </Grid>
     </PageLayout>

@@ -8,6 +8,7 @@ import {
   Divider,
   Grid,
   Header,
+  Label,
   List,
   Segment,
 } from "semantic-ui-react";
@@ -22,7 +23,7 @@ export default ({ data }) => {
         <Grid.Row>
           <Segment basic>
             <Header as="h1" size="massive">
-              <Header.Content>杂谈</Header.Content>
+              杂谈
               <Divider hidden />
               <Header.Subheader>
                 关于汉语方言的一切
@@ -34,28 +35,49 @@ export default ({ data }) => {
           <Grid.Column width={11}>
             <Header size="large" as="h2">
               <Header.Content>关于本汉语方言拼音项目的宗旨</Header.Content>
+              <Label as='a' color='red'>
+                國語
+              </Label>
+              <Label as='a' color='black'>
+                簡化字
+              </Label>
             </Header>
+
             <Divider hidden />
             <blockquote>
               本项目致力于推广方言拼音输入。为什么要推广方言拼音输入？本文将详细阐明这项事业的动机和理念。
             </blockquote>
             <Button 
-              positive
+              color='blue'
               as={Link}
               to='/blog/mission'>
               读
             </Button>{" "}
             <Divider />
 
-            <Header as="h3" size="large">
-              Heading
+            <Header size="large" as="h2">
+              <Header.Content>寫廣東話嘅路，應該點行落去</Header.Content>
+              <Label as='a' color='teal'>
+                粵語
+              </Label>
+              <Label as='a' color='white'>
+                正體字
+              </Label>
             </Header>
-            <p>
-              Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-              auctor. Duis mollis, est non commodo luctus, nisi erat porttitor
-              ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta
-              ac consectetur ac, vestibulum at eros.
-            </p>
+            <Divider hidden />
+            <blockquote>
+              為大家解決幾個關於粵語書寫嘅困惑
+            </blockquote>
+            <Segment secondary>
+              <code>原載於Medium。原文鏈接： https://link.medium.com/AwUPNZdb8Y</code>
+            </Segment>
+            <Button 
+              color='blue'
+              as={Link}
+              to='/blog/write_cantonese'>
+              读
+            </Button>{" "}
+            <Divider />
             <Header as="h3" size="medium">
               Sub-heading
             </Header>
@@ -63,9 +85,7 @@ export default ({ data }) => {
               Cum sociis natoque penatibus et magnis dis parturient montes,
               nascetur ridiculus mus.
             </p>
-            <Segment secondary>
-              <code>Example code block</code>
-            </Segment>
+
             <p>
               Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem
               malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus
@@ -78,33 +98,6 @@ export default ({ data }) => {
               consectetur. Etiam porta sem malesuada magna mollis euismod.
               Fusce dapibus, tellus ac cursus commodo, tortor mauris
               condimentum nibh, ut fermentum massa justo sit amet risus.
-            </p>
-            <ul>
-              <li>
-                Praesent commodo cursus magna, vel scelerisque nisl
-                consectetur et.
-              </li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
-            </ul>
-            <p>
-              Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae
-              elit libero, a pharetra augue.
-            </p>
-            <ol>
-              <li>Vestibulum id ligula porta felis euismod semper.</li>
-              <li>
-                Cum sociis natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus.
-              </li>
-              <li>
-                Maecenas sed diam eget risus varius blandit sit amet non
-                magna.
-              </li>
-            </ol>
-            <p>
-              Cras mattis consectetur purus sit amet fermentum. Sed posuere
-              consectetur est at lobortis.
             </p>
             <Button basic circular size="huge">
               <a href="#root">Next</a>
