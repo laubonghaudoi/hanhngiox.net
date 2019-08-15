@@ -63,10 +63,6 @@ class HomepageDesktopContainer extends Component {
         <Container 
           fluid 
           borderless
-          style={{
-            marginTop:'6em',
-            marginRight:'0em'
-          }}
         >
           {children}
         </Container>

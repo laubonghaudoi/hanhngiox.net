@@ -13,12 +13,13 @@ import {
   Segment,
 } from "semantic-ui-react";
 
+import '../css/blog.css'
 import PageLayout from "../layouts/PageLayout";
 
 export default () => {
   return (
     <PageLayout>
-      <Grid container stackable>
+      <Grid container stackable id='content'>
         <Grid.Row>
           <Segment basic>
             <Header as="h1" size="massive" href='/blog/write_cantonese'>

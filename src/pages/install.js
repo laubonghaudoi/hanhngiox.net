@@ -8,6 +8,7 @@ import {
   Image,
  } from "semantic-ui-react"
 import { rhythm } from "../utils/grandViewTypography"
+import '../css/install.css'
 import InstallPageLayout from "../layouts/InstallPageLayout";
 
 export default () => {

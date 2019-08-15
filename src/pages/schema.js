@@ -12,7 +12,7 @@ import {
   Menu,
   Table
 } from "semantic-ui-react";
-
+import '../css/schema.css'
 import PageLayout from '../layouts/PageLayout'
 
 class SchemaPage extends Component {
