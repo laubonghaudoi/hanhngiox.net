@@ -13,6 +13,7 @@ import {
   Table
 } from "semantic-ui-react";
 import '../css/schema.css'
+import { Link } from "gatsby";
 import PageLayout from '../layouts/PageLayout'
 
 class SchemaPage extends Component {
@@ -36,11 +37,11 @@ class SchemaPage extends Component {
               <Menu.Item active as="a">
                 Overview
               </Menu.Item>
-              <Menu.Item as="a">Reports</Menu.Item>
+              <Menu.Item as={Link} to="/schema/jyutping">Reports</Menu.Item>
               <Menu.Item as="a">Analytics</Menu.Item>
               <Menu.Item as="a">Export</Menu.Item>
               <Divider hidden />
-              <Menu.Item as="a">Nav item</Menu.Item>
+              <Menu.Item as={Link} to="/schema/jyutping">粵拼</Menu.Item>
               <Menu.Item as="a">Nav item again</Menu.Item>
               <Menu.Item as="a">One more nav</Menu.Item>
               <Menu.Item as="a">Another nav item</Menu.Item>
@@ -66,16 +67,10 @@ class SchemaPage extends Component {
               </Grid.Row>
               <Grid.Row textAlign="center">
                 <Grid.Column mobile={8} tablet={4} computer={4}>
-                  <Image
-                    centered
-                    circular
-                    size="small"
-                    src="/static/images/wireframe/square-image.png"
-                  />
                   <Label basic size="large">
-                    Label
+                    Jyutping
                   </Label>
-                  <p>Something else</p>
+                  <p>粵拼</p>
                 </Grid.Column>
                 <Grid.Column mobile={8} tablet={4} computer={4}>
                   <Image
@@ -90,14 +85,8 @@ class SchemaPage extends Component {
                   <p>Something else</p>
                 </Grid.Column>
                 <Grid.Column mobile={8} tablet={4} computer={4}>
-                  <Image
-                    centered
-                    circular
-                    size="small"
-                    src="/static/images/wireframe/square-image.png"
-                  />
                   <Label basic size="large">
-                    Label
+                    Jyutping
                   </Label>
                   <p>Something else</p>
                 </Grid.Column>
@@ -166,83 +155,6 @@ class SchemaPage extends Component {
                       <Table.Cell>diam</Table.Cell>
                       <Table.Cell>Sed</Table.Cell>
                       <Table.Cell>nisi</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                      <Table.Cell>1,005</Table.Cell>
-                      <Table.Cell>Nulla</Table.Cell>
-                      <Table.Cell>quis</Table.Cell>
-                      <Table.Cell>sem</Table.Cell>
-                      <Table.Cell>at</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                      <Table.Cell>1,006</Table.Cell>
-                      <Table.Cell>nibh</Table.Cell>
-                      <Table.Cell>elementum</Table.Cell>
-                      <Table.Cell>imperdiet</Table.Cell>
-                      <Table.Cell>Duis</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                      <Table.Cell>1,007</Table.Cell>
-                      <Table.Cell>sagittis</Table.Cell>
-                      <Table.Cell>ipsum</Table.Cell>
-                      <Table.Cell>Praesent</Table.Cell>
-                      <Table.Cell>mauris</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                      <Table.Cell>1,008</Table.Cell>
-                      <Table.Cell>Fusce</Table.Cell>
-                      <Table.Cell>nec</Table.Cell>
-                      <Table.Cell>tellus</Table.Cell>
-                      <Table.Cell>sed</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                      <Table.Cell>1,009</Table.Cell>
-                      <Table.Cell>augue</Table.Cell>
-                      <Table.Cell>semper</Table.Cell>
-                      <Table.Cell>porta</Table.Cell>
-                      <Table.Cell>Mauris</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                      <Table.Cell>1,010</Table.Cell>
-                      <Table.Cell>massa</Table.Cell>
-                      <Table.Cell>Vestibulum</Table.Cell>
-                      <Table.Cell>lacinia</Table.Cell>
-                      <Table.Cell>arcu</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                      <Table.Cell>1,011</Table.Cell>
-                      <Table.Cell>eget</Table.Cell>
-                      <Table.Cell>nulla</Table.Cell>
-                      <Table.Cell>Class</Table.Cell>
-                      <Table.Cell>aptent</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                      <Table.Cell>1,012</Table.Cell>
-                      <Table.Cell>taciti</Table.Cell>
-                      <Table.Cell>sociosqu</Table.Cell>
-                      <Table.Cell>ad</Table.Cell>
-                      <Table.Cell>litora</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                      <Table.Cell>1,013</Table.Cell>
-                      <Table.Cell>torquent</Table.Cell>
-                      <Table.Cell>per</Table.Cell>
-                      <Table.Cell>conubia</Table.Cell>
-                      <Table.Cell>nostra</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                      <Table.Cell>1,014</Table.Cell>
-                      <Table.Cell>per</Table.Cell>
-                      <Table.Cell>inceptos</Table.Cell>
-                      <Table.Cell>himenaeos</Table.Cell>
-                      <Table.Cell>Curabitur</Table.Cell>
-                    </Table.Row>
-                    <Table.Row>
-                      <Table.Cell>1,015</Table.Cell>
-                      <Table.Cell>sodales</Table.Cell>
-                      <Table.Cell>ligula</Table.Cell>
-                      <Table.Cell>in</Table.Cell>
-                      <Table.Cell>libero</Table.Cell>
                     </Table.Row>
                   </Table.Body>
                 </Table>

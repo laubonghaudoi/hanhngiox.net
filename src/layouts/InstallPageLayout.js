@@ -7,6 +7,8 @@ import {
 } from 'semantic-ui-react'
 import 'semantic-ui-less/semantic.less';
 
+import '../css/install.css';
+
 import InstallMenu from '../components/InstallMenu';
 import PageLayout from '../layouts/PageLayout';
 
@@ -26,7 +28,7 @@ class InstallPageLayout extends Component {
 
     return (
       <PageLayout>
-          <Container fluid>
+          <Container fluid id='content'>
             <Grid columns='equal' padded stackable>
               <Grid.Column width={4}>
                 <InstallMenu 
