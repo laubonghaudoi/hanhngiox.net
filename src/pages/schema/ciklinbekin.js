@@ -16,15 +16,14 @@ import {
 import { Link } from "gatsby-plugin-transition-link";
 import SchemaPageLayout from '../../layouts/SchemaPageLayout'
 
-class Jyutping extends Component {
+class Ciklinbekin extends Component {
   render(){
     return(
       <SchemaPageLayout
-        activeItem='jyutping'
+        activeItem='ciklinbekin'
         >
-        
         <Header dividing size="huge" as="h1">
-          本页为粤拼
+          本页为戚林八音
         </Header>
         <Table singleLine striped selectable unstackable>
           <Table.Header>
@@ -79,4 +78,4 @@ class Jyutping extends Component {
   }
 }
 
-export default Jyutping
+export default Ciklinbekin

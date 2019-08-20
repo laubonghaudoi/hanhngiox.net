@@ -20,7 +20,7 @@ class Jyutping extends Component {
   render(){
     return(
       <SchemaPageLayout
-      activeItem='syndict'
+        activeItem='hakka'
       >
         本页为薪典
       </SchemaPageLayout>

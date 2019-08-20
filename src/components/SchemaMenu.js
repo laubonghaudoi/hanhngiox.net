@@ -28,31 +28,42 @@ class SchemaMenu extends Component {
             <Menu.Item header>吴语</Menu.Item>
             <Divider/>
             <Menu.Item header>徽语</Menu.Item>
+            <Menu.Item>暂缺</Menu.Item>
             <Divider/>
             <Menu.Item header>赣语</Menu.Item>
             <Menu.Item>暂缺</Menu.Item>
             <Divider/>
             <Menu.Item header>湘语</Menu.Item>
+            <Menu.Item>暂缺</Menu.Item>
             <Divider/>
             <Menu.Item header>闽北语</Menu.Item>
+            <Menu.Item>暂缺</Menu.Item>
             <Divider/>
             <Menu.Item header>闽南语</Menu.Item>
             <Divider/>
             <Menu.Item header>闽东语</Menu.Item>
+            <Menu.Item 
+                name='ciklinbekin'
+                as={Link} 
+                to="/schema/ciklinbekin"
+                active={this.props.activeItem === 'ciklinbekin'}
+                onClick={this.handleItemClick}
+            >
+              戚林八音
+            </Menu.Item>
             <Divider/>
             <Menu.Item header>闽中语</Menu.Item>
+            <Menu.Item>暂缺</Menu.Item>
             <Divider/>
             <Menu.Item header>莆仙语</Menu.Item>
             <Divider/>
             <Menu.Item header>客家话</Menu.Item>
             <Menu.Item 
-                name='syndict'
+                name='hakka'
                 as={Link} 
-                to="/schema/syndict"
-                color='blue'
-                active={this.props.activeItem === 'syndict'}
+                to="/schema/hakka"
+                active={this.props.activeItem === 'hakka'}
                 onClick={this.handleItemClick}
-
             >
                 薪典
             </Menu.Item>
@@ -64,7 +75,6 @@ class SchemaMenu extends Component {
                 as={Link} 
                 name='jyutping'
                 to="/schema/jyutping"
-                color='blue'
             >
                 粵拼
             </Menu.Item>
