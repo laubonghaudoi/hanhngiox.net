@@ -63,6 +63,9 @@ class HomepageDesktopContainer extends Component {
         <Container 
           fluid 
           borderless
+          style={{
+            height: '100vh',
+          }}
         >
           {children}
         </Container>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import PropTypes from 'prop-types';
 import {
   Button,
   Divider,
@@ -12,13 +12,24 @@ import {
   Menu,
   Table
 } from "semantic-ui-react";
-import '../css/schema.css'
-import { Link } from "gatsby";
-import PageLayout from '../layouts/PageLayout'
+
+import PageLayout from '../layouts/PageLayout';
+import SchemaMenu from '../components/SchemaMenu';
 
 class SchemaPageLayout extends Component {
+  constructor(props){
+    super(props);
+    this.handleActiveChange = this.handleActiveChange.bind(this);
+    this.state = { activeItem: this.props.activeItem};
+  }
+
+  handleActiveChange(name) {
+    this.setState({activeItem: name})
+  }
+
   render() {
     const { children } = this.props;
+
     return (
       <PageLayout>
         <Grid padded>
@@ -28,24 +39,10 @@ class SchemaPageLayout extends Component {
             only="tablet computer"
             id="sidebar"
           >
-            <Menu vertical borderless fluid text>
-              <Menu.Item active as="a">
-                Overview
-              </Menu.Item>
-              <Menu.Item as={Link} to="/schema/jyutping">Reports</Menu.Item>
-              <Menu.Item as="a">Analytics</Menu.Item>
-              <Menu.Item as="a">Export</Menu.Item>
-              <Divider hidden />
-              <Menu.Item as={Link} to="/schema/jyutping">粵拼</Menu.Item>
-              <Menu.Item as="a">Nav item again</Menu.Item>
-              <Menu.Item as="a">One more nav</Menu.Item>
-              <Menu.Item as="a">Another nav item</Menu.Item>
-              <Menu.Item as="a">More navigation</Menu.Item>
-              <Divider hidden />
-              <Menu.Item as="a">Macintoch</Menu.Item>
-              <Menu.Item as="a">Linux</Menu.Item>
-              <Menu.Item as="a">Windows</Menu.Item>
-            </Menu>
+            <SchemaMenu
+              activeItem={this.state.activeItem}
+              onActiveChange={this.handleActiveChange}
+            />
           </Grid.Column>
           <Grid.Column
             mobile={16}
@@ -60,6 +57,10 @@ class SchemaPageLayout extends Component {
       </PageLayout>
     )
   }
+}
+
+SchemaPageLayout.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default SchemaPageLayout;

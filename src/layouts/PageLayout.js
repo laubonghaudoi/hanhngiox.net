@@ -22,8 +22,8 @@ const PageLayout = ({ children }) => (
       <div>
         <PageContainer>
           {children}
-          <Footer/>
         </PageContainer>
+        <Footer/>
       </div>
     )}
   />

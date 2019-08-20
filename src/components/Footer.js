@@ -13,8 +13,10 @@ const Footer = () => (
     inverted 
     vertical
     style={{ 
-      padding: '4%',
-    }}>
+      padding: '3%',
+      width: '100%',
+    }}
+  >
     <Container>
       <Grid 
         divided 

@@ -20,9 +20,9 @@ class Jyutping extends Component {
   render(){
     return(
       <SchemaPageLayout
-        activeItem='jyutping'
-        >
-        本页为粤拼
+      activeItem='syndict'
+      >
+        本页为薪典
       </SchemaPageLayout>
     )
   }
