@@ -814,9 +814,9 @@
     "@emotion/weak-memoize" "0.2.3"
 
 "@emotion/core@^10.0.15":
-  version "10.0.15"
-  resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.15.tgz#b8489d85d64b45bd03abdb8a3d9639ba8a0328d0"
-  integrity sha512-VHwwl3k/ddMfQOHYgOJryXOs2rGJ5AfKLQGm5AVolNonnr6tkmDI4nzIMNaPpveoXVs7sP0OrF24UunIPxveQw==
+  version "10.0.16"
+  resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.16.tgz#e43630b65c84e31e81f34db3286eab584b08cfaa"
+  integrity sha512-whbiiA7FfPreBY4BqWky2qRfAZvq+4dKQ1WNJuiYQwPCNmb0pEYDgNheSbZoNKtGTtfPaM28hBbZAKWD5EZXmQ==
   dependencies:
     "@babel/runtime" "^7.4.3"
     "@emotion/cache" "^10.0.15"
@@ -7228,7 +7228,7 @@ name-all-modules-plugin@^1.0.1:
   resolved "https://registry.yarnpkg.com/name-all-modules-plugin/-/name-all-modules-plugin-1.0.1.tgz#0abfb6ad835718b9fb4def0674e06657a954375c"
   integrity sha1-Cr+2rYNXGLn7Te8GdOBmV6lUN1w=
 
-nan@^2.12.1:
+nan@^2.12.1, nan@^2.5.1:
   version "2.14.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.0.tgz#7818f722027b2459a86f0295d434d1fc2336c52c"
   integrity sha512-INOFj37C7k3AfaNTtX8RhsTw7qRy7eLET14cROi9+5HAVbbHuIWUHEauBv5qT4Av2tWasiTY1Jw6puUNqRJXQg==
@@ -7626,6 +7626,13 @@ onetime@^2.0.0:
   integrity sha1-BnQoIw/WdEOyeUsiu6UotoZ5YtQ=
   dependencies:
     mimic-fn "^1.0.0"
+
+opencc@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/opencc/-/opencc-1.0.5.tgz#53a928ac29dc3557a1b1e058d369b423673ab7e5"
+  integrity sha1-U6korCncNVehseBY02m0I2c6t+U=
+  dependencies:
+    nan "^2.5.1"
 
 opentracing@^0.14.3:
   version "0.14.4"
