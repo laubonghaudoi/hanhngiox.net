@@ -9,11 +9,12 @@ import {
   Input,
   Image,
   Label,
+  Message,
   Menu,
   Table
 } from "semantic-ui-react";
-// import '../../css/schema.css'
-import { Link } from "gatsby-plugin-transition-link";
+
+import { rhythm } from "../../utils/grandViewTypography"
 import SchemaPageLayout from '../../layouts/SchemaPageLayout'
 
 class Jyutping extends Component {
@@ -22,58 +23,120 @@ class Jyutping extends Component {
       <SchemaPageLayout
         activeItem='jyutping'
         >
-        
         <Header dividing size="huge" as="h1">
-          本页为粤拼
+          粤拼
         </Header>
-        <Table singleLine striped selectable unstackable>
+        <Message>
+          <Header 
+            size="huge"
+            as="h1"
+            color="blue"
+            textAlign="right"
+            style={{
+              display:'inline-block',
+              marginBottom: rhythm(0.5),
+            }}>
+            简介
+          </Header>
+          <p>
+            粤拼全稱「香港語言學學會粵語拼音方案」，亦稱LSHK粵拼。是香港語言學學會於1993年定案的粵語拼音方案。其特點是完全使用ASCII字符，簡單、合理、易學、易用。是目前最通用的粵語拼音方案。
+          </p>
+          <p>
+           
+          </p>
+          <p>
+            
+          </p>
+          <ul>
+            <li>℞ 所屬配方名稱：<code>rime/rime-jyutping</code></li>
+            <li>方案名稱：<code>jyutping</code></li>
+          </ul>
+        </Message>
+
+        <Header dividing size="large" as="h3">
+          聲母
+        </Header>
+        <Table celled definition unstackable textAlign='center'>
           <Table.Header>
-            <Table.Row>
-              <Table.HeaderCell>#</Table.HeaderCell>
-              <Table.HeaderCell>Header</Table.HeaderCell>
-              <Table.HeaderCell>Header</Table.HeaderCell>
-              <Table.HeaderCell>Header</Table.HeaderCell>
-              <Table.HeaderCell>Header</Table.HeaderCell>
+            <Table.Row textAlign='center'>
+              <Table.HeaderCell></Table.HeaderCell>
+              <Table.HeaderCell>脣音</Table.HeaderCell>
+              <Table.HeaderCell>脣齒音</Table.HeaderCell>
+              <Table.HeaderCell>齒齦音</Table.HeaderCell>
+              <Table.HeaderCell>齒齦—硬齶音</Table.HeaderCell>
+              <Table.HeaderCell>硬齶音</Table.HeaderCell>
+              <Table.HeaderCell>軟齶音</Table.HeaderCell>
+              <Table.HeaderCell>喉音</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
           <Table.Body>
             <Table.Row>
-              <Table.Cell>1.001</Table.Cell>
-              <Table.Cell>Lorem</Table.Cell>
-              <Table.Cell>ipsum</Table.Cell>
-              <Table.Cell>dolor</Table.Cell>
-              <Table.Cell>sit</Table.Cell>
+              <Table.Cell>塞音</Table.Cell>
+              <Table.Cell>b [p] 巴<br/>p [pʰ]  怕</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>d [t] 打<br/>t [tʰ]  他</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>g [k] 家<br/>k  [kʰ]  卡<br/>gw [kʷ] 家<br/>kw  [kʷ]  卡</Table.Cell>
+              <Table.Cell></Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell>1,002</Table.Cell>
-              <Table.Cell>amet</Table.Cell>
-              <Table.Cell>consectetur</Table.Cell>
-              <Table.Cell>adipiscing</Table.Cell>
-              <Table.Cell>elit</Table.Cell>
+              <Table.Cell>塞擦音</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>z [t͡s]  渣<br/>c  [t͡sʰ]  叉</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell>鼻音</Table.Cell>
+              <Table.Cell>m [m] 媽</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>n [n] 那</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>ng  [ŋ] 牙</Table.Cell>
+              <Table.Cell></Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell>1,003</Table.Cell>
-              <Table.Cell>Integer</Table.Cell>
-              <Table.Cell>nec</Table.Cell>
-              <Table.Cell>odio</Table.Cell>
-              <Table.Cell>Praesent</Table.Cell>
+              <Table.Cell>擦音</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>f [f] 花</Table.Cell>
+              <Table.Cell>s [s] 沙</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>h [h] 蝦</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell>1,003</Table.Cell>
-              <Table.Cell>libero</Table.Cell>
-              <Table.Cell>Sed</Table.Cell>
-              <Table.Cell>cursus</Table.Cell>
-              <Table.Cell>ante</Table.Cell>
+              <Table.Cell>近音</Table.Cell>
+              <Table.Cell>w [w] 蛙</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>j [j] 也</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell>1,004</Table.Cell>
-              <Table.Cell>dapibus</Table.Cell>
-              <Table.Cell>diam</Table.Cell>
-              <Table.Cell>Sed</Table.Cell>
-              <Table.Cell>nisi</Table.Cell>
+              <Table.Cell>邊近音</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>l [l] 啦</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
             </Table.Row>
           </Table.Body>
         </Table>
+
+        <Header dividing size="large" as="h2">
+          參考資料
+        </Header>
+        https://www.lshk.org/jyutping
       </SchemaPageLayout>
     )
   }

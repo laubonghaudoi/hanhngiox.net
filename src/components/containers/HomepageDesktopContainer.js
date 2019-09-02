@@ -8,6 +8,8 @@ import {
   Visibility,
 } from 'semantic-ui-react'
 
+import '../../css/menu.css';
+
 import HomepageHeading from '../HomepageHeading';
 import Navbar from '../Navbar';
 
@@ -57,11 +59,7 @@ class HomepageDesktopContainer extends Component {
               secondary={!fixed}
               borderless
               fluid
-              style={{
-                height:'3em',
-                paddingLeft: '6em',
-                paddingRight: '6em'
-              }}
+              id='menu'
             >
               <Navbar/>
             </Menu>
