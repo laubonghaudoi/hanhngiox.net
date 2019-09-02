@@ -16,18 +16,16 @@ import {
 import { Link } from "gatsby-plugin-transition-link";
 import SchemaPageLayout from '../../layouts/SchemaPageLayout'
 
-class Ciklinbekin extends Component {
+class Dieghv extends Component {
   render(){
     return(
       <SchemaPageLayout
-        activeItem='ciklinbekin'
-        >
-        <Header dividing size="huge" as="h1">
-          戚林八音
-        </Header>
+        activeItem='dieghv'
+      >
+        潮語拼音輸入法
       </SchemaPageLayout>
     )
   }
 }
 
-export default Ciklinbekin
+export default Dieghv
