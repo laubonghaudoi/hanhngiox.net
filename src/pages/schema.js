@@ -29,7 +29,7 @@ class SchemaPage extends Component {
         <Grid padded>
           <Grid.Row>
             <Header dividing size="huge" as="h1">
-              Dashboard
+              拼音方案一覽
             </Header>
           </Grid.Row>
           <Grid.Row textAlign="center">
@@ -44,7 +44,7 @@ class SchemaPage extends Component {
                 centered
                 circular
                 size="small"
-                src="/static/images/wireframe/square-image.png"
+                src="/static/bk.jpg"
               />
               <Label basic size="large">
                 Label
