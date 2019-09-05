@@ -23,9 +23,10 @@ class InstallMenu extends Component {
         vertical
         inverted
         style={{
-          marginLeft: '2%',
-          marginRight: '2%',
-          position:'fixed'
+          marginLeft: '1em',
+          marginRight: '1em',
+          position:'fixed',
+          width:'12em'
         }}
       >
         <Menu.Item

@@ -1,105 +1,46 @@
-import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
+import _ from 'lodash';
 import {
+  Header,
   Icon,
+  Image,
   Menu,
-} from 'semantic-ui-react'
+  Rail,
+  Ref,
+  Segment,
+  Sticky,
+} from 'semantic-ui-react';
 import 'semantic-ui-less/semantic.less';
+
 import { Link } from 'gatsby-plugin-transition-link';
 
 
+const Placeholder = () => <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />;
 class Toc extends Component {
-  state = {
-    activeItem: 'intro'
-  };
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  contextRef = createRef();
 
   render() {
-    const { activeItem } = this.state
     return (
-      <Menu
-      secondary
-      pointing
-        vertical
-        >
-        <Menu.Item
-          as={Link}
-          to='/install'
-          name='intro'
-          active={activeItem === 'intro'}
-          onClick={this.handleItemClick}
-        >
-          概述
-        </Menu.Item>
-        <Menu.Item>
-          電腦
-          <Menu.Menu>
-            <Menu.Item
-              as={Link}
-              to='/install/windows'
-              name='windows'
-              active={activeItem === 'windows'}
-              onClick={this.handleItemClick}
-            >
-              <Icon name='windows' />
-              Windows
-            </Menu.Item>
-            <Menu.Item
-              as={Link}
-              to='/install/mac'
-              name='mac'
-              active={activeItem === 'mac'}
-              onClick={this.handleItemClick}
-            >
-              <Icon name='apple' />
-              macOS
-            </Menu.Item>
-            <Menu.Item
-              as={Link}
-              to='/install/linux'
-              name='linux'
-              active={activeItem === 'linux'}
-              onClick={this.handleItemClick}
-            >
-              <Icon name='linux' />
-              Linux
-            </Menu.Item>
-          </Menu.Menu>
-        </Menu.Item>
-        <Menu.Item>
-          手機
-        <Menu.Menu>
-            <Menu.Item
-              as={Link}
-              to='/install/ios'
-              name='ios'
-              active={activeItem === 'ios'}
-              onClick={this.handleItemClick}
-            >
-              <Icon name='app store ios' />
-              iOS
-          </Menu.Item>
-            <Menu.Item
-              as={Link}
-              to='/install/android'
-              name='android'
-              active={activeItem === 'android'}
-              onClick={this.handleItemClick}
-            >
-              <Icon name='android' />
-              Android
-            </Menu.Item>
-          </Menu.Menu>
-        </Menu.Item>
-      </Menu>
+      <Ref innerRef={this.contextRef}>
+        <Segment>
+          {_.times(10, (i) => (
+            <Placeholder key={i} />
+          ))}
+
+          <Rail position='right'>
+            {_.times(3, (i) => (
+              <Placeholder key={i} />
+            ))}
+
+            <Sticky context={this.contextRef} pushing>
+              <Header as='h3'>Stuck Content</Header>
+              <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
+            </Sticky>
+          </Rail>
+        </Segment>
+      </Ref>
     )
   }
-}
-
-
-Toc.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Toc;
