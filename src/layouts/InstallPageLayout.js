@@ -11,6 +11,7 @@ import '../css/install.css';
 
 import InstallMenu from '../components/InstallMenu';
 import SchemaList from '../components/SchemaList';
+import Toc from '../components/Toc';
 import PageLayout from '../layouts/PageLayout';
 
 class InstallPageLayout extends Component {
