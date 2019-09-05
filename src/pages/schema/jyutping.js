@@ -56,6 +56,7 @@ class Jyutping extends Component {
         <Header dividing size="large" as="h3">
           聲母
         </Header>
+        粵拼中共有19個聲母，無清濁對立，無腭化音。
         <Table celled definition unstackable textAlign='center'>
           <Table.Header>
             <Table.Row textAlign='center'>
@@ -63,7 +64,7 @@ class Jyutping extends Component {
               <Table.HeaderCell>脣音</Table.HeaderCell>
               <Table.HeaderCell>脣齒音</Table.HeaderCell>
               <Table.HeaderCell>齒齦音</Table.HeaderCell>
-              <Table.HeaderCell>齒齦—硬齶音</Table.HeaderCell>
+              <Table.HeaderCell>齦顎音</Table.HeaderCell>
               <Table.HeaderCell>硬齶音</Table.HeaderCell>
               <Table.HeaderCell>軟齶音</Table.HeaderCell>
               <Table.HeaderCell>喉音</Table.HeaderCell>
@@ -132,7 +133,22 @@ class Jyutping extends Component {
             </Table.Row>
           </Table.Body>
         </Table>
-
+        <Header dividing size="large" as="h3">
+          介音
+        </Header>
+          粵語無介音
+        <Header dividing size="large" as="h3">
+          韻腹
+        </Header>
+        <Header dividing size="large" as="h3">
+          韻尾
+        </Header>
+        <Header dividing size="large" as="h3">
+          鼻音單獨成韻
+        </Header>
+        <Header dividing size="large" as="h3">
+          聲調
+        </Header>
         <Header dividing size="large" as="h2">
           參考資料
         </Header>
