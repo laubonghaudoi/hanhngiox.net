@@ -4,12 +4,13 @@ import {
   Container,
   Grid,
 
-} from 'semantic-ui-react'
+} from 'semantic-ui-react';
 import 'semantic-ui-less/semantic.less';
 
 import '../css/install.css';
 
 import InstallMenu from '../components/InstallMenu';
+import Toc from '../components/Toc';
 import PageLayout from '../layouts/PageLayout';
 
 class InstallPageLayout extends Component {
@@ -30,13 +31,13 @@ class InstallPageLayout extends Component {
       <PageLayout>
           <Container fluid id='content'>
             <Grid columns='equal' padded stackable>
-              <Grid.Column width={4}>
+              <Grid.Column width={3}>
                 <InstallMenu 
                   activeItem={this.state.activeItem}
                   onActiveChange={this.handleActiveChange}
                 />
               </Grid.Column>
-              <Grid.Column width={11}>
+              <Grid.Column width={13}>
                 {children}
               </Grid.Column>
             </Grid>
