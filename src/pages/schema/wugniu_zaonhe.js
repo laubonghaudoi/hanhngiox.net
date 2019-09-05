@@ -39,7 +39,7 @@ class Wugniu_zaonhe extends Component {
             简介
           </Header>
           <p>
-            粤拼全稱「香港語言學學會粵語拼音方案」，亦稱LSHK粵拼。是香港語言學學會於1993年定案的粵語拼音方案。其特點是完全使用ASCII字符，簡單、合理、易學、易用。是目前最通用的粵語拼音方案。
+            本方案全稱「上海吳語拼音輸入方案」，由吳語學堂團隊編制。本方案由吳語協會的吳語拼音方案修改而成。
           </p>
           <p>
            
@@ -48,15 +48,15 @@ class Wugniu_zaonhe extends Component {
             
           </p>
           <ul>
-            <li>℞ 所屬配方名稱：<code>rime/rime-jyutping</code></li>
-            <li>方案名稱：<code>jyutping</code></li>
+            <li>℞ 所屬配方名稱：<code>NGLI/rime-wugniu_zaonhe</code></li>
+            <li>方案名稱：<code>wugniu_zaonhe</code></li>
           </ul>
         </Message>
 
         <Header dividing size="large" as="h3">
           聲母
         </Header>
-        粵拼中共有19個聲母，無清濁對立，無腭化音。
+        上海吳語拼音方案中共有27個聲母，有清濁送氣三路對立，有腭化音。
         <Table celled definition unstackable textAlign='center'>
           <Table.Header>
             <Table.Row textAlign='center'>
@@ -95,10 +95,10 @@ class Wugniu_zaonhe extends Component {
               <Table.Cell>鼻音</Table.Cell>
               <Table.Cell>m [m] 美門墨</Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>n [n] 乃</Table.Cell>
+              <Table.Cell>n [n] 乃能捺</Table.Cell>
               <Table.Cell>gn  [ɲ]  粘牛熱</Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>ng  [ŋ] 牙</Table.Cell>
+              <Table.Cell>ng  [ŋ] 捱硬額</Table.Cell>
               <Table.Cell></Table.Cell>
             </Table.Row>
             <Table.Row>
@@ -113,11 +113,11 @@ class Wugniu_zaonhe extends Component {
             </Table.Row>
             <Table.Row>
               <Table.Cell>近音</Table.Cell>
-              <Table.Cell>w [w] 蛙</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>j [j] 也</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
             </Table.Row>
@@ -152,7 +152,8 @@ class Wugniu_zaonhe extends Component {
         <Header dividing size="large" as="h2">
           參考資料
         </Header>
-        https://www.lshk.org/jyutping
+        https://www.wugniu.com/yinxi/shanghai
+        https://github.com/NGLI/rime-wugniu_zaonhe
       </SchemaPageLayout>
     )
   }
