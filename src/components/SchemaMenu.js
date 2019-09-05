@@ -5,7 +5,7 @@ import {
   Menu,
 } from 'semantic-ui-react';
 import 'semantic-ui-less/semantic.less';
-import Link from 'gatsby-plugin-transition-link';
+import {Link} from 'gatsby';
 import '../css/schema.css';
 
 class SchemaMenu extends Component {
