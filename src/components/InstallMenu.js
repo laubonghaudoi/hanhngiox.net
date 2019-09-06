@@ -4,7 +4,7 @@ import {
   Menu,
 } from 'semantic-ui-react'
 import 'semantic-ui-less/semantic.less';
-import Link from 'gatsby-plugin-transition-link';
+import { Link } from 'gatsby';
 
 
 class InstallMenu extends Component {
@@ -25,7 +25,6 @@ class InstallMenu extends Component {
         style={{
           marginLeft: '1em',
           marginRight: '1em',
-          position:'fixed',
           width:'12em'
         }}
       >
