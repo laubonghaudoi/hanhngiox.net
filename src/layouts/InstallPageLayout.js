@@ -10,6 +10,7 @@ import 'semantic-ui-less/semantic.less';
 import '../css/install.css';
 
 import InstallMenu from '../components/InstallMenu';
+import SchemaList from '../components/SchemaList';
 import PageLayout from '../layouts/PageLayout';
 
 class InstallPageLayout extends Component {

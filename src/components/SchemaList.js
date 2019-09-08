@@ -1,5 +1,9 @@
-import React, { Component } from 'react'
-import { Accordion, Icon } from 'semantic-ui-react'
+import React, { Component } from 'react';
+import { 
+  Accordion, 
+  Icon,
+  List,
+} from 'semantic-ui-react';
 
 export default class SchemaList extends Component {
   state = { activeIndex: -1 }
@@ -16,46 +20,46 @@ export default class SchemaList extends Component {
     const { activeIndex } = this.state
 
     return (
-      <Accordion>
+      <Accordion styled fluid>
         <Accordion.Title active={activeIndex === 0} index={0} onClick={this.handleClick}>
           <Icon name='dropdown' />
           官话
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 0}>
-          <ul>
-            <li>
+          <List>
+            <List.Item>
               中原官话
-              <ul>
-                <li>洛阳话 - 洛嵩片</li>
-                <li>郑州话 - 郑开片</li>
-                <li>枣庄话 - 徐淮片</li>
-              </ul>
-            </li>
-            <li>
+              <List>
+                <List.Item>洛阳话 - 洛嵩片</List.Item>
+                <List.Item>郑州话 - 郑开片</List.Item>
+                <List.Item>枣庄话 - 徐淮片</List.Item>
+              </List>
+            </List.Item>
+            <List.Item>
               江淮官话
-              <ul>
-                <li>南京话 - 洪巢片</li>
-                <li>南通话 - 通泰片</li>
-                <li>如皋话 - 通泰片</li>
-                <li>南通话 - 通泰片</li>
-                <li>如皋话 - 通泰片</li>
-              </ul>
-            </li>
-            <li>
+              <List>
+                <List.Item>南京话 - 洪巢片</List.Item>
+                <List.Item>南通话 - 通泰片</List.Item>
+                <List.Item>如皋话 - 通泰片</List.Item>
+                <List.Item>南通话 - 通泰片</List.Item>
+                <List.Item>如皋话 - 通泰片</List.Item>
+              </List>
+            </List.Item>
+            <List.Item>
               西南官话
-              <ul>
-              <li>黄冈话 - 黄孝片</li>
-              <li>鄂城话 - 黄孝片</li>
-              <li>四川话通音</li>
-              <li>成都话 - 成渝片</li>
-              <li>重庆话 - 成渝片</li>
-              <li>宜宾话 - 灌赤片</li>
-              <li>自贡话 - 灌赤片</li>
-              <li>贵阳话 - 川黔片</li>
-              <li>武汉话 - 武天片</li>
-              </ul>
-            </li>
-          </ul>
+              <List>
+                <List.Item>黄冈话 - 黄孝片</List.Item>
+                <List.Item>鄂城话 - 黄孝片</List.Item>
+                <List.Item>四川话通音</List.Item>
+                <List.Item>成都话 - 成渝片</List.Item>
+                <List.Item>重庆话 - 成渝片</List.Item>
+                <List.Item>宜宾话 - 灌赤片</List.Item>
+                <List.Item>自贡话 - 灌赤片</List.Item>
+                <List.Item>贵阳话 - 川黔片</List.Item>
+                <List.Item>武汉话 - 武天片</List.Item>
+              </List>
+            </List.Item>
+          </List>
         </Accordion.Content>
 
         <Accordion.Title active={activeIndex === 1} index={1} onClick={this.handleClick}>
@@ -63,18 +67,18 @@ export default class SchemaList extends Component {
           吴语
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 1}>
-          <ul>
-            <li>上海话 - 太湖片</li>
-            <li>苏州话 - 太湖片</li>
-            <li>宁波话 - 太湖片</li>
-            <li>海宁话 - 太湖片</li>
-            <li>桐乡话 - 太湖片</li>
-            <li>海盐话 - 太湖片</li>
-            <li>嘉善话 - 太湖片</li>
-            <li>嘉兴话 - 太湖片</li>
-            <li>松江话 - 太湖片</li>
-            <li>永嘉话 - 瓯江片</li>
-          </ul>
+          <List>
+            <List.Item>上海话 - 太湖片</List.Item>
+            <List.Item>苏州话 - 太湖片</List.Item>
+            <List.Item>宁波话 - 太湖片</List.Item>
+            <List.Item>海宁话 - 太湖片</List.Item>
+            <List.Item>桐乡话 - 太湖片</List.Item>
+            <List.Item>海盐话 - 太湖片</List.Item>
+            <List.Item>嘉善话 - 太湖片</List.Item>
+            <List.Item>嘉兴话 - 太湖片</List.Item>
+            <List.Item>松江话 - 太湖片</List.Item>
+            <List.Item>永嘉话 - 瓯江片</List.Item>
+          </List>
         </Accordion.Content>
 
         <Accordion.Title active={activeIndex === 2} index={2} onClick={this.handleClick}>
@@ -82,13 +86,13 @@ export default class SchemaList extends Component {
           粤语
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 2}>
-          <ul>
-            <li>广州话 - 广府片</li>
-            <li>梧州话 - 广府片</li>
-            <li>南宁话 - 邕浔片</li>
-            <li>藤县话 - 勾漏片</li>
-            <li>贵港话 - 勾漏片</li>
-          </ul>
+          <List>
+            <List.Item>广州话 - 广府片</List.Item>
+            <List.Item>梧州话 - 广府片</List.Item>
+            <List.Item>南宁话 - 邕浔片</List.Item>
+            <List.Item>藤县话 - 勾漏片</List.Item>
+            <List.Item>贵港话 - 勾漏片</List.Item>
+          </List>
         </Accordion.Content>
 
         <Accordion.Title active={activeIndex === 3} index={3} onClick={this.handleClick}>
@@ -96,9 +100,9 @@ export default class SchemaList extends Component {
           闽东语
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 3}>
-          <ul>
-            <li>福州话 - 侯官片</li>
-          </ul>
+          <List>
+            <List.Item>福州话 - 侯官片</List.Item>
+          </List>
         </Accordion.Content>
 
         <Accordion.Title active={activeIndex === 4} index={4} onClick={this.handleClick}>
@@ -106,9 +110,9 @@ export default class SchemaList extends Component {
           莆仙话
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 4}>
-          <ul>
-            <li>莆田话</li>
-          </ul>
+          <List>
+            <List.Item>莆田话</List.Item>
+          </List>
         </Accordion.Content>
 
         <Accordion.Title active={activeIndex === 5} index={5} onClick={this.handleClick}>
@@ -116,18 +120,18 @@ export default class SchemaList extends Component {
           闽南语
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 5}>
-          <ul>
-            <li>厦门话 - 泉漳片（通行于闽南、台湾、东南亚等地）</li>
-            <li>泉州话 - 泉漳片</li>
-            <li>漳州话 - 泉漳片</li>
-            <li>台湾话 - 泉漳片</li>
-            <li>潮州话 - 潮汕片（通行于潮汕、港澳、东南亚等地）</li>
-            <li>汕头话 - 潮汕片</li>
-            <li>潮阳话 - 潮汕片</li>
-            <li>揭阳话 - 潮汕片</li>
-            <li>澄海话 - 潮汕片</li>
-            <li>饶平话 - 潮汕片</li>
-          </ul>
+          <List>
+            <List.Item>厦门话 - 泉漳片（通行于闽南、台湾、东南亚等地）</List.Item>
+            <List.Item>泉州话 - 泉漳片</List.Item>
+            <List.Item>漳州话 - 泉漳片</List.Item>
+            <List.Item>台湾话 - 泉漳片</List.Item>
+            <List.Item>潮州话 - 潮汕片（通行于潮汕、港澳、东南亚等地）</List.Item>
+            <List.Item>汕头话 - 潮汕片</List.Item>
+            <List.Item>潮阳话 - 潮汕片</List.Item>
+            <List.Item>揭阳话 - 潮汕片</List.Item>
+            <List.Item>澄海话 - 潮汕片</List.Item>
+            <List.Item>饶平话 - 潮汕片</List.Item>
+          </List>
         </Accordion.Content>
 
         <Accordion.Title active={activeIndex === 6} index={6} onClick={this.handleClick}>
@@ -135,10 +139,10 @@ export default class SchemaList extends Component {
           客家话
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 6}>
-          <ul>
-            <li>客家话通音（通行于粤东、赣南、广西、海南、台湾、东南亚等地）</li>
-            <li>梅县话 - 粤台片</li>
-          </ul>
+          <List>
+            <List.Item>客家话通音（通行于粤东、赣南、广西、海南、台湾、东南亚等地）</List.Item>
+            <List.Item>梅县话 - 粤台片</List.Item>
+          </List>
         </Accordion.Content>
 
         <Accordion.Title active={activeIndex === 7} index={7} onClick={this.handleClick}>
@@ -146,10 +150,10 @@ export default class SchemaList extends Component {
           晋语
         </Accordion.Title>
         <Accordion.Content active={activeIndex === 7}>
-          <ul>
-            <li>嘉乐泉话</li>
-            <li>芮城话</li>
-          </ul>
+          <List>
+            <List.Item>嘉乐泉话</List.Item>
+            <List.Item>芮城话</List.Item>
+          </List>
         </Accordion.Content>
       </Accordion>
     )
