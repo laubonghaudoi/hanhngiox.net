@@ -1,0 +1,204 @@
+{
+  "cmn": [
+    {
+      "language": "中原官話—洛陽話",
+      "name": "洛陽羅馬字",
+      "code": "Patricivs/lakyang"
+    },
+    {
+      "language": "中原官話—洛陽話",
+      "name": "中州羅馬字",
+      "code": "lotem/rime-zhung"
+    },
+    {
+      "language": "中原官話—棗莊話",
+      "name": "中原官話—棗莊話",
+      "code": "tsauibusato/yihdjoouhuah"
+    },
+    {
+      "language": "江淮官話—南京話",
+      "name": "南京話拼音輸入法",
+      "code": "uliloewi/lang2jin1"
+    },
+    {
+      "language": "西南官話—武漢話",
+      "name": "武漢",
+      "code": "yuxifongfei/hubehua"
+    },
+    {
+      "language": "西南官話—鄂城話",
+      "name": "鄂城",
+      "code": "yuxifongfei/hubehua"
+    },
+    {
+      "language": "西南官話—黃岡話",
+      "name": "黃岡",
+      "code": "yuxifongfei/hubehua"
+    },
+    {
+      "language": "西南官話—四川話通音",
+      "name": "蜀拼通音",
+      "code": "Papnas/shupin"
+    },
+    {
+      "language": "西南官話—成都話",
+      "name": "蜀拼-成都",
+      "code": "Papnas/shupin"
+    },
+    {
+      "language": "西南官話—宜賓話",
+      "name": "蜀拼-宜賓",
+      "code": "Papnas/shupin"
+    },
+    {
+      "language": "西南官話—自貢話",
+      "name": "蜀拼-自貢",
+      "code": "Papnas/shupin"
+    },
+    {
+      "language": "西南官話—貴陽話",
+      "name": "蜀拼-貴陽",
+      "code": "Papnas/shupin"
+    }
+  ],
+  "wuu":[
+    {
+      "language": "上海話",
+      "name": "吳語（上海）",
+      "code": "NGLI/rime-wugniu_zaonhe"
+    },
+    {
+      "language": "松江話",
+      "name": "吳語（松江）",
+      "code": "NGLI/rime-wugniu_zaonhe"
+    },
+    {
+      "language": "蘇州話",
+      "name": "吳語（蘇州）",
+      "code": "NGLI/rime-wugniu_soutseu"
+    },
+    {
+      "language": "寧波話",
+      "name": "吳語（寧波）",
+      "code": "NGLI/rime-wugniu_gninpou"
+    },
+    {
+      "language": "桐鄉話",
+      "name": "吳語（桐鄉）",
+      "code": "NGLI/rime-wugniu_kashin"
+    },
+    {
+      "language": "海寧話",
+      "name": "吳語（海寧）",
+      "code": "NGLI/rime-wugniu_kashin"
+    },
+    {
+      "language": "海鹽話",
+      "name": "吳語（海鹽）",
+      "code": "NGLI/rime-wugniu_kashin"
+    },
+    {
+      "language": "嘉興話",
+      "name": "吳語（嘉興）",
+      "code": "NGLI/rime-wugniu_kashin"
+    },
+    {
+      "language": "嘉善話",
+      "name": "吳語（嘉善）",
+      "code": "NGLI/rime-wugniu_kashin"
+    }
+  ],
+  "yue":[
+    {
+      "language": "廣州話",
+      "name": "粵拼",
+      "code": "jyutping"
+    },
+    {
+      "language": "南寧白話",
+      "name": "南寧白話",
+      "code": "leimaau/naamning_jyutping"
+    },
+    {
+      "language": "南寧平話",
+      "name": "南寧（亭子）平話",
+      "code": "leimaau/naamning_jyutping"
+    },
+    {
+      "language": "藤縣話",
+      "name": "勾漏粵拼藤縣白話",
+      "code": "cryptogun/gaulau_jyutping"
+    }
+  ],
+  "hak":[
+    {
+      "language": "客家話通音",
+      "name": "客語",
+      "code": "syndict/hakka"
+    },
+    {
+      "language": "梅縣話",
+      "name": "客語-梅縣",
+      "code": "syndict/hakka"
+    }
+  ],
+  "cpx":[
+    {
+      "language": "莆田話",
+      "name": "興化韻莆音",
+      "code": "Yaryou/HinghuaFactory"
+    }
+  ],
+  "nan":[
+    {
+      "language": "廈門話",
+      "name": "閩南語廈門音",
+      "code": "a-thok/rime-hokkien"
+    },
+    {
+      "language": "臺灣話",
+      "name": "閩南語臺灣音",
+      "code": "a-thok/rime-hokkien"
+    },
+    {
+      "language": "漳州話",
+      "name": "閩南語漳州音",
+      "code": "a-thok/rime-hokkien"
+    },
+    {
+      "language": "泉州話",
+      "name": "閩南語泉州音",
+      "code": "a-thok/rime-hokkien"
+    },
+    {
+      "language": "潮州話",
+      "name": "潮語拼音（潮州）",
+      "code": "Kahaani/dieghv"
+    },
+    {
+      "language": "汕頭話",
+      "name": "潮語拼音（汕頭）",
+      "code": "Kahaani/dieghv"
+    },
+    {
+      "language": "潮陽話",
+      "name": "潮語拼音（潮陽）",
+      "code": "Kahaani/dieghv"
+    },
+    {
+      "language": "揭陽話",
+      "name": "潮語拼音（揭陽）",
+      "code": "Kahaani/dieghv"
+    },
+    {
+      "language": "澄海話",
+      "name": "潮語拼音（澄海）",
+      "code": "Kahaani/dieghv"
+    },
+    {
+      "language": "饒平話",
+      "name": "潮語拼音（饒平）",
+      "code": "Kahaani/dieghv"
+    }
+  ]
+}
