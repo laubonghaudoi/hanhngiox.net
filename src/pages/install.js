@@ -3,6 +3,7 @@ import {
   Card,
   Divider,
   Grid,
+  List,
   Message,
   Header,
   Image,
@@ -24,16 +25,15 @@ export default () => {
             display:'inline-block',
             marginBottom: rhythm(0.5),
           }}>
-
-          用汉语方言拼音打字
+          用漢語方言拼音打字
         </Header>
         <p className="lead">
-          要实现用家乡话拼音在电脑和手机上打字，需要先安装中州韵系列的输入法。中州韵（Rime）是一个开源的输入法引擎，不同的平台上有以其为核心开发的输入法，例如Windows上的小狼毫，macOS的鼠须管，iOS上的iRime等等。采用中州韵为引擎的输入法和搜狗、微软拼音等输入法相比的最大特点是可以任意自定义输入方案。所以民间各位有识之士纷纷为自己的方言母语编写了对应的拼音方案。本教程旨在手把手教读者用方言拼音打字，总结起来仅有两步：
+        要實現用家鄉話拼音在電腦和手機上打字，需要先安裝中州韻系列的輸入法。中州韻（Rime）是一個開源的輸入法引擎，不同的平臺上有以其為核心開發的輸入法，例如Windows上的小狼毫，macOS的鼠須管，iOS上的iRime等等。採用中州韻為引擎的輸入法和搜狗、微軟拼音等輸入法相比的最大特點是可以任意自定義輸入方案。所以民間各位有識之士紛紛為自己的方言母語編寫了對應的拼音方案。本教程旨在手把手教讀者用方言拼音打字，總結起來僅有兩步：
         </p>
-        <ol>
-          <li>在电脑或手机上安装中州韵输入法（在Windows上装小狼毫，iOS上装iRime……）</li>
-          <li>部署你的方言的拼音方案（复制粘贴两个文件而已）</li>
-        </ol>
+        <List ordered>
+          <List.Item>在電腦或手機上安裝中州韻輸入法（在Windows上裝小狼毫，iOS上裝iRime……）</List.Item>
+          <List.Item>部署你的方言的拼音方案（複製粘貼兩個文件而已）</List.Item>
+        </List>
       </Message>
       <Divider horizontal>选择平台</Divider>
       <Grid 
