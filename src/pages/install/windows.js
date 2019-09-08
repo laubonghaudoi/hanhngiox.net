@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component, createRef } from 'react';
 import {
+  Accordion,
+  Container,
+  Divider,
   Grid,
   Header,
   Icon,
@@ -8,10 +10,14 @@ import {
   List,
   Menu,
   Message,
-  Table
+  Segment,
+  Table,
+  Ref,
+  Visibility,
 } from 'semantic-ui-react';
 
 import Link from 'gatsby-plugin-transition-link';
+import RecipeList from '../../components/RecipeList';
 import InstallPageLayout from '../../layouts/InstallPageLayout';
 
 if (typeof window !== "undefined") {
@@ -20,11 +26,22 @@ if (typeof window !== "undefined") {
 }
 
 class WindowsInstallPage extends Component { 
-  state = { activeItem: 'account' }
+  state = { 
+    activeItem: 'account',
+    focus: {
+      step1: false,
+      step2a: false,
+      step2b: false,
+      step3: false,
+    }
+   }
+  contextRef = createRef()
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  handleUpdate = (e, { calculations }) => this.setState({ calculations })
+
   render() {
-    const { activeItem } = this.state
+    const { activeItem, focus } = this.state
     return (
       <InstallPageLayout
         activeItem='windows'
@@ -47,7 +64,9 @@ class WindowsInstallPage extends Component {
               <Icon name="exclamation circle"/>
               有的版本Windows系統會檢測到小狼毫為惡意軟件和木馬，這是Windows Defender自身的誤判問題。小狼毫是一個開源的輸入法軟件，不含任何惡意程序。如果安裝包被系統檢測為惡意程序，請先參考這篇文章的第一步關閉實時保護，再開始安裝。
             </Message>
-            <Header textAlign='center' size="large" as="h2" id='step1'>
+            <Divider></Divider>
+            <Container>
+            <Header textAlign='center' size="huge" as="h2" id='step1'>
               <Header.Content>第一步  安裝小狼毫輸入法</Header.Content>
             </Header>
             <Table structured inverted padded>
@@ -224,27 +243,60 @@ class WindowsInstallPage extends Component {
                 </Table.Cell>
               </Table.Row>
             </Table>
+            </Container>
             
-            <Header textAlign='center' size="large" as="h2" id='step2a'>
-              <Header.Content>第二步 （僅限部分語言）快捷啟用拼音方案</Header.Content>
+            <Header textAlign='center' size="huge" as="h2" id='step2a'>
+              <Header.Content>第二步 快捷啟用拼音方案</Header.Content>
+              <Header.Subheader>
+                僅限部分語言
+              </Header.Subheader>
+            </Header>
+            <Message>
+              <Icon name='info circle'/>
+              小狼毫默认自带了部分语言的拼音方案，可以免去较繁琐的部署过程直接启拼音方案。如果你的想输入的语言在以下列表中，可继续阅读本节快速启用方言拼音，否则直接<Link to='/install/windows/#step2b'>跳到下一节</Link>使用通用方法部署拼音方案。
+            </Message>
+            <RecipeList/>
+            <Table structured inverted padded>
+              <Table.Header>
+                <Table.Row>
+                  <Table.Cell>#</Table.Cell>
+                  <Table.Cell>操作</Table.Cell>
+                </Table.Row>
+              </Table.Header>
+              <Table.Row>
+                <Table.Cell rowspan='2'>1</Table.Cell>
+                <Table.Cell>
+                  首先前往rime官网，下载小狼毫输入法
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image src='/win/win1_1.png' fluid/>
+                </Table.Cell>
+              </Table.Row> 
+            </Table>
+
+            <Header textAlign='center' size="huge" as="h2" id='step2b'>
+              <Header.Content>第二步  部署方言拼音方案</Header.Content>
+              <Header.Subheader>
+                通用方法
+              </Header.Subheader>
             </Header>
 
-            <Header size="large" as="h2" id='step2b'>
-              <Header.Content>第二步（通用方法）部署方言拼音方案</Header.Content>
-            </Header>
-
-            <Header size="large" as="h2" id='wrapup'>
+            <Header textAlign='center' size="huge" as="h2" id='wrapup'>
               <Header.Content>小結</Header.Content>
             </Header>
             
-            <Header size="large" as="h2" id='lookup'>
+            <Header textAlign='center' size="huge" as="h2" id='lookup'>
               <Header.Content>但是我只會打普通話拼音，方言拼音該怎麼打？</Header.Content>
             </Header>
 
-            <Header size="large" as="h2" id='customize'>
+            <Header textAlign='center' size="huge" as="h2" id='customize'>
               <Header.Content>（可選步驟）自定義小狼毫外觀</Header.Content>
             </Header>
           </Grid.Column>
+
+
           <Grid.Column width={3}>
             <Menu 
               vertical
@@ -314,10 +366,6 @@ class WindowsInstallPage extends Component {
       </InstallPageLayout >
     )
   }
-}
-
-WindowsInstallPage.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default WindowsInstallPage;
