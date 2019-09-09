@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { 
   Accordion, 
   Icon,
-  List,
   Table,
 } from 'semantic-ui-react';
 
