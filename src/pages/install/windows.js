@@ -1,6 +1,5 @@
 import React, { Component, createRef } from 'react';
 import {
-  Accordion,
   Container,
   Divider,
   Grid,
@@ -10,7 +9,6 @@ import {
   List,
   Menu,
   Message,
-  Segment,
   Table,
   Ref,
   Visibility,
@@ -244,7 +242,7 @@ class WindowsInstallPage extends Component {
               </Table.Row>
             </Table>
             </Container>
-            
+            <Divider/>
             <Header textAlign='center' size="huge" as="h2" id='step2a'>
               <Header.Content>第二步 快捷啟用拼音方案</Header.Content>
               <Header.Subheader>
@@ -252,10 +250,13 @@ class WindowsInstallPage extends Component {
               </Header.Subheader>
             </Header>
             <Message>
-              <Icon name='info circle'/>
-              小狼毫默认自带了部分语言的拼音方案，可以免去较繁琐的部署过程直接启拼音方案。如果你的想输入的语言在以下列表中，可继续阅读本节快速启用方言拼音，否则直接<Link to='/install/windows/#step2b'>跳到下一节</Link>使用通用方法部署拼音方案。
+              <p><Icon name='info circle'/>
+              小狼毫默认自带了部分语言的拼音方案，可以免去较繁琐的部署过程直接启拼音方案。如果你的想输入的语言在以下列表中，可继续阅读本节快速启用方言拼音，否则直接<Link to='/install/windows/#step2b'>跳到下一节</Link>使用通用方法部署拼音方案。</p>
             </Message>
             <RecipeList/>
+            <Message>
+              <p>上面列表中每一行的格式都是是“语言名：方案名称 方案代号”，有的语言例如潮汕话，是多个方音共用一个方案代号Kahaani/dieghv。找到自己语言的方案名称和代号之后按以下步骤启用方案</p>
+            </Message>
             <Table structured inverted padded>
               <Table.Header>
                 <Table.Row>
@@ -266,23 +267,102 @@ class WindowsInstallPage extends Component {
               <Table.Row>
                 <Table.Cell rowspan='2'>1</Table.Cell>
                 <Table.Cell>
-                  首先前往rime官网，下载小狼毫输入法
+                  打开“【小狼毫】输入法设定”
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/win/win1_1.png' fluid/>
+                  <Image size='medium' src='/win/win1_12_2a_1.png' fluid/>
                 </Table.Cell>
-              </Table.Row> 
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>2</Table.Cell>
+                <Table.Cell>
+                  点击左下方的“獲取更多輸入方案”
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image src='/win/win2a_2.png' fluid/>
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>3</Table.Cell>
+                <Table.Cell>
+                  这时会弹出一个命令行界面
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image src='/win/win2a_3.png' fluid/>
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>4</Table.Cell>
+                <Table.Cell>
+                  然后把你想输入的语言的方案代号复制进去，再按回车。例如要输入广州话，则复制<code>jyutping</code>再按回车，然后可以见到方案部署成功
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image src='/win/win2a_4.png' fluid/>
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>5</Table.Cell>
+                <Table.Cell>
+                  关闭命令行界面，回到小狼毫设定界面，可以见到方案列表可以勾选拼音方案了
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image src='/win/win2a_5.png' fluid/>
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>6</Table.Cell>
+                <Table.Cell>
+                  点“中”完成配置后，重复刚才的步骤按<code>Ctrl</code>和<code>`</code> （数字1左边那个键，和波浪号~相同）两个键，选择粤拼方案，就可以打广州话拼音了！
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image.Group size='medium'>
+                    <Image src='/win/win2a_6a.png' fluid/>
+                    <Image src='/win/win2a_6b.png' fluid/>
+                  </Image.Group>
+                </Table.Cell>
+              </Table.Row>
             </Table>
-
+            <Message>
+              请直接<Link to='/install/windows/#step2b'>跳到「小结」</Link>一节继续教程。
+            </Message>
+            <Divider/>
             <Header textAlign='center' size="huge" as="h2" id='step2b'>
               <Header.Content>第二步  部署方言拼音方案</Header.Content>
               <Header.Subheader>
                 通用方法
               </Header.Subheader>
             </Header>
-
+            <Table structured inverted padded>
+              <Table.Header>
+                <Table.Row>
+                  <Table.Cell>#</Table.Cell>
+                  <Table.Cell>操作</Table.Cell>
+                </Table.Row>
+              </Table.Header>
+              <Table.Row>
+                <Table.Cell rowspan='2'>1</Table.Cell>
+                <Table.Cell>
+                  首先点击这里下载最新版的汉语方言拼音方案合集，打开压缩包可以看到里面有一个<code>default.custom.yaml</code>和<code>default.yaml</code>文件（这两个文件是给其他平台用户的，我们Windows忽略它就行了）和以各大方言区命名的文件夹。
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image src='/win/win2b_1.png' fluid/>
+                </Table.Cell>
+              </Table.Row>
+            </Table>
             <Header textAlign='center' size="huge" as="h2" id='wrapup'>
               <Header.Content>小結</Header.Content>
             </Header>
@@ -358,7 +438,7 @@ class WindowsInstallPage extends Component {
                 as={Link}
                 to='/install/windows/#customize'
               >
-                自定義
+                自定義外觀
               </Menu.Item>
             </Menu>
           </Grid.Column>
