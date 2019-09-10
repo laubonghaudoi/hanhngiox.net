@@ -63,7 +63,6 @@ class WindowsInstallPage extends Component {
               有的版本Windows系統會檢測到小狼毫為惡意軟件和木馬，這是Windows Defender自身的誤判問題。小狼毫是一個開源的輸入法軟件，不含任何惡意程序。如果安裝包被系統檢測為惡意程序，請先參考這篇文章的第一步關閉實時保護，再開始安裝。
             </Message>
             <Divider></Divider>
-            <Container>
             <Header textAlign='center' size="huge" as="h2" id='step1'>
               <Header.Content>第一步  安裝小狼毫輸入法</Header.Content>
             </Header>
@@ -241,7 +240,6 @@ class WindowsInstallPage extends Component {
                 </Table.Cell>
               </Table.Row>
             </Table>
-            </Container>
             <Divider/>
             <Header textAlign='center' size="huge" as="h2" id='step2a'>
               <Header.Content>第二步 快捷啟用拼音方案</Header.Content>
@@ -283,7 +281,7 @@ class WindowsInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/win/win2a_2.png' fluid/>
+                  <Image size='big' src='/win/win2a_2.png' fluid/>
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -294,7 +292,7 @@ class WindowsInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/win/win2a_3.png' fluid/>
+                  <Image size='big' src='/win/win2a_3.png' fluid/>
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -305,7 +303,7 @@ class WindowsInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/win/win2a_4.png' fluid/>
+                  <Image size='big' src='/win/win2a_4.png' fluid/>
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -316,7 +314,7 @@ class WindowsInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/win/win2a_5.png' fluid/>
+                  <Image size='big' src='/win/win2a_5.png' fluid/>
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -362,7 +360,65 @@ class WindowsInstallPage extends Component {
                   <Image src='/win/win2b_1.png' fluid/>
                 </Table.Cell>
               </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>2</Table.Cell>
+                <Table.Cell>
+                  我们这里以苏州话为例，打开吴语/苏州话，可以看见里面有两个文件：wugniu_soutseu.dict.yaml和wugniu_soutseu.schema.yaml，如下图，这就是我们要的拼音方案了。（如果你好奇这两个文件是什么来的，看这里）
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image src='/win/win2b_2.png' fluid/>
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>3</Table.Cell>
+                <Table.Cell>
+                  右键点击任务栏右下角的小狼毫图标，可以看到弹出一个菜单
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image size='medium' src='/win/win2b_3.png' fluid/>
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>4</Table.Cell>
+                <Table.Cell>
+                  点击“用户文件夹（C）”，这时会自动打开C:\Users\用户名\AppData\Roaming\Rime下的文件夹，可以看到里面有几个文件和文件夹
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image src='/win/win2b_4.png' fluid/>
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>5</Table.Cell>
+                <Table.Cell>
+                  然后把wugniu_soutseu.dict.yaml和wugniu_soutseu.schema.yaml这两个文件复制到这里，如下图
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image src='/win/win2b_5.png' fluid/>
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>6</Table.Cell>
+                <Table.Cell>
+                  右键小狼毫图标，点“用户资料同步”
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image size='medium' src='/win/win2b_6.png' fluid/>
+                </Table.Cell>
+              </Table.Row>
             </Table>
+
+
+
             <Header textAlign='center' size="huge" as="h2" id='wrapup'>
               <Header.Content>小結</Header.Content>
             </Header>
