@@ -4885,7 +4885,7 @@ gatsby-cli@^2.7.47:
     ink "^2.3.0"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.7, gatsby-core-utils@^1.0.8, gatsby-core-utils@^1.0.9:
+gatsby-core-utils@^1.0.8, gatsby-core-utils@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.9.tgz#54476c43d50b5f8561b8f0eb5f91a6f94dad4dd3"
   integrity sha512-AA0qrGhon4BXv6/ku1+8l6b9er2TCzgK6iBPwpq1tRXOfJaRUqyZAM3qFOZs/M443YRObooOFNIWrRVcxXCQQw==
@@ -4945,9 +4945,9 @@ gatsby-plugin-i18n@^1.0.1:
     ptz-i18n "^1.0.0"
 
 gatsby-plugin-less@^3.0.2:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-less/-/gatsby-plugin-less-3.0.6.tgz#ce0160f454338fa33e77c1af5270880ab03f42cb"
-  integrity sha512-+gqi8S3YCmEi7BGPDluFK9AwVVLseu+eCEI281+J7nWGiXEvM++kBSLR3y4jLwVyoQ32RibYIpTiGSl4jqQjOg==
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-less/-/gatsby-plugin-less-3.0.7.tgz#1fa95b698a4adb40ea3e5bdfaba321ab698e9969"
+  integrity sha512-qbnj4KpTWq37FR3ijNH/oAjV4cqXY8C2JVZ+1YPlmqvTUopxWALWEC1eLm6dcgqLy2Wgv9COFKiMlCpGW+a2Yg==
   dependencies:
     "@babel/runtime" "^7.6.0"
     less-loader "^5.0.0"
