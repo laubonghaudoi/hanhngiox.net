@@ -14,7 +14,7 @@ import {
   Visibility,
 } from 'semantic-ui-react';
 
-import Link from 'gatsby-plugin-transition-link';
+import { Link } from 'gatsby';
 import RecipeList from '../../components/RecipeList';
 import InstallPageLayout from '../../layouts/InstallPageLayout';
 
@@ -66,8 +66,17 @@ class WindowsInstallPage extends Component {
             <Header textAlign='center' size="huge" as="h2" id='step1'>
               <Header.Content>第一步  安裝小狼毫輸入法</Header.Content>
             </Header>
-            <Table structured inverted padded>
-              <Table.Header>
+            <Table structured padded
+              style={{
+                backgroundColor: '#7BC2FB',
+                color:'black',
+              }}>
+              <Table.Header             
+                style={{
+                backgroundColor: 'yellow',
+                color:'black',
+                borderRadius: '200px',
+              }}>
                 <Table.Row>
                   <Table.Cell>#</Table.Cell>
                   <Table.Cell>操作</Table.Cell>
@@ -241,6 +250,7 @@ class WindowsInstallPage extends Component {
               </Table.Row>
             </Table>
             <Divider/>
+
             <Header textAlign='center' size="huge" as="h2" id='step2a'>
               <Header.Content>第二步 快捷啟用拼音方案</Header.Content>
               <Header.Subheader>
@@ -333,9 +343,10 @@ class WindowsInstallPage extends Component {
               </Table.Row>
             </Table>
             <Message>
-              请直接<Link to='/install/windows/#step2b'>跳到「小结」</Link>一节继续教程。
+              请直接<Link to='/install/windows/#wrapup'>跳到「小结」</Link>一节继续教程。
             </Message>
             <Divider/>
+
             <Header textAlign='center' size="huge" as="h2" id='step2b'>
               <Header.Content>第二步  部署方言拼音方案</Header.Content>
               <Header.Subheader>
@@ -415,17 +426,64 @@ class WindowsInstallPage extends Component {
                   <Image size='medium' src='/win/win2b_6.png' fluid/>
                 </Table.Cell>
               </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>7</Table.Cell>
+                <Table.Cell>
+                  再从开始菜单打开“【小狼毫】输入法设定”，可以看到现在能勾选苏州话拼音方案了
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image size='big' src='/win/win2b_7.png' fluid/>
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>8</Table.Cell>
+                <Table.Cell>
+                  点“中”完成配置后，重复刚才的步骤按<code>Ctrl</code>和<code>`</code>（数字1左边那个键，和波浪号~相同）两个键，选择苏州话拼音方案，就可以打苏州话拼音了！
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image.Group size='medium'>
+                    <Image src='/win/win2b_8a.png' fluid/>
+                    <Image src='/win/win2b_8b.png' fluid/>
+                  </Image.Group>
+                </Table.Cell>
+              </Table.Row>
             </Table>
-
-
+            <Divider/>
 
             <Header textAlign='center' size="huge" as="h2" id='wrapup'>
               <Header.Content>小結</Header.Content>
             </Header>
             
+              至此，我们终于实现了在Windows系统下的汉语方言拼音输入。所以以后如果需要添加其他汉语方言的输入方案，只需要记住以下三步就可以了
+              <Message>
+                快捷方式（仅限部分语言）：
+                <List as='ol'>
+                  <List.Item as='li' value='1'>打开小狼毫输入法设定界面，点“獲取更多輸入方案”</List.Item>
+                  <List.Item as='li' value='1'>输入方案代号后回车，直接下载部署拼音方案</List.Item>
+                  <List.Item as='li' value='1'>回到界面勾选输入方案</List.Item>
+                </List>
+                   
+                通用方式（适用于全部语言）：
+                <List as='ol'>
+                  <List.Item as='li' value='1'>复制后缀为<code>.dict.yaml</code>和<code>.schema.yaml</code>的方案文件到用户文件夹</List.Item>
+                  <List.Item as='li' value='1'>用户资料同步</List.Item>
+                  <List.Item as='li' value='1'>小狼毫输入法设定勾选方案</List.Item>
+                </List>
+              </Message>
+            <Divider/>
+
             <Header textAlign='center' size="huge" as="h2" id='lookup'>
               <Header.Content>但是我只會打普通話拼音，方言拼音該怎麼打？</Header.Content>
             </Header>
+            <Message>
+            <p>小狼毫有一个很强大的拼音反查功能，如果你有个字只会普通话拼音，不知道他的方言拼音怎么打，就按下<code>`</code> ，然后打这个字的普通话拼音，这样就能像查字典一样查到任何字的方言拼音了：</p>
+            <Image src='/win/win_l.png'></Image>
+            <p>当然，最重要的还是学会自己母语方言的拼音。所有的汉语方言拼音普通话拼音一样，很快就能掌握，如果你是母语者那就更轻松了。本站的<Link to='/schema'>拼音方案頁</Link>列出了所有方言拼音方案的介绍和教程。只需稍加练习，以后和老乡亲戚聊天就都能舒畅地打家乡话啦</p>
+            </Message>
 
             <Header textAlign='center' size="huge" as="h2" id='customize'>
               <Header.Content>（可選步驟）自定義小狼毫外觀</Header.Content>
@@ -439,7 +497,8 @@ class WindowsInstallPage extends Component {
               text
               style={{
                 position:'fixed',
-                width:'14em'
+                width:'14em',
+                marginLeft:'2em'
               }}
             >
               <Menu.Item
