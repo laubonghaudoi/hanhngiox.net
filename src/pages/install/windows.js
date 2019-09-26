@@ -47,7 +47,7 @@ class WindowsInstallPage extends Component {
         <Grid columns='equal' padded stackable>
           <Grid.Column width={13}>
             <Header textAlign='center' size="Massive" as="h1">
-              <Header.Content>Windows平台安装部署教程</Header.Content>
+              <Header.Content>Windows安装部署教程</Header.Content>
               <Header.Subheader>
                 以Win 10爲例
               </Header.Subheader>
@@ -85,7 +85,7 @@ class WindowsInstallPage extends Component {
               <Table.Row>
                 <Table.Cell rowspan='2'>1</Table.Cell>
                 <Table.Cell>
-                  首先前往rime官網，下載小狼毫輸入法
+                  首先前往<a href="https://rime.im">中州韻官网</a>，下載小狼毫輸入法
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
