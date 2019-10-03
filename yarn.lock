@@ -8084,13 +8084,6 @@ open@^6.4.0:
   dependencies:
     is-wsl "^1.1.0"
 
-opencc@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/opencc/-/opencc-1.0.5.tgz#53a928ac29dc3557a1b1e058d369b423673ab7e5"
-  integrity sha1-U6korCncNVehseBY02m0I2c6t+U=
-  dependencies:
-    nan "^2.5.1"
-
 opentracing@^0.14.4:
   version "0.14.4"
   resolved "https://registry.yarnpkg.com/opentracing/-/opentracing-0.14.4.tgz#a113408ea740da3a90fde5b3b0011a375c2e4268"
