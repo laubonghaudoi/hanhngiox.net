@@ -11,16 +11,9 @@ import {
   Table,
 } from 'semantic-ui-react';
 
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-
 import { Link } from 'gatsby';
 import RecipeList from '../../components/RecipeList';
 import InstallPageLayout from '../../layouts/InstallPageLayout';
-
-if (typeof window !== "undefined") {
-  // eslint-disable-next-line global-require
-  require("smooth-scroll")('a[href*="#"]')
-}
 
 class WindowsInstallPage extends Component {
   state = {
@@ -61,208 +54,205 @@ class WindowsInstallPage extends Component {
               <Icon name="exclamation circle" />
               有的版本Windows系統會檢測到小狼毫為惡意軟件和木馬，這是Windows Defender自身的誤判問題。小狼毫是一個開源的輸入法軟件，不含任何惡意程序。如果安裝包被系統檢測為惡意程序，請先參考這篇文章的第一步關閉實時保護，再開始安裝。
             </Message>
-            <Divider></Divider>
 
-            <section id='step1'>
-              <Header textAlign='center' size="huge" as="h2">
-                <Header.Content>第一步  安裝小狼毫輸入法</Header.Content>
-              </Header>
+            <Divider style={{ paddingBottom: '4rem' }} id='step1'></Divider>
 
-              <Table structured padded
+            <Header textAlign='center' size="huge" as="h2">
+              <Header.Content>第一步  安裝小狼毫輸入法</Header.Content>
+            </Header>
+            <Table structured padded
+              style={{
+                backgroundColor: '#7BC2FB',
+                color: 'black',
+              }}>
+              <Table.Header
                 style={{
                   backgroundColor: '#7BC2FB',
                   color: 'black',
+                  borderRadius: '200px',
                 }}>
-                <Table.Header
-                  style={{
-                    backgroundColor: '#7BC2FB',
-                    color: 'black',
-                    borderRadius: '200px',
-                  }}>
-                  <Table.Row>
-                    <Table.Cell>#</Table.Cell>
-                    <Table.Cell>操作</Table.Cell>
-                  </Table.Row>
-                </Table.Header>
                 <Table.Row>
-                  <Table.Cell rowspan='2'>1</Table.Cell>
-                  <Table.Cell>
-                    首先前往<a href="https://rime.im">中州韻官网</a>，下載小狼毫輸入法
-                  </Table.Cell>
+                  <Table.Cell>#</Table.Cell>
+                  <Table.Cell>操作</Table.Cell>
                 </Table.Row>
-                <Table.Row>
-                  <Table.Cell>
-                    <Image src='/win/win1_1.png' fluid />
+              </Table.Header>
+              <Table.Row>
+                <Table.Cell rowspan='2'>1</Table.Cell>
+                <Table.Cell>
+                  首先前往<a href="https://rime.im">中州韻官网</a>，下載小狼毫輸入法
                   </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell rowspan='2'>2</Table.Cell>
-                  <Table.Cell>
-                    下載完成後，雙擊安裝
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image src='/win/win1_1.png' fluid />
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>2</Table.Cell>
+                <Table.Cell>
+                  下載完成後，雙擊安裝
                   </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>
-                    <Image size='tiny' src='/win/win1_2.jpg' fluid />
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image size='tiny' src='/win/win1_2.jpg' fluid />
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>3</Table.Cell>
+                <Table.Cell>
+                  Win10可能會彈出安全提醒，這時點擊“更多信息→仍要運行”，然後通過管理員權限
                   </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell rowspan='2'>3</Table.Cell>
-                  <Table.Cell>
-                    Win10可能會彈出安全提醒，這時點擊“更多信息→仍要運行”，然後通過管理員權限
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image.Group size='medium'>
+                    <Image src='/win/win1_3a.jpg' fluid />
+                    <Image src='/win/win1_3b.jpg' fluid />
+                  </Image.Group>
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>4</Table.Cell>
+                <Table.Cell>
+                  正式進入小狼毫安裝界面，點擊“我接受”，然後選擇安裝路徑，再點擊“安裝”
                   </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>
-                    <Image.Group size='medium'>
-                      <Image src='/win/win1_3a.jpg' fluid />
-                      <Image src='/win/win1_3b.jpg' fluid />
-                    </Image.Group>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image.Group size='medium'>
+                    <Image src='/win/win1_4a.jpg' fluid />
+                    <Image src='/win/win1_4b.png' fluid />
+                  </Image.Group>
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>5</Table.Cell>
+                <Table.Cell>
+                  安裝成功後，出現安裝選項界面
                   </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell rowspan='2'>4</Table.Cell>
-                  <Table.Cell>
-                    正式進入小狼毫安裝界面，點擊“我接受”，然後選擇安裝路徑，再點擊“安裝”
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image size='large' src='/win/win1_5.jpg' fluid />
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>6</Table.Cell>
+                <Table.Cell>
+                  選擇好輸入大陸或臺灣字體後點擊“安裝”，即出現安裝成功界面
                   </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>
-                    <Image.Group size='medium'>
-                      <Image src='/win/win1_4a.jpg' fluid />
-                      <Image src='/win/win1_4b.png' fluid />
-                    </Image.Group>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image.Group size='medium'>
+                    <Image src='/win/win1_6a.png' fluid />
+                    <Image src='/win/win1_6b.png' fluid />
+                  </Image.Group>
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>7</Table.Cell>
+                <Table.Cell>
+                  這時再點擊任務欄右下角的輸入法圖標，就可以看到小狼毫輸入法
                   </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell rowspan='2'>5</Table.Cell>
-                  <Table.Cell>
-                    安裝成功後，出現安裝選項界面
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image size='medium' src='/win/win1_7.png' fluid />
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>8</Table.Cell>
+                <Table.Cell>
+                  點擊切換到小狼毫輸入法，隨便打幾個字，可以發現默認用的是普通話拼音輸入，而且是繁體字
                   </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>
-                    <Image size='large' src='/win/win1_5.jpg' fluid />
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image size='medium' src='/win/win1_8.png' fluid />
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>9</Table.Cell>
+                <Table.Cell>
+                  怎麼切換成簡體字輸入呢？只需要按下<code>Ctrl</code>和<code>`</code>（數字1左邊那個鍵，和波浪號~相同）這兩個鍵，就會彈出一個設置菜單
                   </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell rowspan='2'>6</Table.Cell>
-                  <Table.Cell>
-                    選擇好輸入大陸或臺灣字體後點擊“安裝”，即出現安裝成功界面
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image size='medium' src='/win/win1_9.png' fluid />
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>10</Table.Cell>
+                <Table.Cell>
+                  可以看到按1、3、4、5都是選擇不同的輸入方案，按2則進入格式設置
                   </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>
-                    <Image.Group size='medium'>
-                      <Image src='/win/win1_6a.png' fluid />
-                      <Image src='/win/win1_6b.png' fluid />
-                    </Image.Group>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image size='medium' src='/win/win1_10.png' fluid />
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>11</Table.Cell>
+                <Table.Cell>
+                  可以看到不只有簡繁體切換，還有全半角和中英文切換，按下4，然後就可以用簡體字輸入了
                   </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell rowspan='2'>7</Table.Cell>
-                  <Table.Cell>
-                    這時再點擊任務欄右下角的輸入法圖標，就可以看到小狼毫輸入法
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image size='medium' src='/win/win1_11.png' fluid />
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>12</Table.Cell>
+                <Table.Cell>
+                  再打開開始菜單，可以見到新添加的一系列小狼毫輸入法程序，點擊“【小狼毫】輸入法設定”
                   </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>
-                    <Image size='medium' src='/win/win1_7.png' fluid />
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image size='medium' src='/win/win1_12_2a_1.png' fluid />
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>13</Table.Cell>
+                <Table.Cell>
+                  進入輸入法設定界面後可以看到有各種可選的輸入方案，勾選自己想要的然後點“中”（一般只要勾選「明月拼音一項即可，就是普通話拼音輸入」）
                   </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell rowspan='2'>8</Table.Cell>
-                  <Table.Cell>
-                    點擊切換到小狼毫輸入法，隨便打幾個字，可以發現默認用的是普通話拼音輸入，而且是繁體字
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image size='big' src='/win/win1_13.png' fluid />
+                </Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell rowspan='2'>14</Table.Cell>
+                <Table.Cell>
+                  然後進入皮膚選擇界面，選擇自己喜歡的皮膚，再點“中”，就大功告成啦
                   </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>
-                    <Image size='medium' src='/win/win1_8.png' fluid />
-                  </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell rowspan='2'>9</Table.Cell>
-                  <Table.Cell>
-                    怎麼切換成簡體字輸入呢？只需要按下<code>Ctrl</code>和<code>`</code>（數字1左邊那個鍵，和波浪號~相同）這兩個鍵，就會彈出一個設置菜單
-                  </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>
-                    <Image size='medium' src='/win/win1_9.png' fluid />
-                  </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell rowspan='2'>10</Table.Cell>
-                  <Table.Cell>
-                    可以看到按1、3、4、5都是選擇不同的輸入方案，按2則進入格式設置
-                  </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>
-                    <Image size='medium' src='/win/win1_10.png' fluid />
-                  </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell rowspan='2'>11</Table.Cell>
-                  <Table.Cell>
-                    可以看到不只有簡繁體切換，還有全半角和中英文切換，按下4，然後就可以用簡體字輸入了
-                  </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>
-                    <Image size='medium' src='/win/win1_11.png' fluid />
-                  </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell rowspan='2'>12</Table.Cell>
-                  <Table.Cell>
-                    再打開開始菜單，可以見到新添加的一系列小狼毫輸入法程序，點擊“【小狼毫】輸入法設定”
-                  </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>
-                    <Image size='medium' src='/win/win1_12_2a_1.png' fluid />
-                  </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell rowspan='2'>13</Table.Cell>
-                  <Table.Cell>
-                    進入輸入法設定界面後可以看到有各種可選的輸入方案，勾選自己想要的然後點“中”（一般只要勾選「明月拼音一項即可，就是普通話拼音輸入」）
-                  </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>
-                    <Image size='big' src='/win/win1_13.png' fluid />
-                  </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell rowspan='2'>14</Table.Cell>
-                  <Table.Cell>
-                    然後進入皮膚選擇界面，選擇自己喜歡的皮膚，再點“中”，就大功告成啦
-                  </Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                  <Table.Cell>
-                    <Image.Group size='medium'>
-                      <Image src='/win/win1_14a.jpg' fluid />
-                      <Image src='/win/win1_14b.png' fluid />
-                    </Image.Group>
-                  </Table.Cell>
-                </Table.Row>
-              </Table>
-            </section>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>
+                  <Image.Group size='medium'>
+                    <Image src='/win/win1_14a.jpg' fluid />
+                    <Image src='/win/win1_14b.png' fluid />
+                  </Image.Group>
+                </Table.Cell>
+              </Table.Row>
+            </Table>
 
-            <Divider />
 
-            <section id='step2a'>
-              <Header textAlign='center' size="huge" as="h2">
-                <Header.Content>第二步 快捷啟用拼音方案</Header.Content>
-                <Header.Subheader>
-                  僅限部分語言
+            <Divider style={{ paddingBottom: '4rem' }} id='step2a' />
+
+            <Header textAlign='center' size="huge" as="h2">
+              <Header.Content>第二步 快捷啟用拼音方案</Header.Content>
+              <Header.Subheader>
+                僅限部分語言
               </Header.Subheader>
-              </Header>
-            </section>
+            </Header>
             <Message>
               <p><Icon name='info circle' />
                 小狼毫默認自帶了部分語言的拼音方案，可以免去較繁瑣的部署過程直接啓拼音方案。如果你的想輸入的語言在以下列表中，可繼續閱讀本節快速啓用方言拼音，否則直接<Link to='/install/windows/#step2b'>跳到下一節</Link>使用通用方法部署拼音方案。</p>
@@ -353,16 +343,14 @@ class WindowsInstallPage extends Component {
             </Message>
 
 
-            <Divider />
+            <Divider style={{ paddingBottom: '4rem' }} id='step2b' />
 
-            <section id='step2b'>
-              <Header textAlign='center' size="huge" as="h2">
-                <Header.Content>第二步  部署方言拼音方案</Header.Content>
-                <Header.Subheader>
-                  通用方法
+            <Header textAlign='center' size="huge" as="h2">
+              <Header.Content>第二步  部署方言拼音方案</Header.Content>
+              <Header.Subheader>
+                通用方法
               </Header.Subheader>
-              </Header>
-            </section>
+            </Header>
             <Table structured inverted padded>
               <Table.Header>
                 <Table.Row>
@@ -464,13 +452,11 @@ class WindowsInstallPage extends Component {
             </Table>
 
 
-            <Divider />
+            <Divider style={{ paddingBottom: '4rem' }} id='wrapup' />
 
-            <section id='wrapup'>
-              <Header textAlign='center' size="huge" as="h2">
-                <Header.Content>小結</Header.Content>
-              </Header>
-            </section>
+            <Header textAlign='center' size="huge" as="h2">
+              <Header.Content>小結</Header.Content>
+            </Header>
             至此，我們終於實現了在Windows系統下的漢語方言拼音輸入。所以以後如果需要添加其他漢語方言的輸入方案，只需要記住以下三步就可以了
             <Message>
               <Header size="small">
@@ -493,13 +479,12 @@ class WindowsInstallPage extends Component {
             </Message>
 
 
-            <Divider />
+            <Divider style={{ paddingBottom: '4rem' }} id='lookup' />
 
-            <section id='lookup'>
-              <Header textAlign='center' size="huge" as="h2" >
-                <Header.Content>但我只會普通話拼音，方言拼音該怎麼打？</Header.Content>
-              </Header>
-            </section>
+            <Header textAlign='center' size="huge" as="h2" >
+              <Header.Content>但我只會普通話拼音，方言拼音該怎麼打？</Header.Content>
+            </Header>
+
             <Table inverted structured padded>
               <Table.Row>
                 <Table.Cell rowspan='2'>1</Table.Cell>
@@ -520,13 +505,12 @@ class WindowsInstallPage extends Component {
               </Table.Row>
             </Table>
 
-            <Divider />
+            <Divider style={{ paddingBottom: '4rem' }} id='customize' />
 
-            <section id='customize'>
-              <Header textAlign='center' size="huge" as="h2">
-                <Header.Content>（可選）自定義小狼毫外觀</Header.Content>
-              </Header>
-            </section>
+            <Header textAlign='center' size="huge" as="h2">
+              <Header.Content>（可選）自定義小狼毫外觀</Header.Content>
+            </Header>
+
             <Header size="large" as="h3">
               <Header.Content>橫排顯示</Header.Content>
             </Header>
@@ -695,55 +679,55 @@ class WindowsInstallPage extends Component {
                 name='step1'
                 active={activeItem === 'step1'}
                 onClick={this.handleItemClick}
-              // as={Link}
-              // to='/install/windows/#step1'
+                as={Link}
+                to='/install/windows/#step1'
               >
-                <AnchorLink href='#step1'>1 安装小狼毫</AnchorLink>
+                1 安装小狼毫
               </Menu.Item>
               <Menu.Item
                 name='step2a'
                 active={activeItem === 'step2a'}
                 onClick={this.handleItemClick}
-              // as={Link}
-              // to='/install/windows/#step2a'
+                as={Link}
+                to='/install/windows/#step2a'
               >
-                <AnchorLink href='#step2a'>2a 快捷启用方案</AnchorLink>
+                2a 快捷启用方案
               </Menu.Item>
               <Menu.Item
                 name='step2b'
                 active={activeItem === 'step2b'}
                 onClick={this.handleItemClick}
-              // as={Link}
-              // to='/install/windows/#step2b'
+                as={Link}
+                to='/install/windows/#step2b'
               >
-                <AnchorLink href='#step2b'>2b 部署方案</AnchorLink>
+                2b 部署方案
               </Menu.Item>
               <Menu.Item
                 name='wrapup'
                 active={activeItem === 'wrapup'}
                 onClick={this.handleItemClick}
-              // as={Link}
-              // to='/install/windows/#wrapup'
+                as={Link}
+                to='/install/windows/#wrapup'
               >
-                <AnchorLink href='#wrapup'> 小結</AnchorLink>
+                小結
               </Menu.Item>
               <Menu.Item
                 name='lookup'
                 active={activeItem === 'lookup'}
                 onClick={this.handleItemClick}
-              // as={Link}
-              // to='/install/windows/#lookup'
+                as={Link}
+                to='/install/windows/#lookup'
               >
-                <AnchorLink href='#lookup'>拼音反查</AnchorLink>
+                拼音反查
               </Menu.Item>
               <Menu.Item
                 name='customize'
                 active={activeItem === 'customize'}
                 onClick={this.handleItemClick}
-              // as={Link}
-              // to='/install/windows/#customize'
+                as={Link}
+                to='/install/windows/#customize'
               >
-                <AnchorLink href='#customize'>自定義外觀</AnchorLink>
+                自定義外觀
               </Menu.Item>
             </Menu>
           </Grid.Column>

@@ -1,6 +1,5 @@
 import React from "react"
 import { css } from "@emotion/core"
-import { useStaticQuery, graphql } from "gatsby"
 import { 
   Button,
   Container,
@@ -8,7 +7,6 @@ import {
   Header,
   Icon,
   List,
-  Menu,
   Segment
 } from "semantic-ui-react"
 import { Link } from 'gatsby'

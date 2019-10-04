@@ -140,9 +140,46 @@ class Jyutping extends Component {
         <Header dividing size="large" as="h3">
           韻腹
         </Header>
+        <Table celled unstackable textAlign='center'>
+          <Table.Row>
+            <Table.Cell>i [i]<br/>yu  [y]</Table.Cell>
+            <Table.Cell></Table.Cell>
+            <Table.Cell>u</Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.Cell>e<br/>eo/oe</Table.Cell>
+            <Table.Cell></Table.Cell>
+            <Table.Cell>o []</Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.Cell>aa</Table.Cell>
+            <Table.Cell>a</Table.Cell>
+            <Table.Cell></Table.Cell>
+          </Table.Row>
+        </Table>
         <Header dividing size="large" as="h3">
           韻尾
         </Header>
+        <Table celled definition unstackable textAlign='center'>
+          <Table.Row>
+            <Table.Cell>塞音</Table.Cell>
+            <Table.Cell>p</Table.Cell>
+            <Table.Cell>t</Table.Cell>
+            <Table.Cell>k</Table.Cell>
+          </Table.Row>
+          <Table.Row>
+          <Table.Cell>鼻音</Table.Cell>
+            <Table.Cell>m</Table.Cell>
+            <Table.Cell>n</Table.Cell>
+            <Table.Cell></Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.Cell>元音</Table.Cell>
+            <Table.Cell>i</Table.Cell>
+            <Table.Cell>u</Table.Cell>
+            <Table.Cell></Table.Cell>
+          </Table.Row>
+        </Table>
         <Header dividing size="large" as="h3">
           鼻音單獨成韻
         </Header>

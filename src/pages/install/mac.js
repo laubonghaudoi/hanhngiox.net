@@ -58,7 +58,9 @@ class MacInstallPage extends Component {
               <List.Item>部署方言拼音方案</List.Item>
             </List>
             <p>本章就以Mojave 10.14系統為例手把手教你如何操作。</p>
+            
             <Divider></Divider>
+            
             <Header textAlign='center' size="huge" as="h2" id='step1'>
               <Header.Content>第一步 安装鼠须管输入法</Header.Content>
             </Header>
@@ -107,7 +109,7 @@ class MacInstallPage extends Component {
               <Table.Row>
                 <Table.Cell rowspan='2'>3</Table.Cell>
                 <Table.Cell>
-                  mac10可能會彈出安全提醒，這時點擊“更多信息→仍要運行”，然後通過管理員權限
+                  安装过程中会提醒安装完成后需要注销并重新登录
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -118,46 +120,40 @@ class MacInstallPage extends Component {
               <Table.Row>
                 <Table.Cell rowspan='2'>4</Table.Cell>
                 <Table.Cell>
-                  正式進入小狼毫安裝界面，點擊“我接受”，然後選擇安裝路徑，再點擊“安裝”
+                  安装成功后，注销并重新登录
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image.Group size='medium'>
-                    <Image src='/mac/mac1_4a.jpg' fluid/>
-                    <Image src='/mac/mac1_4b.png' fluid/>
-                  </Image.Group>
+                  <Image size='large' src='/mac/mac1_4.png' fluid/>
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell rowspan='2'>5</Table.Cell>
                 <Table.Cell>
-                  安裝成功後，出現安裝選項界面
+                  点击右上角切换输入法，发现已成功安装了鼠须管
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image size='large' src='/mac/mac1_5.jpg' fluid/>
+                  <Image size='large' src='/mac/mac1_5.png' fluid/>
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell rowspan='2'>6</Table.Cell>
                 <Table.Cell>
-                  選擇好輸入大陸或臺灣字體後點擊“安裝”，即出現安裝成功界面
+                  尝试打几个字，可以见到安装成功，且输入的是繁体中文
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image.Group size='medium'>
-                    <Image src='/mac/mac1_6a.png' fluid/>
-                    <Image src='/mac/mac1_6b.png' fluid/>
-                  </Image.Group>
+                  <Image size='large' src='/mac/mac1_6.png' fluid/>
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell rowspan='2'>7</Table.Cell>
                 <Table.Cell>
-                  這時再點擊任務欄右下角的輸入法圖標，就可以看到小狼毫輸入法
+                  怎么切换成简体字输入呢？只需要按下<code>Ctrl</code>和<code>`</code>（数字1左边那个键，和波浪号~相同）这两个键，就会弹出一个设置菜单
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -168,7 +164,7 @@ class MacInstallPage extends Component {
               <Table.Row>
                 <Table.Cell rowspan='2'>8</Table.Cell>
                 <Table.Cell>
-                  點擊切換到小狼毫輸入法，隨便打幾個字，可以發現默認用的是普通話拼音輸入，而且是繁體字
+                  可以看到按1、3、4、5都是选择不同的输入方案，按2则进入格式设置
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -179,7 +175,7 @@ class MacInstallPage extends Component {
               <Table.Row>
                 <Table.Cell rowspan='2'>9</Table.Cell>
                 <Table.Cell>
-                  怎麼切換成簡體字輸入呢？只需要按下<code>Ctrl</code>和<code>`</code>（數字1左邊那個鍵，和波浪號~相同）這兩個鍵，就會彈出一個設置菜單
+                  可以看到不只有简繁体切换，还有全半角和中英文切换，按下4，然后就可以用简体字输入了
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -196,53 +192,6 @@ class MacInstallPage extends Component {
               <Table.Row>
                 <Table.Cell>
                   <Image size='medium' src='/mac/mac1_10.png' fluid/>
-                </Table.Cell>
-              </Table.Row>
-              <Table.Row>
-                <Table.Cell rowspan='2'>11</Table.Cell>
-                <Table.Cell>
-                  可以看到不只有簡繁體切換，還有全半角和中英文切換，按下4，然後就可以用簡體字輸入了
-                </Table.Cell>
-              </Table.Row>
-              <Table.Row>
-                <Table.Cell>
-                  <Image size='medium' src='/mac/mac1_11.png' fluid/>
-                </Table.Cell>
-              </Table.Row>
-              <Table.Row>
-                <Table.Cell rowspan='2'>12</Table.Cell>
-                <Table.Cell>
-                  再打開開始菜單，可以見到新添加的一系列小狼毫輸入法程序，點擊“【小狼毫】輸入法設定”
-                </Table.Cell>
-              </Table.Row>
-              <Table.Row>
-                <Table.Cell>
-                  <Image size='medium' src='/mac/mac1_12_2a_1.png' fluid/>
-                </Table.Cell>
-              </Table.Row>
-              <Table.Row>
-                <Table.Cell rowspan='2'>13</Table.Cell>
-                <Table.Cell>
-                  進入輸入法設定界面後可以看到有各種可選的輸入方案，勾選自己想要的然後點“中”（一般只要勾選「明月拼音一項即可，就是普通話拼音輸入」）
-                </Table.Cell>
-              </Table.Row>
-              <Table.Row>
-                <Table.Cell>
-                  <Image size='big' src='/mac/mac1_13.png' fluid/>
-                </Table.Cell>
-              </Table.Row>
-              <Table.Row>
-                <Table.Cell rowspan='2'>14</Table.Cell>
-                <Table.Cell>
-                  然後進入皮膚選擇界面，選擇自己喜歡的皮膚，再點“中”，就大功告成啦
-                </Table.Cell>
-              </Table.Row>
-              <Table.Row>
-                <Table.Cell>
-                  <Image.Group size='medium'>
-                    <Image src='/mac/mac1_14a.jpg' fluid/>
-                    <Image src='/mac/mac1_14b.png' fluid/>
-                  </Image.Group>
                 </Table.Cell>
               </Table.Row>
             </Table>
@@ -673,7 +622,7 @@ class MacInstallPage extends Component {
                 as={Link}
                 to='/install/mac/#step1'
               >
-                1 安装小狼毫
+                1 安装鼠須管
               </Menu.Item>
               <Menu.Item
                 name='step2a'
