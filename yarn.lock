@@ -5157,11 +5157,11 @@ gatsby-plugin-i18n@^1.0.1:
     ptz-i18n "^1.0.0"
 
 gatsby-plugin-less@^3.0.2:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-less/-/gatsby-plugin-less-3.0.6.tgz#ce0160f454338fa33e77c1af5270880ab03f42cb"
-  integrity sha512-+gqi8S3YCmEi7BGPDluFK9AwVVLseu+eCEI281+J7nWGiXEvM++kBSLR3y4jLwVyoQ32RibYIpTiGSl4jqQjOg==
+  version "3.0.12"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-less/-/gatsby-plugin-less-3.0.12.tgz#004159f029fdaa8bcf35b7cd6898e23112e4d104"
+  integrity sha512-YXB3nfFASqJK3jT1MoU1o/mnCxMSmfyeJeRSzNeXARv5PWDWF7QdyOGW4kIMwHxBApRq+ha2uyGaRMdoJ826Fw==
   dependencies:
-    "@babel/runtime" "^7.6.0"
+    "@babel/runtime" "^7.6.3"
     less-loader "^5.0.0"
 
 gatsby-plugin-netlify@^2.1.3:
