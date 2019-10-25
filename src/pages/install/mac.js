@@ -64,17 +64,19 @@ class MacInstallPage extends Component {
             <Header textAlign='center' size="huge" as="h2" id='step1'>
               <Header.Content>第一步 安装鼠须管输入法</Header.Content>
             </Header>
-            <Table structured padded
-              style={{
-                backgroundColor: '#7BC2FB',
-                color:'black',
-              }}>
+            <Table structured padded inverted
+              // style={{
+              //   backgroundColor: '#7BC2FB',
+              //   color:'black',
+              // }}
+            >
               <Table.Header             
-                style={{
-                backgroundColor: '#7BC2FB',
-                color:'black',
-                borderRadius: '200px',
-              }}>
+              //   style={{
+              //   backgroundColor: '#7BC2FB',
+              //   color:'black',
+              //   borderRadius: '200px',
+              // }}
+              >
                 <Table.Row>
                   <Table.Cell>#</Table.Cell>
                   <Table.Cell>操作</Table.Cell>
@@ -437,7 +439,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/mac/mac_l.png'></Image>
+                  <Image size='massive' src='/mac/mac_l.png'></Image>
                 </Table.Cell>
               </Table.Row>
               <Table.Row>

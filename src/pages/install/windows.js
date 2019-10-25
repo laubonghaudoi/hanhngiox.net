@@ -60,17 +60,19 @@ class WindowsInstallPage extends Component {
             <Header textAlign='center' size="huge" as="h2">
               <Header.Content>第一步  安裝小狼毫輸入法</Header.Content>
             </Header>
-            <Table structured padded
-              style={{
-                backgroundColor: '#7BC2FB',
-                color: 'black',
-              }}>
+            <Table structured padded inverted
+              // style={{
+              //   backgroundColor: '#7BC2FB',
+              //   color: 'black',
+              // }}
+            >
               <Table.Header
-                style={{
-                  backgroundColor: '#7BC2FB',
-                  color: 'black',
-                  borderRadius: '200px',
-                }}>
+                // style={{
+                //   backgroundColor: '#7BC2FB',
+                //   color: 'black',
+                //   borderRadius: '200px',
+                // }}
+              >
                 <Table.Row>
                   <Table.Cell>#</Table.Cell>
                   <Table.Cell>操作</Table.Cell>
@@ -84,7 +86,7 @@ class WindowsInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/win/win1_1.png' fluid />
+                  <Image size='massive' src='/win/win1_1.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>

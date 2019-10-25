@@ -39,7 +39,7 @@ class Jyutping extends Component {
             简介
           </Header>
           <p>
-            粤拼全稱「香港語言學學會粵語拼音方案」，亦稱LSHK粵拼。是香港語言學學會於1993年定案的粵語拼音方案。其特點是完全使用ASCII字符，簡單、合理、易學、易用。是目前最通用的粵語拼音方案。
+            粤拼全稱「香港語言學學會粵語拼音方案」，亦稱LSHK粵拼。是香港語言學學會於1993年定案的粵語拼音方案。其特點是完全使用ASCII字符，用數字表示聲調，設計科學合理。是目前最通用的粵語拼音方案。
           </p>
           <p>
            
@@ -48,8 +48,13 @@ class Jyutping extends Component {
             
           </p>
           <ul>
-            <li>℞ 所屬配方名稱：<code>rime/rime-jyutping</code></li>
-            <li>方案名稱：<code>jyutping</code></li>
+            <li>官方頁面：<a href="https://www.lshk.org/jyutping">Jyutping 粵拼 | lshk</a></li>
+            <li>℞ 所屬配方名稱：
+              <ul>
+                <li>無聲調版：<code>rime/rime-jyutping</code></li>
+                <li>顯示聲調及IPA版：<code>rime/rime-cantonese</code></li>
+              </ul>
+            </li>
           </ul>
         </Message>
 
@@ -147,13 +152,18 @@ class Jyutping extends Component {
             <Table.Cell>u</Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell>e<br/>eo/oe</Table.Cell>
+            <Table.Cell>e<br/>eo</Table.Cell>
             <Table.Cell></Table.Cell>
             <Table.Cell>o []</Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell>aa</Table.Cell>
+            <Table.Cell>oe</Table.Cell>
             <Table.Cell>a</Table.Cell>
+            <Table.Cell></Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.Cell></Table.Cell>
+            <Table.Cell>aa</Table.Cell>
             <Table.Cell></Table.Cell>
           </Table.Row>
         </Table>
@@ -171,7 +181,7 @@ class Jyutping extends Component {
           <Table.Cell>鼻音</Table.Cell>
             <Table.Cell>m</Table.Cell>
             <Table.Cell>n</Table.Cell>
-            <Table.Cell></Table.Cell>
+            <Table.Cell>ng</Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.Cell>元音</Table.Cell>
@@ -183,9 +193,22 @@ class Jyutping extends Component {
         <Header dividing size="large" as="h3">
           鼻音單獨成韻
         </Header>
+
         <Header dividing size="large" as="h3">
           聲調
         </Header>
+        <Table textAlign="center">
+          <Table.Row>
+            <Table.Cell>1 陰平 [˥˥]</Table.Cell>
+            <Table.Cell>2 陰上 [˧˥]</Table.Cell>
+            <Table.Cell>3 陰去 [˧˧]</Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.Cell>4 陽平 [˨˩]</Table.Cell>
+            <Table.Cell>5 陽上 [˩˧]</Table.Cell>
+            <Table.Cell>6 陽去 [˨˨]</Table.Cell>
+          </Table.Row>
+        </Table>
         <Header dividing size="large" as="h2">
           參考資料
         </Header>
