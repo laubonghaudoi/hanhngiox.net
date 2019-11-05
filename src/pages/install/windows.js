@@ -246,7 +246,6 @@ class WindowsInstallPage extends Component {
               </Table.Row>
             </Table>
 
-
             <Divider style={{ paddingBottom: '4rem' }} id='step2a' />
 
             <Header textAlign='center' size="huge" as="h2">

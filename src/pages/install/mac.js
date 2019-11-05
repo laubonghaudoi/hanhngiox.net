@@ -1,6 +1,5 @@
-import React, { Component, createRef } from 'react';
+import React, { Component } from 'react';
 import {
-  Container,
   Divider,
   Grid,
   Header,
@@ -10,18 +9,11 @@ import {
   Menu,
   Message,
   Table,
-  Ref,
-  Visibility,
 } from 'semantic-ui-react';
 
 import { Link } from 'gatsby';
 import RecipeList from '../../components/RecipeList';
 import InstallPageLayout from '../../layouts/InstallPageLayout';
-
-if (typeof macdow !== "undefined") {
-  // eslint-disable-next-line global-require
-  require("smooth-scroll")('a[href*="#"]')
-}
 
 class MacInstallPage extends Component { 
   state = { 
@@ -32,14 +24,15 @@ class MacInstallPage extends Component {
       step2b: false,
       step3: false,
     }
-   }
-  contextRef = createRef();
+  };
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-  handleUpdate = (e, { calculations }) => this.setState({ calculations })
+  handleItemClick = (_e, { name }) => {
+    return this.setState({ activeItem: name });
+  }
+  handleUpdate = (_e, { calculations }) => this.setState({ calculations });
 
   render() {
-    const { activeItem, focus } = this.state
+    const { activeItem } = this.state
     return (
       <InstallPageLayout
         activeItem='mac'
@@ -59,9 +52,9 @@ class MacInstallPage extends Component {
             </List>
             <p>本章就以Mojave 10.14系統為例手把手教你如何操作。</p>
             
-            <Divider></Divider>
+            <Divider style={{ paddingBottom: '4rem' }} id='step1'/>
             
-            <Header textAlign='center' size="huge" as="h2" id='step1'>
+            <Header textAlign='center' size="huge" as="h2">
               <Header.Content>第一步 安装鼠须管输入法</Header.Content>
             </Header>
             <Table structured padded inverted
@@ -197,9 +190,10 @@ class MacInstallPage extends Component {
                 </Table.Cell>
               </Table.Row>
             </Table>
-            <Divider/>
 
-            <Header textAlign='center' size="huge" as="h2" id='step2a'>
+            <Divider style={{ paddingBottom: '4rem' }} id='step2a'/>
+
+            <Header textAlign='center' size="huge" as="h2">
               <Header.Content>第二步 快捷啟用拼音方案</Header.Content>
               <Header.Subheader>
                 僅限部分語言
@@ -293,9 +287,10 @@ class MacInstallPage extends Component {
             <Message>
               请直接<Link to='/install/mac/#wrapup'>跳到「小结」</Link>一节继续教程。
             </Message>
-            <Divider/>
 
-            <Header textAlign='center' size="huge" as="h2" id='step2b'>
+            <Divider style={{ paddingBottom: '4rem' }} id='step2b'/>
+
+            <Header textAlign='center' size="huge" as="h2">
               <Header.Content>第二步  部署方言拼音方案</Header.Content>
               <Header.Subheader>
                 通用方法
@@ -400,9 +395,10 @@ class MacInstallPage extends Component {
                 </Table.Cell>
               </Table.Row>
             </Table>
-            <Divider/>
 
-            <Header textAlign='center' size="huge" as="h2" id='wrapup'>
+            <Divider style={{ paddingBottom: '4rem' }} id='wrapup'/>
+
+            <Header textAlign='center' size="huge" as="h2">
               <Header.Content>小結</Header.Content>
             </Header>
               至此，我們終於實現了在macdows系統下的漢語方言拼音輸入。所以以後如果需要添加其他漢語方言的輸入方案，只需要記住以下三步就可以了
@@ -425,9 +421,10 @@ class MacInstallPage extends Component {
                   <List.Item as='li' value='3.'>小狼毫輸入法設定勾選方案</List.Item>
                 </List>
               </Message>
-            <Divider/>
 
-            <Header textAlign='center' size="huge" as="h2" id='lookup'>
+            <Divider style={{ paddingBottom: '4rem' }} id='lookup'/>
+
+            <Header textAlign='center' size="huge" as="h2">
               <Header.Content>但我只會普通話拼音，方言拼音該怎麼打？</Header.Content>
             </Header>
             <Table inverted structured padded>
@@ -449,9 +446,10 @@ class MacInstallPage extends Component {
                 </Table.Cell>
               </Table.Row>
             </Table>
-            <Divider/>
 
-            <Header textAlign='center' size="huge" as="h2" id='customize'>
+            <Divider style={{ paddingBottom: '4rem' }} id='customize'/>
+
+            <Header textAlign='center' size="huge" as="h2">
               <Header.Content>（可選）自定義小狼毫外觀</Header.Content>
             </Header>
             <Header size="large" as="h3">
