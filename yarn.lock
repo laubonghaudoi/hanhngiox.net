@@ -907,10 +907,10 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.0", "@babel/runtime@^7.6.3":
-  version "7.6.3"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.3.tgz#935122c74c73d2240cafd32ddb5fc2a6cd35cf1f"
-  integrity sha512-kq6anf9JGjW8Nt5rYfEuGRaEAaH1mkv3Bbu6rYvLOpPh/RusSJXuKPEAoZ7L7gybZkchE8+NV5g9vKF4AGAtsA==
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.0", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.6":
+  version "7.7.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.6.tgz#d18c511121aff1b4f2cd1d452f1bac9601dd830f"
+  integrity sha512-BWAJxpNVa0QlE5gZdWjSxXtemZyZ9RmrmVozxt3NUXeZhVIJ5ANyqmMc0JDrivBZyxUuQvFxlvH4OWWOogGfUw==
   dependencies:
     regenerator-runtime "^0.13.2"
 
@@ -5157,11 +5157,11 @@ gatsby-plugin-i18n@^1.0.1:
     ptz-i18n "^1.0.0"
 
 gatsby-plugin-less@^3.0.2:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-less/-/gatsby-plugin-less-3.0.6.tgz#ce0160f454338fa33e77c1af5270880ab03f42cb"
-  integrity sha512-+gqi8S3YCmEi7BGPDluFK9AwVVLseu+eCEI281+J7nWGiXEvM++kBSLR3y4jLwVyoQ32RibYIpTiGSl4jqQjOg==
+  version "3.0.17"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-less/-/gatsby-plugin-less-3.0.17.tgz#2511d25aa9da061bd2f0df859f549dbe6e97bd59"
+  integrity sha512-j8dkJrWYPwSV/NmqumisaQHiEec757ALEZTYfXMktWTjCISnnYu1ad09YN4xIY1wvlKWpK9Tow5XsjUvU2h7Kg==
   dependencies:
-    "@babel/runtime" "^7.6.0"
+    "@babel/runtime" "^7.7.6"
     less-loader "^5.0.0"
 
 gatsby-plugin-netlify@^2.1.3:
