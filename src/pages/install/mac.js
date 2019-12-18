@@ -196,12 +196,10 @@ class MacInstallPage extends Component {
             </Header>
             <Message>
               <p><Icon name='info circle'/>
-              如果你的想輸入的語言在以下列表中，可繼續閱讀本節快速啓用方言拼音，否則直接<Link to='/install/mac/#step2b'>跳到下一節</Link>使用通用方法部署拼音方案。</p>
+              如果你的想輸入的語言<strong>在下方列表中</strong>，可繼續閱讀本節快速啓用方言拼音，<strong>否則直接<Link to='/install/linux/#step2b'>跳到下一節</Link></strong>使用通用方法部署拼音方案。</p>
+              <p>下面列表中每一行的格式都是是<code>語言名：方案名稱 方案代號</code>，有的語言例如潮汕話，是多個方音共用一個方案代號 <code>Kahaani/dieghv</code>。找到自己語言的方案名稱和代號之後按以下步驟啓用方案。</p>
             </Message>
             <RecipeList/>
-            <Message>
-              <p>上面列表中每一行的格式都是是“語言名：方案名稱 方案代號”，有的語言例如潮汕話，是多個方音共用一個方案代號Kahaani/dieghv。找到自己語言的方案名稱和代號之後按以下步驟啓用方案</p>
-            </Message>
             <Table structured inverted padded>
               <Table.Header>
                 <Table.Row>

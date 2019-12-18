@@ -28,7 +28,7 @@ export default () => {
           用漢語方言拼音打字
         </Header>
         <p className="lead">
-        要實現用家鄉話拼音在電腦和手機上打字，需要先安裝中州韻系列的輸入法。中州韻（Rime）是一個開源的輸入法引擎，不同的平臺上有以其為核心開發的輸入法，例如Windows上的小狼毫，macOS的鼠須管，iOS上的iRime等等。採用中州韻為引擎的輸入法和搜狗、微軟拼音等輸入法相比的最大特點是可以任意自定義輸入方案。所以民間各位有識之士紛紛為自己的方言母語編寫了對應的拼音方案。本教程旨在手把手教讀者用方言拼音打字，總結起來僅有兩步：
+          要實現用家鄉話拼音在電腦和手機上打字，需要先安裝中州韻系列的輸入法。中州韻（Rime）是一個開源的輸入法引擎，不同的平臺上有以其為核心開發的輸入法，例如Windows上的小狼毫，macOS的鼠須管，iOS上的iRime等等。採用中州韻為引擎的輸入法和搜狗、微軟拼音等輸入法相比的最大特點是可以任意自定義輸入方案。所以民間各位有識之士紛紛為自己的方言母語編寫了對應的拼音方案。本教程旨在手把手教讀者用方言拼音打字，總結起來僅有兩步：
         </p>
         <List ordered>
           <List.Item>在電腦或手機上安裝中州韻輸入法（在Windows上裝小狼毫，iOS上裝iRime……）</List.Item>
@@ -45,7 +45,7 @@ export default () => {
         <Grid.Row columns={3}>
           <Grid.Column>
             <Card href='/install/windows'>
-              <Image src='/windows.png' wrapped />
+              <Image src='/card/windows.png' wrapped />
               <Card.Content>
                 <Card.Header>Windows</Card.Header>
                 <Card.Description>
@@ -56,7 +56,7 @@ export default () => {
           </Grid.Column>
           <Grid.Column>
             <Card href='/install/mac'>
-              <Image src='/apple.png' wrapped ui={false} />
+              <Image src='/card/apple.png' wrapped ui={false} />
               <Card.Content>
                 <Card.Header>macOS</Card.Header>
                 <Card.Description>
@@ -67,7 +67,7 @@ export default () => {
           </Grid.Column>
           <Grid.Column>
             <Card href='/install/linux'>
-              <Image src='/ubuntu.png' wrapped ui={false} />
+              <Image src='/card/ubuntu.png' wrapped ui={false} />
               <Card.Content>
                 <Card.Header>Linux</Card.Header>
                 <Card.Description>
@@ -80,7 +80,7 @@ export default () => {
         <Grid.Row stretched columns={2}>
           <Grid.Column>
             <Card href='/install/ios'>
-              <Image src='/ios.png' wrapped ui={false} />
+              <Image src='/card/ios.png' wrapped ui={false} />
               <Card.Content>
                 <Card.Header>iOS</Card.Header>
                 <Card.Description>
@@ -91,7 +91,7 @@ export default () => {
           </Grid.Column>
           <Grid.Column>
             <Card href='/install/android'>
-              <Image src='/android.jpg' wrapped ui={false} />
+              <Image src='/card/android.jpg' wrapped ui={false} />
               <Card.Content>
                 <Card.Header>Android</Card.Header>
                 <Card.Description>

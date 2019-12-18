@@ -30,7 +30,7 @@ class IndexPage extends React.Component{
               <Grid.Row>
                 <Grid.Column width={8}>
                   <Header as='h3' style={{ fontSize: '2em' }}>
-                  拼音输入法都只能打普通话吗？
+                  拼音 = 普通話拼音？
                   </Header>
                   <p style={{ fontSize: '1.33em' }}>
                     当然不是！现在经过民间各界有识之士的共同努力，我们终于可以在手机和电脑上用自己的母语方言来打字了。

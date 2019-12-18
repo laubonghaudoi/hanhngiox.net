@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
   Divider,
-  Icon,
   Menu,
 } from 'semantic-ui-react';
 import 'semantic-ui-less/semantic.less';
@@ -21,7 +20,7 @@ class SchemaMenu extends Component {
   render() {
     return (
         <Menu vertical borderless fluid text>
-            <Menu.Item header>官话</Menu.Item>
+            <Menu.Item header>官話</Menu.Item>
               <Menu.Item 
                 name='langjin'
                 as={Link} 
@@ -41,7 +40,7 @@ class SchemaMenu extends Component {
                 蜀拼
               </Menu.Item>
             <Divider/>
-            <Menu.Item header>吴语</Menu.Item>
+            <Menu.Item header>吳語</Menu.Item>
               <Menu.Item 
                 name='wugniu_zaonhe'
                 as={Link} 
@@ -81,7 +80,7 @@ class SchemaMenu extends Component {
                 粵拼
             </Menu.Item>
             <Divider/>
-            <Menu.Item header>闽南语</Menu.Item>
+            <Menu.Item header>閩南語</Menu.Item>
               <Menu.Item 
                 name='dieghv'
                 as={Link} 
@@ -92,7 +91,7 @@ class SchemaMenu extends Component {
                 潮語拼音輸入法
               </Menu.Item>
             <Divider/>
-            <Menu.Item header>闽东语</Menu.Item>
+            <Menu.Item header>閩東語</Menu.Item>
               <Menu.Item 
                   name='ciklinbekin'
                   as={Link} 
@@ -103,10 +102,10 @@ class SchemaMenu extends Component {
                 戚林八音
               </Menu.Item>
             <Divider/>
-            <Menu.Item header>闽中语</Menu.Item>
+            <Menu.Item header>閩中語</Menu.Item>
               <Menu.Item>暂缺</Menu.Item>
             <Divider/>
-            <Menu.Item header>莆仙语</Menu.Item>
+            <Menu.Item header>莆仙語</Menu.Item>
               <Menu.Item 
                     name='pouleng'
                     as={Link} 
@@ -117,7 +116,7 @@ class SchemaMenu extends Component {
                   興化韻莆仙話輸入方案
               </Menu.Item>
             <Divider/>
-            <Menu.Item header>客家话</Menu.Item>
+            <Menu.Item header>客家話</Menu.Item>
             <Menu.Item 
                 name='hakka'
                 as={Link} 
@@ -128,20 +127,20 @@ class SchemaMenu extends Component {
                 薪典
             </Menu.Item>
             <Divider/>
-            <Menu.Item header>晉语</Menu.Item>
-              <Menu.Item>暂缺</Menu.Item>
+            <Menu.Item header>晉語</Menu.Item>
+              <Menu.Item>暫缺</Menu.Item>
             <Divider/>
-            <Menu.Item header>徽语</Menu.Item>
-              <Menu.Item>暂缺</Menu.Item>
+            <Menu.Item header>徽語</Menu.Item>
+              <Menu.Item>暫缺</Menu.Item>
             <Divider/>
-            <Menu.Item header>赣语</Menu.Item>
-              <Menu.Item>暂缺</Menu.Item>
+            <Menu.Item header>赣語</Menu.Item>
+              <Menu.Item>暫缺</Menu.Item>
             <Divider/>
-            <Menu.Item header>湘语</Menu.Item>
-              <Menu.Item>暂缺</Menu.Item>
+            <Menu.Item header>湘語</Menu.Item>
+              <Menu.Item>暫缺</Menu.Item>
             <Divider/>
-            <Menu.Item header>闽北语</Menu.Item>
-              <Menu.Item>暂缺</Menu.Item>
+            <Menu.Item header>閩北語</Menu.Item>
+              <Menu.Item>暫缺</Menu.Item>
             <Divider/>
         </Menu>
     )

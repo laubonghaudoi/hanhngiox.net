@@ -25,11 +25,11 @@ const Footer = () => (
       >
         <Grid.Row>
           <Grid.Column width={3}>
-            <Header inverted as='h4' content='实用链接' />
+            <Header inverted as='h4' content='實用鏈接' />
             <List link inverted>
               <List.Item 
                 icon='mail'
-                content={<a href='mailto:laubonghaudoi@icloud.com'>联系邮箱</a>}
+                content={<a href='mailto:laubonghaudoi@icloud.com'>聯繫郵箱</a>}
               />
               <List.Item
                 icon='twitter'
@@ -37,24 +37,24 @@ const Footer = () => (
               />
               <List.Item
                 icon='facebook'
-                content={<a href='https://rime.im/'>中州韵官网</a>}
+                content={<a href='https://rime.im/'>中州韻官網</a>}
               />
               <List.Item 
                 icon='github'
-                content={<a href='https://github.com/laubonghaudoi/Chinese_Rime'>拼音方案支持项目</a>}
+                content={<a href='https://github.com/laubonghaudoi/Chinese_Rime'>拼音方案支持項目</a>}
               />
             </List>
           </Grid.Column>
           <Grid.Column width={3}>
-            <Header inverted as='h4' content='资源' />
+            <Header inverted as='h4' content='資源' />
             <List link inverted>
               <List.Item 
                 icon='download'
-                content={<a href='https://github.com/laubonghaudoi/Chinese_Rime'>拼音方案下载包</a>}
+                content={<a href='https://github.com/laubonghaudoi/Chinese_Rime'>拼音方案下載包</a>}
               />
               <List.Item
                 icon='google'
-                content={<a href='https://share.weiyun.com/5BqauQb'>拼音方案相关文件</a>}
+                content={<a href='https://share.weiyun.com/5BqauQb'>拼音方案相關文件</a>}
               />
             </List>
           </Grid.Column>
@@ -62,18 +62,18 @@ const Footer = () => (
             <Header inverted as='h4' content='分享本站' />
             <List link inverted>
               <List.Item 
-                icon='download'
-                content={<a href='https://github.com/laubonghaudoi/Chinese_Rime'>拼音方案下载包</a>}
+                icon='facebook'
+                content={<a href='https://github.com/laubonghaudoi/Chinese_Rime'>Facebook</a>}
               />
               <List.Item
-                icon='google'
-                content={<a href='https://share.weiyun.com/5BqauQb'>拼音方案相关文件</a>}
+                icon='twitter'
+                content={<a href='https://share.weiyun.com/5BqauQb'>Twitter</a>}
               />
             </List>
           </Grid.Column>
           <Grid.Column width={4}>
             <Header as='h4' inverted>
-            © 2019 by 劉邦後代
+            © 2019 by @laubonghaudoi
             </Header>
             <p>
               Powered by: Gatsby, React, Semantic UI
