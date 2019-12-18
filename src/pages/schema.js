@@ -44,7 +44,7 @@ class SchemaPage extends Component {
                 centered
                 circular
                 size="small"
-                src="/static/bk.jpg"
+                src="/static/bk.png"
               />
               <Label basic size="large">
                 Label

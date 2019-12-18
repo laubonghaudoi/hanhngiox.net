@@ -71,7 +71,7 @@ class HomepageMobileContainer extends Component {
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 350, padding: '1em 0em', backgroundImage: `url(${"/bk.jpg"})`}}
+            style={{ minHeight: 350, padding: '1em 0em', backgroundImage: `url(${"/bk.png"})`}}
             vertical
           >
             <Container>

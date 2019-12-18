@@ -47,7 +47,7 @@ class HomepageDesktopContainer extends Component {
             inverted
             textAlign='center'
             style={{ 
-              backgroundImage: `url(${"/bk.jpg"})`,
+              backgroundImage: `url(${"/bk.png"})`,
               backgroundSize: 'cover',
               height: '100vh',
             }}

@@ -43,7 +43,7 @@ class IndexPage extends React.Component{
                   </p>
                 </Grid.Column>
                 <Grid.Column floated='right' width={8}>
-                  <Image bordered rounded size='huge' src='/wuyu.png' />
+                  <Image bordered rounded src='/demo.gif' />
                 </Grid.Column>
               </Grid.Row>
             </Grid>
