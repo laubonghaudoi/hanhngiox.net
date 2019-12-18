@@ -3,6 +3,7 @@ import { css } from "@emotion/core"
 import { 
   Button,
   Container,
+  Divider,
   Grid,
   Header,
   Icon,
@@ -55,8 +56,9 @@ export default ({ children }) => {
                 to='/blog'
               >
                 <Icon name='arrow up'/>
-                回到顶部
+                返頂
               </Button>
+              <Divider style={{ paddingBottom: '4rem' }}/>
             </Container>
           </Grid.Column>
           <Grid.Column width={4} floated="right">

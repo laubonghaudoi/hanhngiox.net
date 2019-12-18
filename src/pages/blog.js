@@ -23,10 +23,10 @@ export default () => {
         <Grid.Row>
           <Segment basic>
             <Header as="h1" size="massive" href='/blog/write_cantonese'>
-              杂谈
+              雜談
               <Divider hidden />
               <Header.Subheader>
-                关于汉语方言的一切
+                各地漢語白話文文章集錦
               </Header.Subheader>
             </Header>
           </Segment>
@@ -34,23 +34,19 @@ export default () => {
         <Grid.Row>
           <Grid.Column width={11}>
             <Header size="large" as="h2">
-              <Header.Content>关于本汉语方言拼音项目的宗旨</Header.Content>
+              <Header.Content>關於薪典</Header.Content>
               <Label as='a' color='red'>
-                國語
-              </Label>
-              <Label as='a' color='black'>
-                簡化字
+                客家話
               </Label>
             </Header>
-
             <Divider hidden />
             <blockquote>
-              本项目致力于推广方言拼音输入。为什么要推广方言拼音输入？本文将详细阐明这项事业的动机和理念。
+              原載於 <a href="https://syndict.com/about.htm">syndict.com/about.htm</a>
             </blockquote>
             <Button 
               color='blue'
               as={Link}
-              to='/blog/mission'>
+              to='/blog/syndict'>
               读
             </Button>{" "}
             <Divider />
@@ -59,9 +55,6 @@ export default () => {
               <Header.Content>寫廣東話嘅路，應該點行落去</Header.Content>
               <Label as='a' color='teal'>
                 粵語
-              </Label>
-              <Label as='a' color='white'>
-                正體字
               </Label>
             </Header>
             <Header.Subheader>阿擇 （Chaaak） 2019.2.24</Header.Subheader>
@@ -85,9 +78,6 @@ export default () => {
               <Label as='a' color='teal'>
                 粵語
               </Label>
-              <Label as='a' color='white'>
-                正體字
-              </Label>
             </Header>
             <Header.Subheader>阿擇 （Chaaak） 2019.2.24</Header.Subheader>
             <Divider hidden />
@@ -110,9 +100,6 @@ export default () => {
               <Label as='a' color='teal'>
                 粵語
               </Label>
-              <Label as='a' color='white'>
-                正體字
-              </Label>
             </Header>
             <Header.Subheader>阿擇 （Chaaak） 2019.2.24</Header.Subheader>
             <Divider hidden />
@@ -134,9 +121,9 @@ export default () => {
 
           <Grid.Column width={4} floated="right">
             <Segment secondary>
-              <Header as="h4">杂谈</Header>
+              <Header as="h4">雜談</Header>
               <p>
-                本板块将连载各种关于汉语方言拼音的资料和文章，帮助读者了解汉语方言拼音的知识。
+                本板塊將轉載以各地漢語白話文寫作的文章，幫助讀者瞭解漢語白話文和漢語方言拼音的知識。
               </p>
             </Segment>
             <Header as="h4">Archives</Header>

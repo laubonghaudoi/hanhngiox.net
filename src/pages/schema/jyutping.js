@@ -83,7 +83,7 @@ class Jyutping extends Component {
               <Table.Cell>d [t] 打<br/>t [tʰ]  他</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>g [k] 家<br/>k  [kʰ]  卡<br/>gw [kʷ] 家<br/>kw  [kʷ]  卡</Table.Cell>
+              <Table.Cell>g [k] 家<br/>k  [kʰ]  卡<br/>gw [kʷ] 瓜<br/>kw  [kʷ]  夸</Table.Cell>
               <Table.Cell></Table.Cell>
             </Table.Row>
             <Table.Row>
@@ -147,23 +147,23 @@ class Jyutping extends Component {
         </Header>
         <Table celled unstackable textAlign='center'>
           <Table.Row>
-            <Table.Cell>i [i]<br/>yu  [y]</Table.Cell>
+            <Table.Cell>i [i] 詩<br/>yu [y] 書</Table.Cell>
             <Table.Cell></Table.Cell>
-            <Table.Cell>u</Table.Cell>
+            <Table.Cell>u [u] 夫</Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.Cell>e<br/>eo</Table.Cell>
+            <Table.Cell>e [e] 姐<br/>eo [ø] </Table.Cell>
             <Table.Cell></Table.Cell>
-            <Table.Cell>o []</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>oe</Table.Cell>
-            <Table.Cell>a</Table.Cell>
             <Table.Cell></Table.Cell>
           </Table.Row>
           <Table.Row>
+            <Table.Cell>oe [œ]</Table.Cell>
+            <Table.Cell>a [ɐ] 不</Table.Cell>
+            <Table.Cell>o [ɔ] 波</Table.Cell>
+          </Table.Row>
+          <Table.Row>
             <Table.Cell></Table.Cell>
-            <Table.Cell>aa</Table.Cell>
+            <Table.Cell>aa [a] 花</Table.Cell>
             <Table.Cell></Table.Cell>
           </Table.Row>
         </Table>
@@ -172,28 +172,33 @@ class Jyutping extends Component {
         </Header>
         <Table celled definition unstackable textAlign='center'>
           <Table.Row>
-            <Table.Cell>塞音</Table.Cell>
-            <Table.Cell>p</Table.Cell>
-            <Table.Cell>t</Table.Cell>
-            <Table.Cell>k</Table.Cell>
+            <Table.Cell>塞音（入聲）</Table.Cell>
+            <Table.Cell>p [p̚]</Table.Cell>
+            <Table.Cell>t [t̚]</Table.Cell>
+            <Table.Cell>k [k̚]</Table.Cell>
           </Table.Row>
           <Table.Row>
           <Table.Cell>鼻音</Table.Cell>
-            <Table.Cell>m</Table.Cell>
-            <Table.Cell>n</Table.Cell>
-            <Table.Cell>ng</Table.Cell>
+            <Table.Cell>m [m]</Table.Cell>
+            <Table.Cell>n [n]</Table.Cell>
+            <Table.Cell>ng [ŋ]</Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.Cell>元音</Table.Cell>
-            <Table.Cell>i</Table.Cell>
-            <Table.Cell>u</Table.Cell>
+            <Table.Cell>i [i]</Table.Cell>
+            <Table.Cell>u [u]</Table.Cell>
             <Table.Cell></Table.Cell>
           </Table.Row>
         </Table>
         <Header dividing size="large" as="h3">
           鼻音單獨成韻
         </Header>
-
+        <Table textAlign="center">
+          <Table.Row>
+            <Table.Cell>m [m] 唔</Table.Cell>
+            <Table.Cell>ng [ŋ] 吳</Table.Cell>
+          </Table.Row>
+        </Table>
         <Header dividing size="large" as="h3">
           聲調
         </Header>

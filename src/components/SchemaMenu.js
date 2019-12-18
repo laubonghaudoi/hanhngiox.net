@@ -41,9 +41,6 @@ class SchemaMenu extends Component {
                 蜀拼
               </Menu.Item>
             <Divider/>
-            <Menu.Item header>晉语</Menu.Item>
-              <Menu.Item>暂缺</Menu.Item>
-            <Divider/>
             <Menu.Item header>吴语</Menu.Item>
               <Menu.Item 
                 name='wugniu_zaonhe'
@@ -73,17 +70,16 @@ class SchemaMenu extends Component {
                 寧波吳語拼音輸入方案
               </Menu.Item>
             <Divider/>
-            <Menu.Item header>徽语</Menu.Item>
-              <Menu.Item>暂缺</Menu.Item>
-            <Divider/>
-            <Menu.Item header>赣语</Menu.Item>
-              <Menu.Item>暂缺</Menu.Item>
-            <Divider/>
-            <Menu.Item header>湘语</Menu.Item>
-              <Menu.Item>暂缺</Menu.Item>
-            <Divider/>
-            <Menu.Item header>闽北语</Menu.Item>
-              <Menu.Item>暂缺</Menu.Item>
+            <Menu.Item header>粤语</Menu.Item>
+            <Menu.Item 
+                active={this.props.activeItem === 'jyutping'}
+                onClick={this.handleItemClick}
+                as={Link} 
+                name='jyutping'
+                to="/schema/jyutping"
+            >
+                粵拼
+            </Menu.Item>
             <Divider/>
             <Menu.Item header>闽南语</Menu.Item>
               <Menu.Item 
@@ -132,16 +128,20 @@ class SchemaMenu extends Component {
                 薪典
             </Menu.Item>
             <Divider/>
-            <Menu.Item header>粤语</Menu.Item>
-            <Menu.Item 
-                active={this.props.activeItem === 'jyutping'}
-                onClick={this.handleItemClick}
-                as={Link} 
-                name='jyutping'
-                to="/schema/jyutping"
-            >
-                粵拼
-            </Menu.Item>
+            <Menu.Item header>晉语</Menu.Item>
+              <Menu.Item>暂缺</Menu.Item>
+            <Divider/>
+            <Menu.Item header>徽语</Menu.Item>
+              <Menu.Item>暂缺</Menu.Item>
+            <Divider/>
+            <Menu.Item header>赣语</Menu.Item>
+              <Menu.Item>暂缺</Menu.Item>
+            <Divider/>
+            <Menu.Item header>湘语</Menu.Item>
+              <Menu.Item>暂缺</Menu.Item>
+            <Divider/>
+            <Menu.Item header>闽北语</Menu.Item>
+              <Menu.Item>暂缺</Menu.Item>
             <Divider/>
         </Menu>
     )

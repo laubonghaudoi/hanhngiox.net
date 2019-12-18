@@ -60,7 +60,7 @@ class WindowsInstallPage extends Component {
             <Header textAlign='center' size="huge" as="h2">
               <Header.Content>第一步  安裝小狼毫輸入法</Header.Content>
             </Header>
-            <Table structured padded inverted
+            <Table structured padded inverted key="red"
               // style={{
               //   backgroundColor: '#7BC2FB',
               //   color: 'black',
@@ -74,8 +74,8 @@ class WindowsInstallPage extends Component {
                 // }}
               >
                 <Table.Row>
-                  <Table.Cell>#</Table.Cell>
-                  <Table.Cell>操作</Table.Cell>
+                  <Table.Cell textAlign='center'><strong>序</strong></Table.Cell>
+                  <Table.Cell textAlign='center'><strong>操作</strong></Table.Cell>
                 </Table.Row>
               </Table.Header>
               <Table.Row>
@@ -86,7 +86,7 @@ class WindowsInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image size='massive' src='/win/win1_1.png' fluid />
+                  <Image size='big' src='/win/win1_1.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -265,8 +265,8 @@ class WindowsInstallPage extends Component {
             <Table structured inverted padded>
               <Table.Header>
                 <Table.Row>
-                  <Table.Cell>#</Table.Cell>
-                  <Table.Cell>操作</Table.Cell>
+                  <Table.Cell textAlign='center'><strong>序</strong></Table.Cell>
+                  <Table.Cell textAlign='center'><strong>操作</strong></Table.Cell>
                 </Table.Row>
               </Table.Header>
               <Table.Row>
@@ -355,8 +355,8 @@ class WindowsInstallPage extends Component {
             <Table structured inverted padded>
               <Table.Header>
                 <Table.Row>
-                  <Table.Cell>#</Table.Cell>
-                  <Table.Cell>操作</Table.Cell>
+                  <Table.Cell textAlign='center'><strong>序</strong></Table.Cell>
+                  <Table.Cell textAlign='center'><strong>操作</strong></Table.Cell>
                 </Table.Row>
               </Table.Header>
               <Table.Row>
