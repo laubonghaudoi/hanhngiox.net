@@ -9,22 +9,21 @@ import {
   Input,
   Image,
   Label,
-  Message,
   Menu,
   Table
 } from "semantic-ui-react";
-
-import { rhythm } from "../../utils/grandViewTypography"
+// import '../../css/schema.css'
+import { Link } from "gatsby-plugin-transition-link";
 import SchemaPageLayout from '../../layouts/SchemaPageLayout'
 
-class Jyutping extends Component {
+class Yahwe_zaonhe extends Component {
   render(){
     return(
       <SchemaPageLayout
-        activeItem='jyutping'
+        activeItem='yahwe_zaonhe'
         >
         <Header dividing size="huge" as="h1">
-          粤拼
+          吳語協會式上海話拼音
         </Header>
         <Message>
           <Header 
@@ -133,89 +132,10 @@ class Jyutping extends Component {
             </Table.Row>
           </Table.Body>
         </Table>
-        <Header dividing size="large" as="h3">
-          介音
-        </Header>
-          粵語無介音
-        <Header dividing size="large" as="h3">
-          韻腹
-        </Header>
-        <Table celled unstackable textAlign='center'>
-          <Table.Row>
-            <Table.Cell>i <ipa>[i]</ipa> 詩<br/>yu <ipa>[y]</ipa> 書</Table.Cell>
-            <Table.Cell></Table.Cell>
-            <Table.Cell>u <ipa>[u]</ipa> 夫</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>e <ipa>[e]</ipa> 姐<br/>eo <ipa>[ø]</ipa> 水</Table.Cell>
-            <Table.Cell></Table.Cell>
-            <Table.Cell></Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>oe <ipa>[œ]</ipa> 削</Table.Cell>
-            <Table.Cell>a <ipa>[ɐ]</ipa> 不</Table.Cell>
-            <Table.Cell>o <ipa>[ɔ]</ipa> 波</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell></Table.Cell>
-            <Table.Cell>aa <ipa>[a]</ipa> 花</Table.Cell>
-            <Table.Cell></Table.Cell>
-          </Table.Row>
-        </Table>
-        <Header dividing size="large" as="h3">
-          韻尾
-        </Header>
-        <Table celled definition unstackable textAlign='center'>
-          <Table.Row>
-            <Table.Cell>塞音（入聲）</Table.Cell>
-            <Table.Cell>p <ipa>[p̚]</ipa> 溼</Table.Cell>
-            <Table.Cell>t <ipa>[t̚]</ipa> 失</Table.Cell>
-            <Table.Cell>k <ipa>[k̚]</ipa> 塞</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-          <Table.Cell>鼻音</Table.Cell>
-            <Table.Cell>m <ipa>[m]</ipa> 心</Table.Cell>
-            <Table.Cell>n <ipa>[n]</ipa> 身</Table.Cell>
-            <Table.Cell>ng <ipa>[ŋ]</ipa> 生</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>元音/半元音</Table.Cell>
-            <Table.Cell>i <ipa>[i]</ipa> 西</Table.Cell>
-            <Table.Cell>u <ipa>[u]</ipa> 收</Table.Cell>
-            <Table.Cell></Table.Cell>
-          </Table.Row>
-        </Table>
-        <Header dividing size="large" as="h3">
-          鼻音單獨成韻
-        </Header>
-        <Table textAlign="center">
-          <Table.Row>
-            <Table.Cell>m <ipa>[m]</ipa> 唔</Table.Cell>
-            <Table.Cell>ng <ipa>[ŋ]</ipa> 吳</Table.Cell>
-          </Table.Row>
-        </Table>
-        <Header dividing size="large" as="h3">
-          聲調
-        </Header>
-        <Table textAlign="center">
-          <Table.Row>
-            <Table.Cell>1 陰平 <ipa>[˥˥]</ipa> 詩</Table.Cell>
-            <Table.Cell>2 陰上 <ipa>[˧˥]</ipa> 史</Table.Cell>
-            <Table.Cell>3 陰去 <ipa>[˧˧]</ipa> 試</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>4 陽平 <ipa>[˨˩]</ipa> 時</Table.Cell>
-            <Table.Cell>5 陽上 <ipa>[˩˧]</ipa> 市</Table.Cell>
-            <Table.Cell>6 陽去 <ipa>[˨˨]</ipa> 事</Table.Cell>
-          </Table.Row>
-        </Table>
-        <Header dividing size="large" as="h2">
-          參考資料
-        </Header>
-        https://www.lshk.org/jyutping
+        
       </SchemaPageLayout>
     )
   }
 }
 
-export default Jyutping
+export default Yahwe_zaonhe

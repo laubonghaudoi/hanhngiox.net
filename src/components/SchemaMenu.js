@@ -42,10 +42,10 @@ class SchemaMenu extends Component {
             <Divider/>
             <Menu.Item header>吳語</Menu.Item>
               <Menu.Item 
-                name='wugniu_zaonhe'
+                name='yahwe_zaonhe'
                 as={Link} 
-                to="/schema/wugniu_zaonhe"
-                active={this.props.activeItem === 'wugniu_zaonhe'}
+                to="/schema/yahwe_zaonhe"
+                active={this.props.activeItem === 'yahwe_zaonhe'}
                 onClick={this.handleItemClick}
               >
                 上海吳語拼音輸入方案
@@ -91,20 +91,6 @@ class SchemaMenu extends Component {
                 潮語拼音輸入法
               </Menu.Item>
             <Divider/>
-            <Menu.Item header>閩東語</Menu.Item>
-              <Menu.Item 
-                  name='ciklinbekin'
-                  as={Link} 
-                  to="/schema/ciklinbekin"
-                  active={this.props.activeItem === 'ciklinbekin'}
-                  onClick={this.handleItemClick}
-              >
-                戚林八音
-              </Menu.Item>
-            <Divider/>
-            <Menu.Item header>閩中語</Menu.Item>
-              <Menu.Item>暂缺</Menu.Item>
-            <Divider/>
             <Menu.Item header>莆仙語</Menu.Item>
               <Menu.Item 
                     name='pouleng'
@@ -139,8 +125,14 @@ class SchemaMenu extends Component {
             <Menu.Item header>湘語</Menu.Item>
               <Menu.Item>暫缺</Menu.Item>
             <Divider/>
+            <Menu.Item header>閩東語</Menu.Item>
+              <Menu.Item>暂缺</Menu.Item>
+            <Divider/>
             <Menu.Item header>閩北語</Menu.Item>
               <Menu.Item>暫缺</Menu.Item>
+            <Divider/>
+            <Menu.Item header>閩中語</Menu.Item>
+              <Menu.Item>暂缺</Menu.Item>
             <Divider/>
         </Menu>
     )
