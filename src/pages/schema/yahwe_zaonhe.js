@@ -12,8 +12,8 @@ import {
   Menu,
   Table
 } from "semantic-ui-react";
-// import '../../css/schema.css'
-import { Link } from "gatsby-plugin-transition-link";
+
+import { rhythm } from "../../utils/grandViewTypography"
 import SchemaPageLayout from '../../layouts/SchemaPageLayout'
 
 class Yahwe_zaonhe extends Component {
