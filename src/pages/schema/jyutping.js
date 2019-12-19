@@ -44,16 +44,13 @@ class Jyutping extends Component {
           <p>
            
           </p>
-          <p>
-            
-          </p>
           <ul>
             <li>官方頁面：<a href="https://www.lshk.org/jyutping">Jyutping 粵拼 | lshk</a></li>
-            <li>℞ 所屬配方名稱：<code>rime/rimt-cantonese</code></li>
+            <li>℞ 所屬配方名稱：<code>rime/rime-cantonese</code></li>
           </ul>
         </Message>
 
-        <Header dividing size="large" as="h3">
+        <Header dividing size="large" as="h2">
           聲母
         </Header>
         粵拼中共有19個聲母，無清濁對立，無腭化音。
@@ -133,11 +130,26 @@ class Jyutping extends Component {
             </Table.Row>
           </Table.Body>
         </Table>
-        <Header dividing size="large" as="h3">
+
+        <Header dividing size="big" as="h3">
+          鼻音單獨成韻
+        </Header>
+        <Table textAlign="center">
+          <Table.Row>
+            <Table.Cell>m <ipa>[m]</ipa> 唔</Table.Cell>
+            <Table.Cell>ng <ipa>[ŋ]</ipa> 吳</Table.Cell>
+          </Table.Row>
+        </Table>
+
+
+        <Header dividing size="large" as="h2">
+          韻母
+        </Header>
+        <Header dividing size="big" as="h3">
           介音
         </Header>
           粵語無介音
-        <Header dividing size="large" as="h3">
+        <Header dividing size="big" as="h3">
           韻腹
         </Header>
         <Table celled unstackable textAlign='center'>
@@ -162,7 +174,7 @@ class Jyutping extends Component {
             <Table.Cell></Table.Cell>
           </Table.Row>
         </Table>
-        <Header dividing size="large" as="h3">
+        <Header dividing size="big" as="h3">
           韻尾
         </Header>
         <Table celled definition unstackable textAlign='center'>
@@ -186,7 +198,7 @@ class Jyutping extends Component {
           </Table.Row>
         </Table>
         <Header dividing size="large" as="h3">
-          鼻音單獨成韻
+          聲母
         </Header>
         <Table textAlign="center">
           <Table.Row>
@@ -194,6 +206,8 @@ class Jyutping extends Component {
             <Table.Cell>ng <ipa>[ŋ]</ipa> 吳</Table.Cell>
           </Table.Row>
         </Table>
+
+
         <Header dividing size="large" as="h3">
           聲調
         </Header>

@@ -30,15 +30,6 @@ class SchemaMenu extends Component {
               >
                 南京話拼音输入法
               </Menu.Item>
-              <Menu.Item 
-                name='shupin'
-                as={Link} 
-                to="/schema/shupin"
-                active={this.props.activeItem === 'shupin'}
-                onClick={this.handleItemClick}
-              >
-                蜀拼
-              </Menu.Item>
             <Divider/>
             <Menu.Item header>吳語</Menu.Item>
               <Menu.Item 
@@ -48,25 +39,7 @@ class SchemaMenu extends Component {
                 active={this.props.activeItem === 'yahwe_zaonhe'}
                 onClick={this.handleItemClick}
               >
-                上海吳語拼音輸入方案
-              </Menu.Item>
-              <Menu.Item 
-                name='wugniu_soutseu'
-                as={Link} 
-                to="/schema/wugniu_soutseu"
-                active={this.props.activeItem === 'wugniu_soutseu'}
-                onClick={this.handleItemClick}
-              >
-                蘇州吳語拼音輸入方案
-              </Menu.Item>
-              <Menu.Item 
-                name='wugniu_gninpou'
-                as={Link} 
-                to="/schema/wugniu_gninpou"
-                active={this.props.activeItem === 'wugniu_gninpou'}
-                onClick={this.handleItemClick}
-              >
-                寧波吳語拼音輸入方案
+                吳語協會式上海話拼音
               </Menu.Item>
             <Divider/>
             <Menu.Item header>粤语</Menu.Item>
@@ -92,15 +65,7 @@ class SchemaMenu extends Component {
               </Menu.Item>
             <Divider/>
             <Menu.Item header>莆仙語</Menu.Item>
-              <Menu.Item 
-                    name='pouleng'
-                    as={Link} 
-                    to="/schema/pouleng"
-                    active={this.props.activeItem === 'pouleng'}
-                    onClick={this.handleItemClick}
-                >
-                  興化韻莆仙話輸入方案
-              </Menu.Item>
+              <Menu.Item>暫缺</Menu.Item>
             <Divider/>
             <Menu.Item header>客家話</Menu.Item>
             <Menu.Item 
