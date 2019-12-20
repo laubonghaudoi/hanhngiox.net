@@ -47,28 +47,29 @@ class HomepageDesktopContainer extends Component {
             <Menu
               fixed='top'
               inverted
-              fluid
+              // fluid
               borderless
               color='black'
               style={{
                 height: '4em',
                 paddingLeft: '5%',
-                paddingRight:'5%'
+                paddingRight:'5%',
               }}
             >
               <Navbar/>
             </Menu>
           </Container>
+          {children}
         </Visibility>
-        <Container 
+        {/* <Container 
           fluid 
           borderless
           style={{
             // height: '100vh',
           }}
-        >
-          {children}
-        </Container>
+        > */}
+          
+        {/* </Container> */}
       </Responsive>
     )
   }

@@ -50,7 +50,7 @@ class SchemaMenu extends Component {
                 name='jyutping'
                 to="/schema/jyutping"
             >
-                粵拼
+                香港語言學學會粵語拼音方案
             </Menu.Item>
             <Divider/>
             <Menu.Item header>閩南語</Menu.Item>

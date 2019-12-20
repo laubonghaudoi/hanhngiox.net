@@ -27,6 +27,7 @@
     "semantic-ui-less": "^2.3.3",
     "semantic-ui-react": "^0.88.0",
     "smooth-scroll": "^16.1.0",
+    "typescript": "^3.7.3",
     "typography": "^0.16.19",
     "typography-theme-github": "^0.16.19",
     "typography-theme-grand-view": "^0.16.19",
