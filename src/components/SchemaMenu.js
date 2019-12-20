@@ -64,9 +64,6 @@ class SchemaMenu extends Component {
                 潮語拼音輸入法
               </Menu.Item>
             <Divider/>
-            <Menu.Item header>莆仙語</Menu.Item>
-              <Menu.Item>暫缺</Menu.Item>
-            <Divider/>
             <Menu.Item header>客家話</Menu.Item>
             <Menu.Item 
                 name='hakka'
@@ -77,6 +74,9 @@ class SchemaMenu extends Component {
             >
                 薪典
             </Menu.Item>
+            <Divider/>
+            <Menu.Item header>莆仙語</Menu.Item>
+              <Menu.Item>建設中</Menu.Item>
             <Divider/>
             <Menu.Item header>晉語</Menu.Item>
               <Menu.Item>暫缺</Menu.Item>
