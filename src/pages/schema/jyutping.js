@@ -182,19 +182,19 @@ class Jyutping extends Component {
           <Grid.Column>
             <Table celled unstackable textAlign='center'>
               <Table.Row>
-                <Table.Cell>i <ipa>[i]</ipa> 詩<br/>yu <ipa>[y]</ipa> 書</Table.Cell>
+                <Table.Cell>i <ipa>[i], [ɪ̞]</ipa> 詩<br/>yu <ipa>[y]</ipa> 書</Table.Cell>
                 <Table.Cell></Table.Cell>
-                <Table.Cell>u <ipa>[u]</ipa> 夫</Table.Cell>
+                <Table.Cell>u <ipa>[u], [ʊ̞]</ipa> 夫</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell>e <ipa>[e]</ipa> 姐<br/>eo <ipa>[ø]</ipa> 水</Table.Cell>
+                <Table.Cell>e <ipa>[e], [ɛ]</ipa> 姐<br/>eo <ipa>[ɵ]</ipa> 水</Table.Cell>
                 <Table.Cell></Table.Cell>
                 <Table.Cell></Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell>oe <ipa>[œ]</ipa> 削</Table.Cell>
                 <Table.Cell>a <ipa>[ɐ]</ipa> 不</Table.Cell>
-                <Table.Cell>o <ipa>[ɔ]</ipa> 波</Table.Cell>
+                <Table.Cell>o <ipa>[o], [ɔ]</ipa> 波</Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell></Table.Cell>
@@ -263,64 +263,112 @@ class Jyutping extends Component {
           </Table.Header>
           <Table.Body>
             <Table.Row>
-              <Table.Cell>aa</Table.Cell>
-              <Table.Cell>aa</Table.Cell>
-              <Table.Cell>aai</Table.Cell>
-              <Table.Cell>aau</Table.Cell>
-              <Table.Cell>aam</Table.Cell>
-              <Table.Cell>aan</Table.Cell>
-              <Table.Cell>aang</Table.Cell>
-              <Table.Cell>aap</Table.Cell>
-              <Table.Cell>aat</Table.Cell>
-              <Table.Cell>aak</Table.Cell> 
+              <Table.Cell>i</Table.Cell>
+              <Table.Cell>i 思</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>iu 消</Table.Cell>
+              <Table.Cell>im 閃</Table.Cell>
+              <Table.Cell>in 先</Table.Cell>
+              <Table.Cell>ing 升</Table.Cell>
+              <Table.Cell>ip 攝</Table.Cell>
+              <Table.Cell>it 泄</Table.Cell>
+              <Table.Cell>ik 識</Table.Cell> 
             </Table.Row>
             <Table.Row>
-              <Table.Cell>aa</Table.Cell>
-              <Table.Cell>\</Table.Cell>
-              <Table.Cell>ai</Table.Cell>
-              <Table.Cell>au</Table.Cell>
-              <Table.Cell>am</Table.Cell>
-              <Table.Cell>an</Table.Cell>
-              <Table.Cell>ang</Table.Cell>
-              <Table.Cell>ap</Table.Cell>
-              <Table.Cell>at</Table.Cell>
-              <Table.Cell>ak</Table.Cell> 
+              <Table.Cell>yu</Table.Cell>
+              <Table.Cell>yu 書</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>yun 孫</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>yut 雪</Table.Cell>
+              <Table.Cell></Table.Cell> 
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>u</Table.Cell>
+              <Table.Cell>u 夫</Table.Cell>
+              <Table.Cell>ui</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>um</Table.Cell>
+              <Table.Cell>un 歡</Table.Cell>
+              <Table.Cell>ung 風</Table.Cell>
+              <Table.Cell>up </Table.Cell>
+              <Table.Cell>ut 闊</Table.Cell>
+              <Table.Cell>uk 福</Table.Cell> 
             </Table.Row>
             <Table.Row>
               <Table.Cell>e</Table.Cell>
-              <Table.Cell>e</Table.Cell>
-              <Table.Cell>ei</Table.Cell>
-              <Table.Cell>eu</Table.Cell>
-              <Table.Cell>em</Table.Cell>
-              <Table.Cell>\</Table.Cell>
-              <Table.Cell>eng</Table.Cell>
+              <Table.Cell>e 些</Table.Cell>
+              <Table.Cell>ei 四</Table.Cell>
+              <Table.Cell>eu 掉</Table.Cell>
+              <Table.Cell>em 舐</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>eng 鄭</Table.Cell>
               <Table.Cell>ep</Table.Cell>
-              <Table.Cell>et</Table.Cell>
-              <Table.Cell>ek</Table.Cell> 
+              <Table.Cell>et 坺</Table.Cell>
+              <Table.Cell>ek 石</Table.Cell> 
             </Table.Row>
             <Table.Row>
-              <Table.Cell>i</Table.Cell>
-              <Table.Cell>i</Table.Cell>
-              <Table.Cell>\</Table.Cell>
-              <Table.Cell>iu</Table.Cell>
-              <Table.Cell>im</Table.Cell>
-              <Table.Cell>in</Table.Cell>
-              <Table.Cell>ing</Table.Cell>
-              <Table.Cell>ip</Table.Cell>
-              <Table.Cell>it</Table.Cell>
-              <Table.Cell>ik</Table.Cell> 
+              <Table.Cell>eo</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>eoi 需</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>eon 詢</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>eot 摔</Table.Cell>
+              <Table.Cell></Table.Cell> 
             </Table.Row>
             <Table.Row>
-              <Table.Cell>yu</Table.Cell>
-              <Table.Cell>yu</Table.Cell>
-              <Table.Cell>\</Table.Cell>
-              <Table.Cell>\</Table.Cell>
-              <Table.Cell>\</Table.Cell>
-              <Table.Cell>yun</Table.Cell>
-              <Table.Cell>\</Table.Cell>
-              <Table.Cell>\</Table.Cell>
-              <Table.Cell>yut</Table.Cell>
-              <Table.Cell>\</Table.Cell> 
+              <Table.Cell>oe</Table.Cell>
+              <Table.Cell>oe 鋸</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>oeng 疆</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>oet* 𠰲</Table.Cell>
+              <Table.Cell>oek 腳</Table.Cell> 
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>o</Table.Cell>
+              <Table.Cell>o 可</Table.Cell>
+              <Table.Cell>oi 開</Table.Cell>
+              <Table.Cell>ou 好</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>on 看</Table.Cell>
+              <Table.Cell>ong 康</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>ot 喝</Table.Cell>
+              <Table.Cell>ok 學</Table.Cell> 
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>a</Table.Cell>
+              <Table.Cell>a*</Table.Cell>
+              <Table.Cell>ai 擠</Table.Cell>
+              <Table.Cell>au 周</Table.Cell>
+              <Table.Cell>am 斟</Table.Cell>
+              <Table.Cell>an 珍</Table.Cell>
+              <Table.Cell>ang 增</Table.Cell>
+              <Table.Cell>ap 汁</Table.Cell>
+              <Table.Cell>at 侄</Table.Cell>
+              <Table.Cell>ak 則</Table.Cell> 
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>aa</Table.Cell>
+              <Table.Cell>aa 渣</Table.Cell>
+              <Table.Cell>aai 齋</Table.Cell>
+              <Table.Cell>aau 嘲</Table.Cell>
+              <Table.Cell>aam 站</Table.Cell>
+              <Table.Cell>aan 讚</Table.Cell>
+              <Table.Cell>aang 掙</Table.Cell>
+              <Table.Cell>aap 集</Table.Cell>
+              <Table.Cell>aat 扎</Table.Cell>
+              <Table.Cell>aak 責</Table.Cell> 
             </Table.Row>
           </Table.Body>
         </Table>
