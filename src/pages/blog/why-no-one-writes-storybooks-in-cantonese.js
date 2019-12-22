@@ -1,6 +1,5 @@
 import React from "react"
 import { 
-  Card,
   Divider,
   Header,
   Message} from "semantic-ui-react"

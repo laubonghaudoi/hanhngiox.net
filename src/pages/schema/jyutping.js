@@ -65,7 +65,7 @@ class Jyutping extends Component {
                 <List.Item as={Link} to='/schema/jyutping/#onset'>聲母</List.Item>
                 <List.Item as={Link} to='/schema/jyutping/#final'>
                   韻母
-                  <List.List style={{paddingLeft: '2rem'}}>
+                  <List.List style={{paddingLeft: '2rem', paddingTop: '0.5rem', paddingBottom: '0.5rem'}}>
                     <List.Item>介音</List.Item>
                     <List.Item>韻腹</List.Item>
                     <List.Item>韻尾</List.Item>
@@ -101,7 +101,6 @@ class Jyutping extends Component {
             </Message>            
           </Grid.Column>
         </Grid>
-
         
         <Table celled definition unstackable textAlign='center' color='blue'>
           <Table.Header>
@@ -194,6 +193,7 @@ class Jyutping extends Component {
           </Grid.Column>
         </Grid>
 
+
         <Header dividing size="large" as="h2" id="final" style={{ paddingTop: '5rem' }}>
           韻母
         </Header>
@@ -213,14 +213,14 @@ class Jyutping extends Component {
           <Grid.Column>
             <Table celled unstackable textAlign='center' color='orange'>
               <Table.Row>
-                <Table.Cell>i <ipa>[i]</ipa> 詩<br/>i<sub>後接 -ng,-k</sub><ipa>[ɪ̞]</ipa> 識<br/>yu <ipa>[y]</ipa> 書</Table.Cell>
+                <Table.Cell>i <ipa>[i]</ipa> 詩<br/><allophone>i<sub>後接 -ng,-k</sub><ipa>[ɪ̞]</ipa> 識</allophone><br/>yu <ipa>[y]</ipa> 書</Table.Cell>
                 <Table.Cell></Table.Cell>
-                <Table.Cell>u <ipa>[u]</ipa> 夫<br/>u<sub>後接 -ng,-k</sub><ipa>[ʊ̞]</ipa> 風</Table.Cell>
+                <Table.Cell>u <ipa>[u]</ipa> 夫<br/><allophone>u<sub>後接 -ng,-k</sub><ipa>[ʊ̞]</ipa> 風</allophone></Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell>e<sub>後接 -i</sub> <ipa>[e]</ipa> 未</Table.Cell>
+                <Table.Cell><allophone>e<sub>後接 -i</sub> <ipa>[e]</ipa> 未</allophone></Table.Cell>
                 <Table.Cell>eo <ipa>[ɵ]</ipa> 水</Table.Cell>
-                <Table.Cell>o<sub>後接 -u</sub> <ipa>[o]</ipa> 高</Table.Cell>
+                <Table.Cell><allophone>o<sub>後接 -u</sub> <ipa>[o]</ipa> 高</allophone></Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell>e <ipa>[ɛ]</ipa> 姐<br/>oe <ipa>[œ]</ipa> 削</Table.Cell>
@@ -236,7 +236,7 @@ class Jyutping extends Component {
           </Grid.Column>
           <Grid.Column>
             <Message info>
-              <p>粵拼共有13個韻腹，其中7個可以自由地出現在開音節。詳見下方<Link to='/schema/jyutping/#final_table'>韻母表</Link>。</p>
+              <p>粵拼共有9個韻腹，與韻尾的具體搭配詳見下方<Link to='/schema/jyutping/#final_table'>韻母表</Link>。</p>
             </Message>
             <Message positive>
               <Message.Header>音變規則</Message.Header>
@@ -255,7 +255,7 @@ class Jyutping extends Component {
           <Grid.Column>
           <Table celled definition unstackable textAlign='center' color='olive'>
             <Table.Row>
-              <Table.Cell>塞音（入聲）</Table.Cell>
+              <Table.Cell>塞音</Table.Cell>
               <Table.Cell>p <ipa>[p̚]</ipa> 溼</Table.Cell>
               <Table.Cell>t <ipa>[t̚]</ipa> 失</Table.Cell>
               <Table.Cell>k <ipa>[k̚]</ipa> 塞</Table.Cell>
@@ -267,16 +267,16 @@ class Jyutping extends Component {
               <Table.Cell>ng <ipa>[ŋ]</ipa> 生</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell>元音/半元音</Table.Cell>
-              <Table.Cell>i<sub>前接 eo-, u-</sub> <ipa>[y]</ipa> 水</Table.Cell>
-              <Table.Cell>i <ipa>[i]</ipa> 西</Table.Cell>
+              <Table.Cell>元音</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>i <ipa>[i]</ipa> 西<br/><allophone>i<sub>前接 eo-, u-</sub> <ipa>[y]</ipa> 水</allophone></Table.Cell>
               <Table.Cell>u <ipa>[u]</ipa> 收</Table.Cell>
             </Table.Row>
           </Table>
           </Grid.Column>
           <Grid.Column>
             <Message info>
-              粵拼共有9個韻尾，三個塞音韻尾（入聲韻）、三個鼻音韻尾、三個半元音韻尾
+              粵拼共有8個韻尾，其中三個塞音韻尾（入聲韻）均爲不除阻。
             </Message>
             <Message positive>
               <Message.Header>音變規則</Message.Header>
@@ -344,10 +344,10 @@ class Jyutping extends Component {
               <Table.Cell>u 夫</Table.Cell>
               <Table.Cell>ui 灰</Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>um</Table.Cell>
+              <Table.Cell negative>um</Table.Cell>
               <Table.Cell>un 歡</Table.Cell>
               <Table.Cell>ung 風</Table.Cell>
-              <Table.Cell>up </Table.Cell>
+              <Table.Cell negative>up</Table.Cell>
               <Table.Cell>ut 闊</Table.Cell>
               <Table.Cell>uk 福</Table.Cell> 
             </Table.Row>
@@ -359,7 +359,7 @@ class Jyutping extends Component {
               <Table.Cell>em 舐</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell>eng 鄭</Table.Cell>
-              <Table.Cell>ep</Table.Cell>
+              <Table.Cell negative>ep</Table.Cell>
               <Table.Cell>et 坺</Table.Cell>
               <Table.Cell>ek 石</Table.Cell> 
             </Table.Row>
@@ -425,9 +425,19 @@ class Jyutping extends Component {
             </Table.Row>
           </Table.Body>
         </Table>
-        <Message warning>
-          <p><Icon name='info circle'/> a 和 oet 是新增韻母，詳見<Link to='https://e40058f5-5f04-4db7-8d70-4650bee22b88.filesusr.com/ugd/508b98_8bead2fef24f46e79eba9bc86faf3075.pdf'>粵拼增韻建議</Link></p>
-        </Message>
+        <Grid columns={2} stackable>
+          <Grid.Column>
+            <Message negative>
+              um, up, ep 爲邊緣韻母，僅存在於擬聲詞或外來借詞中，一般情況下可忽略。
+            </Message>
+          </Grid.Column>
+          <Grid.Column>
+            <Message warning>
+              <Icon name='info circle'/> a 和 oet 爲新增韻母，詳見<Link to='https://e40058f5-5f04-4db7-8d70-4650bee22b88.filesusr.com/ugd/508b98_8bead2fef24f46e79eba9bc86faf3075.pdf'>粵拼增韻建議</Link>
+            </Message>
+          </Grid.Column>
+        </Grid>
+
 
         <Header dividing size="large" as="h3" id="tone" style={{ paddingTop: '5rem' }}>
           聲調
@@ -463,7 +473,8 @@ class Jyutping extends Component {
           參考
         </Header>
         <List bulleted>
-          <ipa>https://www.lshk.org/jyutping</ipa>
+          <List.Item><ipa>https://www.lshk.org/jyutping</ipa></List.Item>
+          <List.Item><ipa>Zee, Eric. 1991. "Chinese (Hong Kong Cantonese)." <i>Journal of the International Phonetic Association</i> 21.1: 46-48.</ipa></List.Item>
         </List>
         
       </SchemaPageLayout>

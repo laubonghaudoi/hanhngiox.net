@@ -23,6 +23,7 @@ class Dieghv extends Component {
         activeItem='dieghv'
       >
         潮語拼音輸入法
+        https://kahaani.github.io/gatian/appendix1/index.html
       </SchemaPageLayout>
     )
   }

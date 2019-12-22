@@ -7,6 +7,10 @@ ipa {
   font-family: 'Times New Roman', Times, serif
 }
 
+allophone {
+  color: #4c7d4c;
+}
+
 #sidebar {
   /* position: fixed; */
   /* height: 100vh; */

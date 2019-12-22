@@ -23,6 +23,7 @@ class Jyutping extends Component {
         activeItem='hakka'
       >
         本页为薪典
+        https://syndict.com/hakka/tutorial/1.8.htm
       </SchemaPageLayout>
     )
   }

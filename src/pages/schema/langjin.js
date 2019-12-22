@@ -25,6 +25,7 @@ class Langjin extends Component {
         <Header dividing size="huge" as="h1">
           南京話拼音输入法
         </Header>
+        https://uliloewi.github.io/LangJinPinIn/PinInFangAng
       </SchemaPageLayout>
     )
   }

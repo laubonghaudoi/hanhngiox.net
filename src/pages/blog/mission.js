@@ -1,19 +1,8 @@
 import React from "react"
-import { css } from "@emotion/core"
-import { useStaticQuery, graphql } from "gatsby"
 import { 
-  Button,
-  Container,
   Divider,
-  Grid,
   Header,
-  Icon,
-  List,
-  Message,
-  Segment
-} from "semantic-ui-react"
-import Link from 'gatsby-plugin-transition-link'
-import { rhythm } from "../../utils/grandViewTypography"
+  Message} from "semantic-ui-react"
 import BlogPageLayout from "../../layouts/BlogPageLayout";
 
 export default () => (
