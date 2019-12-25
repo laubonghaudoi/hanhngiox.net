@@ -296,14 +296,14 @@ class Jyutping extends Component {
         <Table celled structured unstackable textAlign='center' color='red'>
           <Table.Header>
             <Table.Row textAlign='center'>
-              <Table.HeaderCell colSpan='2'></Table.HeaderCell>
+              <Table.HeaderCell colSpan='2'>韻尾</Table.HeaderCell>
               <Table.HeaderCell>單元音</Table.HeaderCell>
               <Table.HeaderCell colSpan='2'>複元音</Table.HeaderCell>
               <Table.HeaderCell colSpan='3'>鼻音</Table.HeaderCell>
               <Table.HeaderCell colSpan='3'>塞音（入聲韻）</Table.HeaderCell>
             </Table.Row>
             <Table.Row textAlign='center'>
-              <Table.HeaderCell colSpan='2'>韻</Table.HeaderCell>
+              <Table.HeaderCell colSpan='2'>韻腹</Table.HeaderCell>
               <Table.HeaderCell>-</Table.HeaderCell>
               <Table.HeaderCell>-i</Table.HeaderCell>
               <Table.HeaderCell>-u</Table.HeaderCell>

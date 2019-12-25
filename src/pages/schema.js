@@ -1,21 +1,14 @@
 import React, { Component } from 'react'
 
 import {
-  Button,
+  Card,
   Divider,
   Grid,
   Header,
-  Icon,
-  Input,
   Image,
-  Label,
-  Menu,
-  Table,
   Message,
   List
 } from "semantic-ui-react";
-// import '../css/schema.css'
-import { Link } from "gatsby";
 import SchemaPageLayout from '../layouts/SchemaPageLayout'
 
 class SchemaPage extends Component {
@@ -51,12 +44,34 @@ class SchemaPage extends Component {
               <List.Item>Hashimoto, M. (1970). Notes on Mandarin phonology. Jakobson, Roman; Kawamoto, Shigeo. Studies in General and Oriental Linguistics. Tokyo: TEC, 207-220.</List.Item>
             </List>
           </Message>
-          <Grid.Row textAlign="center">
-            <Grid.Column mobile={8} tablet={4} computer={4}>
-              <Label basic size="large">
-                Jyutping
-              </Label>
-              <p>粵拼</p>
+          <Grid.Row stretched columns={3}>
+            <Grid.Column>
+              <Card
+                href='/schema/jyutping'
+              >
+                <Image src='/card/jyutping.png'/>
+                <Card.Content>
+                  <Card.Header>粵拼</Card.Header>
+                  <Card.Meta>LSHK</Card.Meta>
+                  <Card.Description>
+                    香港語言學學會粵語拼音方案
+                  </Card.Description>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>
+            <Card
+              href='schema/langjin'
+            >
+              <Image src='/card/lower_yangtze_mandarin.png'/>
+              <Card.Content>
+                <Card.Header>南京官話拼音方案</Card.Header>
+                <Card.Meta>LSHK</Card.Meta>
+                <Card.Description>
+                  香港語言學學會粵語拼音方案
+                </Card.Description>
+              </Card.Content>
+            </Card>
             </Grid.Column>
           </Grid.Row>
           <Divider section hidden />
