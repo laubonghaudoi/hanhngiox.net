@@ -209,7 +209,7 @@ class Langjin extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>e <ipa>[e]</ipa> 車<br/>än <ipa>[ẽ]</ipa> 限</Table.Cell>
-                <Table.Cell>en [ə̃] 恩</Table.Cell>
+                <Table.Cell>en <ipa>[ə̃]</ipa> 恩<br/>er <ipa>[ɚ]</ipa> 而</Table.Cell>
                 <Table.Cell>o <ipa>[o]</ipa> 我<br/>ong <ipa>[õ]</ipa> 嗡</Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -226,7 +226,7 @@ class Langjin extends Component {
           </Grid.Column>
           <Grid.Column>
             <Message info>
-              南京官話中共有15個韻腹，其中符號 r 亦可代表聲母 <ipa>[ʐ̩]</ipa>。
+              南京官話中共有16個韻腹，其中符號 r 亦可代表聲母 <ipa>[ʐ̩]</ipa>。
             </Message>
             <Message warning><Icon name='info circle'/>本頁面遵循端木三 (2007) 對韻腹 y 和 r 的轉寫，即將「思」字的韻腹轉寫爲音節化輔音 <ipa>[ʐ̩]</ipa> 和 <ipa>[ʐ̩]</ipa>，不同於部分學者將其視作元音 <ipa>[ɿ]</ipa> 和 <ipa>[ʅ]</ipa> 的寫法。</Message>
             <Message positive>
@@ -247,11 +247,6 @@ class Langjin extends Component {
           <Grid.Column>
           <Table celled definition unstackable textAlign='center' color='olive'>
             <Table.Row>
-            <Table.Cell>鼻音</Table.Cell>
-              <Table.Cell>n <ipa>[n]</ipa> 身</Table.Cell>
-              <Table.Cell></Table.Cell>
-            </Table.Row>
-            <Table.Row>
               <Table.Cell>元音</Table.Cell>
               <Table.Cell>i <ipa>[i]</ipa> 西</Table.Cell>
               <Table.Cell>u <ipa>[ɯ]</ipa> 收</Table.Cell>
@@ -260,7 +255,7 @@ class Langjin extends Component {
           </Grid.Column>
           <Grid.Column>
             <Message info>
-              南京官話共有3個韻尾，無塞音韻尾（入聲韻已演化爲一個調類）。
+              南京官話共有2個韻尾，無塞音韻尾（入聲韻已演化爲一個調類），無鼻音韻尾（鼻音韻尾已演化爲鼻化元音）。
             </Message>
           </Grid.Column>
         </Grid>
@@ -284,7 +279,7 @@ class Langjin extends Component {
           </Table.Header>
           <Table.Body>
             <Table.Row textAlign='center'>
-              <Table.Cell rowSpan='15'>-Ø</Table.Cell>
+              <Table.Cell rowSpan='16'>-Ø</Table.Cell>
               <Table.Cell>i</Table.Cell>
               <Table.Cell><ipa>[i]</ipa></Table.Cell>
               <Table.Cell>i 衣</Table.Cell>
@@ -354,6 +349,14 @@ class Langjin extends Component {
               <Table.Cell>en 恩</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell>uen 文</Table.Cell>
+              <Table.Cell></Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell>er</Table.Cell>
+              <Table.Cell><ipa>[ɚ]</ipa></Table.Cell>
+              <Table.Cell>er 而</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
             </Table.Row>
             <Table.Row textAlign='center'>
@@ -444,14 +447,6 @@ class Langjin extends Component {
           </Grid.Column>
           <Grid.Column>
             <Message info>南京官話拼音共有5個聲調，其中入聲已演化爲一個鯛類。</Message>
-            <Message positive>
-              <Message.Header>音變規則</Message.Header>
-              <p>
-                <ul>
-                  <li>廣州音中陰平調已分化成<ipa>[˥˥]</ipa>和<ipa>[˥˧]</ipa>兩調，粵拼中不作區分。</li>
-                </ul>
-              </p>
-            </Message>
           </Grid.Column>
         </Grid>
 
