@@ -28,7 +28,7 @@ class SchemaMenu extends Component {
                 active={this.props.activeItem === 'langjin'}
                 onClick={this.handleItemClick}
               >
-                南京話拼音输入法
+                南京官話拼音方案
               </Menu.Item>
             <Divider/>
             <Menu.Item header>吳語</Menu.Item>

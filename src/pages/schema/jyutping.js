@@ -102,7 +102,7 @@ class Jyutping extends Component {
           </Grid.Column>
         </Grid>
         
-        <Table celled definition unstackable textAlign='center' color='blue'>
+        <Table structured celled unstackable textAlign='center' color='blue'>
           <Table.Header>
             <Table.Row textAlign='center'>
               <Table.HeaderCell></Table.HeaderCell>
@@ -213,14 +213,14 @@ class Jyutping extends Component {
           <Grid.Column>
             <Table celled unstackable textAlign='center' color='orange'>
               <Table.Row>
-                <Table.Cell>i <ipa>[i]</ipa> 詩<br/><allophone>i<sub>後接 -ng,-k</sub><ipa>[ɪ̞]</ipa> 識</allophone><br/>yu <ipa>[y]</ipa> 書</Table.Cell>
+                <Table.Cell>i <ipa>[i]</ipa> 詩<br/>i<sub><allophone>後接 -ng,-k</allophone></sub> <ipa>[ɪ̞]</ipa> 識<br/>yu <ipa>[y]</ipa> 書</Table.Cell>
                 <Table.Cell></Table.Cell>
-                <Table.Cell>u <ipa>[u]</ipa> 夫<br/><allophone>u<sub>後接 -ng,-k</sub><ipa>[ʊ̞]</ipa> 風</allophone></Table.Cell>
+                <Table.Cell>u <ipa>[u]</ipa> 夫<br/>u<sub><allophone>後接 -ng,-k</allophone></sub> <ipa>[ʊ̞]</ipa> 風</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell><allophone>e<sub>後接 -i</sub> <ipa>[e]</ipa> 未</allophone></Table.Cell>
+                <Table.Cell>e<sub><allophone>後接 -i</allophone></sub> <ipa>[e]</ipa> 未</Table.Cell>
                 <Table.Cell>eo <ipa>[ɵ]</ipa> 水</Table.Cell>
-                <Table.Cell><allophone>o<sub>後接 -u</sub> <ipa>[o]</ipa> 高</allophone></Table.Cell>
+                <Table.Cell>o<sub><allophone>後接 -u</allophone></sub> <ipa>[o]</ipa> 高</Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell>e <ipa>[ɛ]</ipa> 姐<br/>oe <ipa>[œ]</ipa> 削</Table.Cell>
@@ -236,18 +236,19 @@ class Jyutping extends Component {
           </Grid.Column>
           <Grid.Column>
             <Message info>
-              <p>粵拼共有9個韻腹，與韻尾的具體搭配詳見下方<Link to='/schema/jyutping/#final_table'>韻母表</Link>。</p>
+              <p>粵拼共有13個韻腹，其中7個可以自由出現在開音節。具體與韻尾的搭配請見下方韻母表。 </p>
             </Message>
             <Message positive>
               <Message.Header>音變規則</Message.Header>
               <p>
                 <ul>
-                  <li>韻腹 e, o, i, u 在拼寫成 <strong>e</strong>i, <strong>o</strong>u, <strong>i</strong>ng, <strong>i</strong>k, <strong>u</strong>ng, <strong>u</strong>k 時，讀音與單獨使用時稍有不同，詳見表中IPA。</li>
+                  <li>i, u, e, o 均爲一個符號對應兩個韻腹，具體所代表的韻腹取決於所搭配的韻尾。即韻腹 e, o, i, u 在拼寫成 <strong>e</strong>i, <strong>o</strong>u, <strong>i</strong>ng, <strong>i</strong>k, <strong>u</strong>ng, <strong>u</strong>k 時，讀音與和其他韻尾搭配時稍有不同，詳見表中IPA。</li>
                 </ul>
               </p>
             </Message>
           </Grid.Column>
         </Grid>
+        
         <Header dividing size="big" as="h3" id="coda">
           韻尾
         </Header>
@@ -269,7 +270,7 @@ class Jyutping extends Component {
             <Table.Row>
               <Table.Cell>元音</Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>i <ipa>[i]</ipa> 西<br/><allophone>i<sub>前接 eo-, u-</sub> <ipa>[y]</ipa> 水</allophone></Table.Cell>
+              <Table.Cell>i <ipa>[i]</ipa> 西</Table.Cell>
               <Table.Cell>u <ipa>[u]</ipa> 收</Table.Cell>
             </Table.Row>
           </Table>
@@ -282,7 +283,7 @@ class Jyutping extends Component {
               <Message.Header>音變規則</Message.Header>
               <p>
                 <ul>
-                  <li>拼寫作 -i 的韻尾，會受 eo 和 u 韻腹影響產生圓唇化，詳見表中IPA。</li>
+                  <li>韻尾 -i 拼寫成 eoi 和 ui 時，會受 eo 和 u 韻腹影響產生圓唇化，即發音更接近於 <ipa>[y]</ipa>。</li>
                 </ul>
               </p>
             </Message>
@@ -292,17 +293,17 @@ class Jyutping extends Component {
         <Header dividing size="large" as="h2" id="final_table" style={{ paddingTop: '5rem' }}>
           韻母表
         </Header>
-        <Table celled definition unstackable textAlign='center' color='red'>
+        <Table celled structured unstackable textAlign='center' color='red'>
           <Table.Header>
             <Table.Row textAlign='center'>
-              <Table.HeaderCell></Table.HeaderCell>
+              <Table.HeaderCell colSpan='2'></Table.HeaderCell>
               <Table.HeaderCell>單元音</Table.HeaderCell>
               <Table.HeaderCell colSpan='2'>複元音</Table.HeaderCell>
               <Table.HeaderCell colSpan='3'>鼻音</Table.HeaderCell>
               <Table.HeaderCell colSpan='3'>塞音（入聲韻）</Table.HeaderCell>
             </Table.Row>
             <Table.Row textAlign='center'>
-              <Table.HeaderCell>韻</Table.HeaderCell>
+              <Table.HeaderCell colSpan='2'>韻</Table.HeaderCell>
               <Table.HeaderCell>-</Table.HeaderCell>
               <Table.HeaderCell>-i</Table.HeaderCell>
               <Table.HeaderCell>-u</Table.HeaderCell>
@@ -316,19 +317,33 @@ class Jyutping extends Component {
           </Table.Header>
           <Table.Body>
             <Table.Row>
-              <Table.Cell>i</Table.Cell>
+              <Table.Cell rowSpan='2'>i</Table.Cell>
+              <Table.Cell><ipa>[i]</ipa></Table.Cell>
               <Table.Cell>i 思</Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell active></Table.Cell>
               <Table.Cell>iu 消</Table.Cell>
               <Table.Cell>im 閃</Table.Cell>
               <Table.Cell>in 先</Table.Cell>
-              <Table.Cell>ing 升</Table.Cell>
+              <Table.Cell></Table.Cell>
               <Table.Cell>ip 攝</Table.Cell>
               <Table.Cell>it 泄</Table.Cell>
+              <Table.Cell></Table.Cell> 
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell><ipa>[ɪ̞]</ipa></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell active></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>ing 升</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
               <Table.Cell>ik 識</Table.Cell> 
             </Table.Row>
             <Table.Row>
               <Table.Cell>yu</Table.Cell>
+              <Table.Cell><ipa>[y]</ipa></Table.Cell>
               <Table.Cell>yu 書</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
@@ -340,31 +355,59 @@ class Jyutping extends Component {
               <Table.Cell></Table.Cell> 
             </Table.Row>
             <Table.Row>
-              <Table.Cell>u</Table.Cell>
+              <Table.Cell rowSpan='2'>u</Table.Cell>
+              <Table.Cell><ipa>[u]</ipa></Table.Cell>
               <Table.Cell>u 夫</Table.Cell>
               <Table.Cell>ui 灰</Table.Cell>
+              <Table.Cell active></Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell negative>um</Table.Cell>
               <Table.Cell>un 歡</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>ut 闊</Table.Cell>
+              <Table.Cell></Table.Cell> 
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell><ipa>[ʊ̞]</ipa></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell active></Table.Cell>
+              <Table.Cell negative>um</Table.Cell>
+              <Table.Cell></Table.Cell>
               <Table.Cell>ung 風</Table.Cell>
               <Table.Cell negative>up</Table.Cell>
-              <Table.Cell>ut 闊</Table.Cell>
+              <Table.Cell></Table.Cell>
               <Table.Cell>uk 福</Table.Cell> 
             </Table.Row>
             <Table.Row>
-              <Table.Cell>e</Table.Cell>
-              <Table.Cell>e 些</Table.Cell>
+              <Table.Cell rowSpan='2'>e </Table.Cell>
+              <Table.Cell><ipa>[e]</ipa></Table.Cell>
+              <Table.Cell></Table.Cell>
               <Table.Cell>ei 四</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell negative>ep</Table.Cell>
+              <Table.Cell>et 坺</Table.Cell>
+              <Table.Cell></Table.Cell> 
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell><ipa>[ɛ]</ipa></Table.Cell>
+              <Table.Cell>e 些</Table.Cell>
+              <Table.Cell></Table.Cell>
               <Table.Cell>eu 掉</Table.Cell>
               <Table.Cell>em 舐</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell>eng 鄭</Table.Cell>
-              <Table.Cell negative>ep</Table.Cell>
-              <Table.Cell>et 坺</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
               <Table.Cell>ek 石</Table.Cell> 
             </Table.Row>
             <Table.Row>
               <Table.Cell>eo</Table.Cell>
+              <Table.Cell><ipa>[ɵ]</ipa></Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell>eoi 需</Table.Cell>
               <Table.Cell></Table.Cell>
@@ -377,6 +420,7 @@ class Jyutping extends Component {
             </Table.Row>
             <Table.Row>
               <Table.Cell>oe</Table.Cell>
+              <Table.Cell><ipa>[œ]</ipa></Table.Cell>
               <Table.Cell>oe 鋸</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
@@ -388,10 +432,23 @@ class Jyutping extends Component {
               <Table.Cell>oek 腳</Table.Cell> 
             </Table.Row>
             <Table.Row>
-              <Table.Cell>o</Table.Cell>
+              <Table.Cell rowSpan='2'>o</Table.Cell>
+              <Table.Cell><ipa>[o]</ipa></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>ou 好</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell> 
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell><ipa>[ɔ]</ipa></Table.Cell>
               <Table.Cell>o 可</Table.Cell>
               <Table.Cell>oi 開</Table.Cell>
-              <Table.Cell>ou 好</Table.Cell>
+              <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell>on 看</Table.Cell>
               <Table.Cell>ong 康</Table.Cell>
@@ -401,6 +458,7 @@ class Jyutping extends Component {
             </Table.Row>
             <Table.Row>
               <Table.Cell>a</Table.Cell>
+              <Table.Cell><ipa>[ɐ]</ipa></Table.Cell>
               <Table.Cell warning>a <sup><Icon name='info circle'/></sup> 㗎</Table.Cell>
               <Table.Cell>ai 擠</Table.Cell>
               <Table.Cell>au 周</Table.Cell>
@@ -413,6 +471,7 @@ class Jyutping extends Component {
             </Table.Row>
             <Table.Row>
               <Table.Cell>aa</Table.Cell>
+              <Table.Cell><ipa>[a]</ipa></Table.Cell>
               <Table.Cell>aa 渣</Table.Cell>
               <Table.Cell>aai 齋</Table.Cell>
               <Table.Cell>aau 嘲</Table.Cell>
@@ -458,6 +517,7 @@ class Jyutping extends Component {
             </Table>
           </Grid.Column>
           <Grid.Column>
+            <Message info>粵拼共有6個聲調，保留陰清陽濁的和中古音的對應關繫。</Message>
             <Message positive>
               <Message.Header>音變規則</Message.Header>
               <p>
