@@ -50,9 +50,9 @@ class WindowsInstallPage extends Component {
               <List.Item>部署方言拼音方案</List.Item>
             </List>
             <p>本章就以Windows 10系統為例手把手教你如何操作（別擔心Win7也一樣的，不行的話儘管<a href="mailto:laubonghaudoi@icloud.com">郵件</a>罵我）。</p>
-            <Message>
+            <Message warning>
               <Icon name="exclamation circle" />
-              有的版本Windows系統會檢測到小狼毫為惡意軟件和木馬，這是Windows Defender自身的誤判問題。小狼毫是一個開源的輸入法軟件，不含任何惡意程序。如果安裝包被系統檢測為惡意程序，請先參考這篇文章的第一步關閉實時保護，再開始安裝。
+              有的版本Windows系統會檢測到小狼毫為惡意軟件和木馬，這是Windows Defender自身的誤判問題。小狼毫是一個開源的輸入法軟件，不含任何惡意程序。如果安裝包被系統檢測為惡意程序，請先參考<a href='https://zhuanlan.zhihu.com/p/30675056'>這篇文章</a>的第一步關閉實時保護，再開始安裝。
             </Message>
 
             <Divider style={{ paddingBottom: '4rem' }} id='step1'></Divider>

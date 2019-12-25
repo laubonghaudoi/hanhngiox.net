@@ -1,17 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import {
-  Button,
-  Divider,
-  Grid,
-  Header,
-  Icon,
-  Input,
-  Image,
-  Label,
-  Menu,
-  Table
-} from "semantic-ui-react";
+  Grid} from "semantic-ui-react";
 
 import PageLayout from '../layouts/PageLayout';
 import SchemaMenu from '../components/SchemaMenu';

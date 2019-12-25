@@ -1,11 +1,16 @@
 import React, { Component } from 'react'
 
 import {
+  Divider,
+  Grid,
   Header,
+  Icon,
+  List,
   Message,
   Table
 } from "semantic-ui-react";
 
+import { Link } from 'gatsby';
 import { rhythm } from "../../utils/grandViewTypography"
 import SchemaPageLayout from '../../layouts/SchemaPageLayout'
 
@@ -18,38 +23,70 @@ class Yahwe_zaonhe extends Component {
         <Header dividing size="huge" as="h1">
           吳語協會式上海話拼音方案
         </Header>
-        <Message>
-          <Header 
-            size="big"
-            as="h1"
-            color="blue"
-            textAlign="right"
-            style={{
-              display:'inline-block',
-              marginBottom: rhythm(0.5),
-            }}>
-            简介
-          </Header>
-          <p>
-            吳語協會式上海話拼音方案是吳語協會制定的吳語拼音方案，以中派上海音爲標準，區分尖團
-          </p>
-          <p>
-           
-          </p>
-          <p>
+        <Message 
+          info
+        >
+          <Grid columns={2} stackable>
+            <Divider vertical><Icon name="map"></Icon></Divider>
+            <Grid.Column>
+              <Header 
+                size="big"
+                as="h2"
+                color="black"
+                textAlign="right"
+                style={{
+                  display:'inline-block',
+                  marginBottom: rhythm(0.5),
+                }}>
+                简介
+              </Header>
+              <p>
+                吳語協會式上海話拼音方案是吳語協會制定的吳語拼音方案，以中派上海音爲標準，區分尖團.
+              </p>
+              <ul>
+                <li>官方頁面：<a href="http://wu-chinese.com/romanization/shanghai.html">上海話拼音方案</a></li>
+                <li>℞ 所屬配方名：<code>edward-martyr/rime-yahwe_zaonhe</code></li>
+              </ul>
+            </Grid.Column>
             
-          </p>
-          <ul>
-            <li>官方頁面：<a href="http://wu-chinese.com/romanization/shanghai.html">上海話拼音方案</a></li>
-            <li>℞ 所屬配方名稱：<code>edward-martyr/rime-yahwe_zaonhe</code></li>
-          </ul>
+            <Grid.Column>
+              <Header 
+                size="big"
+                as="h2"
+                // color="blue"
+                textAlign="right"
+                style={{
+                  display:'inline-block',
+                  marginBottom: rhythm(0.5),
+                  paddingLeft: '1rem'
+                }}>
+                目錄
+              </Header>
+              <List bulleted style={{paddingLeft: '2rem'}}>
+                <List.Item as={Link} to='/schema/yahwe_zaonhe/#onset'>聲母</List.Item>
+                <List.Item as={Link} to='/schema/yahwe_zaonhe/#final'>
+                  韻母
+                  <List.List style={{paddingLeft: '2rem', paddingTop: '0.5rem', paddingBottom: '0.5rem'}}>
+                    <List.Item>介音</List.Item>
+                    <List.Item>韻腹</List.Item>
+                    <List.Item>韻尾</List.Item>
+                  </List.List>  
+                </List.Item>
+                <List.Item as={Link} to='/schema/yahwe_zaonhe/#final_table'>韻母表</List.Item>
+                <List.Item as={Link} to='/schema/yahwe_zaonhe/#tone'>聲調</List.Item>
+                <List.Item as={Link} to='/schema/yahwe_zaonhe/#reference'>參考</List.Item>
+              </List>
+            </Grid.Column>
+          </Grid>
         </Message>
 
-        <Header dividing size="large" as="h3">
+        <Header dividing size="large" as="h3" id='onset' style={{ paddingTop: '5rem' }}>
           聲母
         </Header>
-        上海話中共有27個聲母（含零聲母「'」），有清濁送氣三路對立，有腭化音。
-        <Table celled definition unstackable textAlign='center'>
+        <Message info>
+          上海話中共有27個聲母（含零聲母「'」），有清濁送氣三路對立，有腭化音。
+        </Message>
+        <Table celled definition unstackable textAlign='center' color='blue'>
           <Table.Header>
             <Table.Row textAlign='center'>
               <Table.HeaderCell></Table.HeaderCell>
@@ -126,6 +163,21 @@ class Yahwe_zaonhe extends Component {
           </Table.Body>
         </Table>
         
+        <Header dividing size="large" as="h2" id="final" style={{ paddingTop: '5rem' }}>
+          韻母
+        </Header>
+        <Header dividing size="big" as="h3" id="medial">
+          介音
+        </Header>
+
+
+        <Header dividing size="large" as="h2" id="reference">
+          參考
+        </Header>
+        <List bulleted>
+          <List.Item><ipa>http://wu-chinese.com/romanization/shanghai.html</ipa></List.Item>
+          <List.Item><ipa>Chen, Y., & Gussenhoven, C. (2015). Shanghai Chinese. <i>Journal of the International Phonetic Association,</i> 45(3), 321-337. doi:10.1017/S0025100315000043</ipa></List.Item>
+        </List>
       </SchemaPageLayout>
     )
   }

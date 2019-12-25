@@ -34,6 +34,28 @@ export default () => {
         <Grid.Row>
           <Grid.Column width={11}>
             <Header size="large" as="h2">
+              <Header.Content>粵文書寫方式續探</Header.Content>
+              <Label as='a' color='teal'>
+                粵語
+              </Label>
+            </Header>
+            <Header.Subheader>阿擇 （Chaaak） 2019.12.25</Header.Subheader>
+            <Divider hidden />
+            <blockquote>
+            粵文」係用粵語做基礎發展而成嘅書寫語言（written language）。大家好鍾意叫「粵文」做「寫口語」、「寫廣東話」。粵文一早已經去咗一個新階段，唔再係寫低口語咁簡單，已經成為咗一種書寫語言。
+            </blockquote>
+            <Segment secondary>
+              <code>原載於Medium https://link.medium.com/GDzKhZZdI2</code>
+            </Segment>
+            <Button 
+              color='blue'
+              as={Link}
+              to='/blog/cantonese-standardisation-revisit'>
+              读
+            </Button>{" "}
+            <Divider />
+
+            <Header size="large" as="h2">
               <Header.Content>關於薪典</Header.Content>
               <Label as='a' color='red'>
                 客家話
@@ -69,28 +91,6 @@ export default () => {
               color='blue'
               as={Link}
               to='/blog/write_cantonese'>
-              读
-            </Button>{" "}
-            <Divider />
-
-            <Header size="large" as="h2">
-              <Header.Content>最大條道理可以寫廣東話嘅文體</Header.Content>
-              <Label as='a' color='teal'>
-                粵語
-              </Label>
-            </Header>
-            <Header.Subheader>阿擇 （Chaaak） 2019.2.24</Header.Subheader>
-            <Divider hidden />
-            <blockquote>
-              兒童書你都唔用全粵語，唔通連聽個故仔都要大人逐字翻譯？
-            </blockquote>
-            <Segment secondary>
-              <code>原載於Medium https://link.medium.com/AwUPNZdb8Y</code>
-            </Segment>
-            <Button 
-              color='blue'
-              as={Link}
-              to='/blog/why-no-one-writes-storybooks-in-cantonese'>
               读
             </Button>{" "}
             <Divider />
