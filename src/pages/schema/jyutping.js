@@ -85,7 +85,7 @@ class Jyutping extends Component {
         <Grid columns={2} stackable>
           <Grid.Column>
             <Message info>
-              <p>粵拼中共有19個聲母，無清濁對立，無腭化音。</p>
+              <p>粵拼中共有19個聲母（不含零聲母），無清濁對立，無腭化音。其中零聲母爲喉塞音，無符號，在輸入法中以 <ipa>'</ipa> 代替</p>
             </Message>
           </Grid.Column>
           <Grid.Column>
@@ -123,8 +123,8 @@ class Jyutping extends Component {
               <Table.Cell>d <ipa>[t]</ipa> 打<br/>t <ipa>[tʰ]</ipa>  他</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>g <ipa>[k]</ipa> 家<br/>k  <ipa>[kʰ]</ipa>  卡<br/>gw <ipa>[kʷ]</ipa> 瓜<br/>kw  <ipa>[kʷ]</ipa>  夸</Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell>g <ipa>[k]</ipa> 家<br/>k  <ipa>[kʰ]</ipa>  卡<br/>gw <ipa>[kʷ]</ipa> 瓜<br/>kw  <ipa>[kʷʰ]</ipa> 夸</Table.Cell>
+              <Table.Cell>' <ipa>[ʔ]</ipa></Table.Cell>
             </Table.Row>
             <Table.Row>
               <Table.Cell>塞擦音</Table.Cell>
@@ -213,9 +213,9 @@ class Jyutping extends Component {
           <Grid.Column>
             <Table celled unstackable textAlign='center' color='orange'>
               <Table.Row>
-                <Table.Cell>i <ipa>[i]</ipa> 詩<br/>i<sub><allophone>後接 -ng,-k</allophone></sub> <ipa>[ɪ̞]</ipa> 識<br/>yu <ipa>[y]</ipa> 書</Table.Cell>
+                <Table.Cell>i <ipa>[iː]</ipa> 詩<br/>i<sub><allophone>後接 -ng,-k</allophone></sub> <ipa>[ɪ̞]</ipa> 識<br/>yu <ipa>[y]</ipa> 書</Table.Cell>
                 <Table.Cell></Table.Cell>
-                <Table.Cell>u <ipa>[u]</ipa> 夫<br/>u<sub><allophone>後接 -ng,-k</allophone></sub> <ipa>[ʊ̞]</ipa> 風</Table.Cell>
+                <Table.Cell>u <ipa>[uː]</ipa> 夫<br/>u<sub><allophone>後接 -ng,-k</allophone></sub> <ipa>[ʊ̞]</ipa> 風</Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell>e<sub><allophone>後接 -i</allophone></sub> <ipa>[e]</ipa> 未</Table.Cell>
@@ -223,13 +223,13 @@ class Jyutping extends Component {
                 <Table.Cell>o<sub><allophone>後接 -u</allophone></sub> <ipa>[o]</ipa> 高</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell>e <ipa>[ɛ]</ipa> 姐<br/>oe <ipa>[œ]</ipa> 削</Table.Cell>
+                <Table.Cell>e <ipa>[ɛː]</ipa> 姐<br/>oe <ipa>[œː]</ipa> 削</Table.Cell>
                 <Table.Cell>a <ipa>[ɐ]</ipa> 不</Table.Cell>
-                <Table.Cell>o <ipa>[ɔ]</ipa> 波</Table.Cell>
+                <Table.Cell>o <ipa>[ɔː]</ipa> 波</Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell></Table.Cell>
-                <Table.Cell>aa <ipa>[a]</ipa> 花</Table.Cell>
+                <Table.Cell>aa <ipa>[aː]</ipa> 花</Table.Cell>
                 <Table.Cell></Table.Cell>
               </Table.Row>
             </Table>
@@ -318,7 +318,7 @@ class Jyutping extends Component {
           <Table.Body>
             <Table.Row>
               <Table.Cell rowSpan='2'>i</Table.Cell>
-              <Table.Cell><ipa>[i]</ipa></Table.Cell>
+              <Table.Cell><ipa>[iː]</ipa></Table.Cell>
               <Table.Cell>i 思</Table.Cell>
               <Table.Cell active></Table.Cell>
               <Table.Cell>iu 消</Table.Cell>
@@ -343,7 +343,7 @@ class Jyutping extends Component {
             </Table.Row>
             <Table.Row>
               <Table.Cell>yu</Table.Cell>
-              <Table.Cell><ipa>[y]</ipa></Table.Cell>
+              <Table.Cell><ipa>[yː]</ipa></Table.Cell>
               <Table.Cell>yu 書</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
@@ -356,7 +356,7 @@ class Jyutping extends Component {
             </Table.Row>
             <Table.Row>
               <Table.Cell rowSpan='2'>u</Table.Cell>
-              <Table.Cell><ipa>[u]</ipa></Table.Cell>
+              <Table.Cell><ipa>[uː]</ipa></Table.Cell>
               <Table.Cell>u 夫</Table.Cell>
               <Table.Cell>ui 灰</Table.Cell>
               <Table.Cell active></Table.Cell>
@@ -394,7 +394,7 @@ class Jyutping extends Component {
               <Table.Cell></Table.Cell> 
             </Table.Row>
             <Table.Row>
-              <Table.Cell><ipa>[ɛ]</ipa></Table.Cell>
+              <Table.Cell><ipa>[ɛː]</ipa></Table.Cell>
               <Table.Cell>e 些</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell>eu 掉</Table.Cell>
@@ -420,7 +420,7 @@ class Jyutping extends Component {
             </Table.Row>
             <Table.Row>
               <Table.Cell>oe</Table.Cell>
-              <Table.Cell><ipa>[œ]</ipa></Table.Cell>
+              <Table.Cell><ipa>[œː]</ipa></Table.Cell>
               <Table.Cell>oe 鋸</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
@@ -445,7 +445,7 @@ class Jyutping extends Component {
               <Table.Cell></Table.Cell> 
             </Table.Row>
             <Table.Row>
-              <Table.Cell><ipa>[ɔ]</ipa></Table.Cell>
+              <Table.Cell><ipa>[ɔː]</ipa></Table.Cell>
               <Table.Cell>o 可</Table.Cell>
               <Table.Cell>oi 開</Table.Cell>
               <Table.Cell></Table.Cell>
@@ -471,7 +471,7 @@ class Jyutping extends Component {
             </Table.Row>
             <Table.Row>
               <Table.Cell>aa</Table.Cell>
-              <Table.Cell><ipa>[a]</ipa></Table.Cell>
+              <Table.Cell><ipa>[aː]</ipa></Table.Cell>
               <Table.Cell>aa 渣</Table.Cell>
               <Table.Cell>aai 齋</Table.Cell>
               <Table.Cell>aau 嘲</Table.Cell>

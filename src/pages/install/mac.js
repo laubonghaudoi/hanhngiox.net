@@ -194,7 +194,7 @@ class MacInstallPage extends Component {
                 僅限部分語言
               </Header.Subheader>
             </Header>
-            <Message>
+            <Message info>
               <p><Icon name='info circle'/>
               如果你的想輸入的語言<strong>在下方列表中</strong>，可繼續閱讀本節快速啓用方言拼音，<strong>否則直接<Link to='/install/linux/#step2b'>跳到下一節</Link></strong>使用通用方法部署拼音方案。</p>
               <p>下面列表中每一行的格式都是是<code>語言名：方案名稱 方案代號</code>，有的語言例如潮汕話，是多個方音共用一個方案代號 <code>Kahaani/dieghv</code>。找到自己語言的方案名稱和代號之後按以下步驟啓用方案。</p>
@@ -283,7 +283,7 @@ class MacInstallPage extends Component {
                 </Table.Cell>
               </Table.Row>
             </Table>
-            <Message>
+            <Message info>
               请直接<Link to='/install/mac/#wrapup'>跳到「小结」</Link>一节继续教程。
             </Message>
 
@@ -409,7 +409,7 @@ class MacInstallPage extends Component {
               <Header.Content>小結</Header.Content>
             </Header>
               至此，我們終於實現了在macOS下的漢語方言拼音輸入。所以以後如果需要添加其他漢語方言的輸入方案，只需要記住以下三步就可以了
-              <Message>
+              <Message positive>
                 <Header size="small">
                   快捷方式（僅限部分語言）：
                 </Header>
@@ -520,7 +520,7 @@ class MacInstallPage extends Component {
             <Header size="large" as="h3">
               <Header.Content>高級定製</Header.Content>
             </Header>
-            <Message>
+            <Message info>
               小狼毫是一個非常強大的輸入法，可以任意配置最適合自己的輸入方案，詳情請參考Rime官網的<a href='https://github.com/rime/home/wiki/CustomizationGuide'>定製指南</a>。
             </Message>
           </Grid.Column>
