@@ -8,3 +8,4 @@ yarn-error.log
 /public/static
 .DS_Store
 .idea
+/examples

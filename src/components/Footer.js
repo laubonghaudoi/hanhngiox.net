@@ -10,18 +10,6 @@ import {
 
 import { useStaticQuery, graphql } from "gatsby"
 const Footer = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allFile(filter: { extension: { eq: "pdf" } }) {
-        edges {
-          node {
-            publicURL
-            name
-          }
-        }
-      }
-    }
-  `)
   return (
     <Segment
       inverted
@@ -50,8 +38,8 @@ const Footer = () => {
                   content={<a href='https://www.zhihu.com/people/lau-bong-hau-doi'>知乎私信</a>}
                 />
                 <List.Item
-                  icon='facebook'
-                  content={<a href='https://rime.im/'>中州韻官網</a>}
+                  icon='wechat'
+                  content={<a href='https://rime.im'>中州韻官網</a>}
                 />
                 <List.Item
                   icon='github'
@@ -64,7 +52,7 @@ const Footer = () => {
               <List link inverted>
                 <List.Item
                   icon='download'
-                  content={<a href='../../download.zip' download>下載包</a>}
+                  content={<a href='../../download.zip' download>拼音方案下載包</a>}
                 />
                 <List.Item
                   icon='google'
@@ -77,11 +65,15 @@ const Footer = () => {
               <List link inverted>
                 <List.Item
                   icon='facebook'
-                  content={<a href='https://github.com/laubonghaudoi/Chinese_Rime'>Facebook</a>}
+                  content={<div class="fb-share-button" data-href="https://hanhngiox-net-6388342753.gtsb.io/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhanhngiox-net-6388342753.gtsb.io%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Facebook</a></div>}
                 />
                 <List.Item
                   icon='twitter'
                   content={<a href='https://share.weiyun.com/5BqauQb'>Twitter</a>}
+                />
+                <List.Item
+                  icon='wechat'
+                  content={<a href='https://share.weiyun.com/5BqauQb'>微信</a>}
                 />
               </List>
             </Grid.Column>

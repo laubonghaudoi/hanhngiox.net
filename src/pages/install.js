@@ -1,5 +1,5 @@
 import React from "react"
-import { 
+import {
   Card,
   Divider,
   Grid,
@@ -7,7 +7,7 @@ import {
   Message,
   Header,
   Image,
- } from "semantic-ui-react"
+} from "semantic-ui-react"
 import { rhythm } from "../utils/grandViewTypography"
 import '../css/install.css'
 import InstallPageLayout from "../layouts/InstallPageLayout";
@@ -16,13 +16,13 @@ export default () => {
   return (
     <InstallPageLayout>
       <Message>
-        <Header 
+        <Header
           size="huge"
           as="h1"
           color="blue"
           textAlign="right"
           style={{
-            display:'inline-block',
+            display: 'inline-block',
             marginBottom: rhythm(0.5),
           }}>
           用漢語方言拼音打字
@@ -35,11 +35,11 @@ export default () => {
           <List.Item>部署你的方言的拼音方案（複製粘貼兩個文件而已）</List.Item>
         </List>
       </Message>
-      <Divider horizontal>选择平台</Divider>
-      <Grid 
-        columns='equal' 
-        padded 
-        stackable 
+      <Divider horizontal>選擇平臺</Divider>
+      <Grid
+        columns='equal'
+        padded
+        stackable
         divided='vertically'
       >
         <Grid.Row columns={3}>
@@ -49,7 +49,7 @@ export default () => {
               <Card.Content>
                 <Card.Header>Windows</Card.Header>
                 <Card.Description>
-                  以Win 10为例，安装小狼毫输入法并启用汉语方言拼音方案
+                  以Win 10爲例，安裝小狼毫輸入法並啓用漢語方言拼音方案
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -60,7 +60,7 @@ export default () => {
               <Card.Content>
                 <Card.Header>macOS</Card.Header>
                 <Card.Description>
-                  以Mac为例，安装鼠须管输入法并启用汉语方言拼音方案
+                  以Mac爲例，安裝鼠須管輸入法並啓用漢語方言拼音方案
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -71,7 +71,7 @@ export default () => {
               <Card.Content>
                 <Card.Header>Linux</Card.Header>
                 <Card.Description>
-                  以Ubuntu 18.04为例，安装ibus-rime并启用汉语方言拼音方案
+                  以Ubuntu 18.04爲例，安裝ibus-rime並啓用漢語方言拼音方案
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -84,7 +84,7 @@ export default () => {
               <Card.Content>
                 <Card.Header>iOS</Card.Header>
                 <Card.Description>
-                  以iOS为例，安装iRime输入法并启用汉语方言拼音方案
+                  以iOS爲例，安裝iRime輸入法並啓用漢語方言拼音方案
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -95,7 +95,7 @@ export default () => {
               <Card.Content>
                 <Card.Header>Android</Card.Header>
                 <Card.Description>
-                  以Android为例，安装同文输入法并启用汉语方言拼音方案
+                  以Android爲例，安裝同文輸入法並啓用漢語方言拼音方案
                 </Card.Description>
               </Card.Content>
             </Card>

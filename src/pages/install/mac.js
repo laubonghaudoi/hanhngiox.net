@@ -15,8 +15,8 @@ import { Link } from 'gatsby';
 import RecipeList from '../../components/RecipeList';
 import InstallPageLayout from '../../layouts/InstallPageLayout';
 
-class MacInstallPage extends Component { 
-  state = { 
+class MacInstallPage extends Component {
+  state = {
     activeItem: 'account',
     focus: {
       step1: false,
@@ -51,19 +51,19 @@ class MacInstallPage extends Component {
               <List.Item>部署方言拼音方案</List.Item>
             </List>
             <p>本章就以Mojave 10.14系統為例手把手教你如何操作。</p>
-            
-            <Divider style={{ paddingBottom: '4rem' }} id='step1'/>
-            
+
+            <Divider style={{ paddingBottom: '4rem' }} id='step1' />
+
             <Header textAlign='center' size="huge" as="h2" style={{ paddingBottom: '1rem' }}>
               <Header.Content>第一步 安装鼠须管输入法</Header.Content>
             </Header>
             <Table structured padded inverted
-              // style={{
-              //   backgroundColor: '#7BC2FB',
-              //   color:'black',
-              // }}
+            // style={{
+            //   backgroundColor: '#7BC2FB',
+            //   color:'black',
+            // }}
             >
-              <Table.Header             
+              <Table.Header
               //   style={{
               //   backgroundColor: '#7BC2FB',
               //   color:'black',
@@ -83,7 +83,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/mac/mac1_1.png' fluid/>
+                  <Image src='/mac/mac1_1.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -95,10 +95,10 @@ class MacInstallPage extends Component {
               <Table.Row>
                 <Table.Cell>
                   <Image.Group>
-                    <Image size='tiny' src='/mac/mac1_2a.png' fluid/>
-                    <Image size='large' src='/mac/mac1_2b.png' fluid/>
+                    <Image size='tiny' src='/mac/mac1_2a.png' fluid />
+                    <Image size='large' src='/mac/mac1_2b.png' fluid />
                   </Image.Group>
-                  
+
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -109,7 +109,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/mac/mac1_3.png' fluid/>
+                  <Image src='/mac/mac1_3.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -120,7 +120,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image size='large' src='/mac/mac1_4.png' fluid/>
+                  <Image size='large' src='/mac/mac1_4.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -131,7 +131,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image size='large' src='/mac/mac1_5.png' fluid/>
+                  <Image size='large' src='/mac/mac1_5.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -142,7 +142,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image size='large' src='/mac/mac1_6.png' fluid/>
+                  <Image size='large' src='/mac/mac1_6.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -153,7 +153,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image size='medium' src='/mac/mac1_7.png' fluid/>
+                  <Image size='medium' src='/mac/mac1_7.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -164,7 +164,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image size='medium' src='/mac/mac1_8.png' fluid/>
+                  <Image size='medium' src='/mac/mac1_8.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -175,7 +175,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image size='medium' src='/mac/mac1_9.png' fluid/>
+                  <Image size='medium' src='/mac/mac1_9.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -186,7 +186,7 @@ class MacInstallPage extends Component {
               </Table.Row>
             </Table>
 
-            <Divider style={{ paddingBottom: '4rem' }} id='step2a'/>
+            <Divider style={{ paddingBottom: '4rem' }} id='step2a' />
 
             <Header textAlign='center' size="huge" as="h2" style={{ paddingBottom: '1rem' }}>
               <Header.Content>第二步 快捷啟用拼音方案</Header.Content>
@@ -195,11 +195,11 @@ class MacInstallPage extends Component {
               </Header.Subheader>
             </Header>
             <Message info>
-              <p><Icon name='info circle'/>
-              如果你的想輸入的語言<strong>在下方列表中</strong>，可繼續閱讀本節快速啓用方言拼音，<strong>否則直接<Link to='/install/linux/#step2b'>跳到下一節</Link></strong>使用通用方法部署拼音方案。</p>
+              <p><Icon name='info circle' />
+                如果你的想輸入的語言<strong>在下方列表中</strong>，可繼續閱讀本節快速啓用方言拼音，<strong>否則直接<Link to='/install/linux/#step2b'>跳到下一節</Link></strong>使用通用方法部署拼音方案。</p>
               <p>下面列表中每一行的格式都是是<code>語言名：方案名稱 方案代號</code>，有的語言例如潮汕話，是多個方音共用一個方案代號 <code>Kahaani/dieghv</code>。找到自己語言的方案名稱和代號之後按以下步驟啓用方案。</p>
             </Message>
-            <RecipeList/>
+            <RecipeList />
             <Table structured inverted padded>
               <Table.Header>
                 <Table.Row>
@@ -224,8 +224,8 @@ class MacInstallPage extends Component {
                 <Table.Cell rowspan='2'>2</Table.Cell>
                 <Table.Cell>
                   <p>然後運行以下命令，安裝你想要的方言拼音方案：</p>
-                  <p><code>cd plum</code><br/>
-                  <code>bash rime-install NGLI/rime-wugniu_soutseu</code></p>
+                  <p><code>cd plum</code><br />
+                    <code>bash rime-install NGLI/rime-wugniu_soutseu</code></p>
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -243,7 +243,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image size='big' src='/mac/mac2a_3.png' fluid/>
+                  <Image size='big' src='/mac/mac2a_3.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -254,18 +254,18 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image size='big' src='/mac/mac2a_4.png' fluid/>
+                  <Image size='big' src='/mac/mac2a_4.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell rowspan='2'>5</Table.Cell>
                 <Table.Cell>
-                  關閉命令行界面，回到小狼毫設定界面，可以見到方案列表可以勾選拼音方案了
+                  關閉命令行界面，回到鼠須管設定界面，可以見到方案列表可以勾選拼音方案了
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image size='big' src='/mac/mac2a_5.png' fluid/>
+                  <Image size='big' src='/mac/mac2a_5.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -277,8 +277,8 @@ class MacInstallPage extends Component {
               <Table.Row>
                 <Table.Cell>
                   <Image.Group size='medium'>
-                    <Image src='/mac/mac2a_6a.png' fluid/>
-                    <Image src='/mac/mac2a_6b.png' fluid/>
+                    <Image src='/mac/mac2a_6a.png' fluid />
+                    <Image src='/mac/mac2a_6b.png' fluid />
                   </Image.Group>
                 </Table.Cell>
               </Table.Row>
@@ -287,7 +287,7 @@ class MacInstallPage extends Component {
               请直接<Link to='/install/mac/#wrapup'>跳到「小结」</Link>一节继续教程。
             </Message>
 
-            <Divider style={{ paddingBottom: '4rem' }} id='step2b'/>
+            <Divider style={{ paddingBottom: '4rem' }} id='step2b' />
 
             <Header textAlign='center' size="huge" as="h2" style={{ paddingBottom: '1rem' }}>
               <Header.Content>第二步  部署方言拼音方案</Header.Content>
@@ -310,7 +310,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/mac/mac2b_1.png' fluid/>
+                  <Image src='/mac/mac2b_1.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -321,7 +321,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/mac/mac2b_2.png' fluid/>
+                  <Image src='/mac/mac2b_2.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -332,7 +332,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image size='medium' src='/mac/mac2b_3.png' fluid/>
+                  <Image size='medium' src='/mac/mac2b_3.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -343,7 +343,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/mac/mac2b_4.png'fluid/>
+                  <Image src='/mac/mac2b_4.png' fluid />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -354,7 +354,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/mac/mac2b_5.png'/>
+                  <Image src='/mac/mac2b_5.png' />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -365,7 +365,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/mac/mac2b_6.png'/>
+                  <Image src='/mac/mac2b_6.png' />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -376,7 +376,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/mac/mac2b_7_c1_3.png'/>
+                  <Image src='/mac/mac2b_7_c1_3.png' />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -387,7 +387,7 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/mac/mac2b_8.png'/>
+                  <Image src='/mac/mac2b_8.png' />
                 </Table.Cell>
               </Table.Row>
               <Table.Row>
@@ -398,38 +398,38 @@ class MacInstallPage extends Component {
               </Table.Row>
               <Table.Row>
                 <Table.Cell>
-                  <Image src='/mac/mac2b_9.png'/>
+                  <Image src='/mac/mac2b_9.png' />
                 </Table.Cell>
               </Table.Row>
             </Table>
 
-            <Divider style={{ paddingBottom: '4rem' }} id='wrapup'/>
+            <Divider style={{ paddingBottom: '4rem' }} id='wrapup' />
 
             <Header textAlign='center' size="huge" as="h2" style={{ paddingBottom: '1rem' }}>
               <Header.Content>小結</Header.Content>
             </Header>
-              至此，我們終於實現了在macOS下的漢語方言拼音輸入。所以以後如果需要添加其他漢語方言的輸入方案，只需要記住以下三步就可以了
+            至此，我們終於實現了在macOS下的漢語方言拼音輸入。所以以後如果需要添加其他漢語方言的輸入方案，只需要記住以下三步就可以了
               <Message positive>
-                <Header size="small">
-                  快捷方式（僅限部分語言）：
+              <Header size="small">
+                快捷方式（僅限部分語言）：
                 </Header>
-                <List as='ol'>
-                  <List.Item as='li' value='1.'>打開小狼毫輸入法設定界面，點“獲取更多輸入方案”</List.Item>
-                  <List.Item as='li' value='2.'>輸入方案代號後回車，直接下載部署拼音方案</List.Item>
-                  <List.Item as='li' value='3.'>回到界面勾選輸入方案</List.Item>
-                </List>
-                <Divider/>
-                <Header size="small">
-                  通用方式（適用於全部語言）：
+              <List as='ol'>
+                <List.Item as='li' value='1.'>打開鼠須管輸入法設定界面，點“獲取更多輸入方案”</List.Item>
+                <List.Item as='li' value='2.'>輸入方案代號後回車，直接下載部署拼音方案</List.Item>
+                <List.Item as='li' value='3.'>回到界面勾選輸入方案</List.Item>
+              </List>
+              <Divider />
+              <Header size="small">
+                通用方式（適用於全部語言）：
                 </Header>
-                <List as='ol'>
-                  <List.Item as='li' value='1.'>複製後綴爲<code>.dict.yaml</code>和<code>.schema.yaml</code>的方案文件到用戶文件夾</List.Item>
-                  <List.Item as='li' value='2.'>用戶資料同步</List.Item>
-                  <List.Item as='li' value='3.'>小狼毫輸入法設定勾選方案</List.Item>
-                </List>
-              </Message>
+              <List as='ol'>
+                <List.Item as='li' value='1.'>複製後綴爲<code>.dict.yaml</code>和<code>.schema.yaml</code>的方案文件到用戶文件夾</List.Item>
+                <List.Item as='li' value='2.'>用戶資料同步</List.Item>
+                <List.Item as='li' value='3.'>鼠須管輸入法設定勾選方案</List.Item>
+              </List>
+            </Message>
 
-            <Divider style={{ paddingBottom: '4rem' }} id='lookup'/>
+            <Divider style={{ paddingBottom: '4rem' }} id='lookup' />
 
             <Header textAlign='center' size="huge" as="h2" style={{ paddingBottom: '1rem' }}>
               <Header.Content>但我只會普通話拼音，方言拼音該怎麼打？</Header.Content>
@@ -460,7 +460,7 @@ class MacInstallPage extends Component {
               </Table.Row>
             </Table>
 
-            <Divider style={{ paddingBottom: '4rem' }} id='customize'/>
+            <Divider style={{ paddingBottom: '4rem' }} id='customize' />
 
             <Header textAlign='center' size="huge" as="h2" style={{ paddingBottom: '1rem' }}>
               <Header.Content>（可選）自定義鼠須管外觀</Header.Content>
@@ -521,18 +521,18 @@ class MacInstallPage extends Component {
               <Header.Content>高級定製</Header.Content>
             </Header>
             <Message info>
-              小狼毫是一個非常強大的輸入法，可以任意配置最適合自己的輸入方案，詳情請參考Rime官網的<a href='https://github.com/rime/home/wiki/CustomizationGuide'>定製指南</a>。
+              鼠須管是一個非常強大的輸入法，可以任意配置最適合自己的輸入方案，詳情請參考Rime官網的<a href='https://github.com/rime/home/wiki/CustomizationGuide'>定製指南</a>。
             </Message>
           </Grid.Column>
 
           <Grid.Column width={3}>
-            <Menu 
+            <Menu
               vertical
               text
               style={{
-                position:'fixed',
-                width:'14em',
-                marginLeft:'1em'
+                position: 'fixed',
+                width: '14em',
+                marginLeft: '1em'
               }}
             >
               <Menu.Item
