@@ -10,7 +10,7 @@ import {
   Sidebar,
 } from 'semantic-ui-react'
 
-import { Link } from 'gatsby-plugin-transition-link';
+import { Link } from 'gatsby';
 
 import HomepageHeading from '../HomepageHeading';
 
@@ -50,19 +50,19 @@ class HomepageMobileContainer extends Component {
           visible={sidebarOpened}
         >
           <Menu.Item as={Link} to='/install'>
-            <Icon name='compass'/>
+            <Icon name='compass' />
             開始
           </Menu.Item>
           <Menu.Item as={Link} to='/schema'>
-            <Icon name='th'/>
+            <Icon name='th' />
             方案
           </Menu.Item>
           <Menu.Item as={Link} to='/blog'>
-            <Icon name='book'/>
+            <Icon name='book' />
             雜談
           </Menu.Item>
           <Menu.Item as={Link} to='/about'>
-            <Icon name='question circle'/>
+            <Icon name='question circle' />
             關於
           </Menu.Item>
         </Sidebar>
@@ -71,8 +71,9 @@ class HomepageMobileContainer extends Component {
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 350, padding: '1em 0em', backgroundImage: `url(${"/bk.png"})`}}
+            style={{ minHeight: 350, padding: '1em 0em', backgroundImage: `url(${"/bk.png"})` }}
             vertical
+            fluid
           >
             <Container>
               <Menu inverted pointing secondary size='large'>
@@ -80,20 +81,16 @@ class HomepageMobileContainer extends Component {
                   <Icon name='sidebar' />
                 </Menu.Item>
                 <Menu.Item as={Link} to='/'>
-                HanhNgiox
+                  HanhNgiox
                 </Menu.Item>
                 <Menu.Menu position='right'>
                   <Dropdown item simple direction='left' text='界面語言'>
                     <Dropdown.Menu position='right' color='blue'>
-                      <Dropdown.Item>國語（普通話）繁體</Dropdown.Item>
-                      <Dropdown.Item>国语（普通话）简体</Dropdown.Item>
-                      <Dropdown.Divider />
-                      <Dropdown.Item>粵語 繁體</Dropdown.Item>
-                      <Dropdown.Item>粤语 简体</Dropdown.Item>
+                      <Dropdown.Item>普通話（國語）</Dropdown.Item>
+                      <Dropdown.Item>粵語</Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
                 </Menu.Menu>
-                
               </Menu>
             </Container>
             <HomepageHeading mobile />

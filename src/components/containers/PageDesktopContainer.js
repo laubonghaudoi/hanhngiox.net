@@ -23,7 +23,7 @@ const getWidth = () => {
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
  * It can be more complicated, but you can create really flexible markup.
  */
-class HomepageDesktopContainer extends Component {
+class PageDesktopContainer extends Component {
   state = {}
 
   hideFixedMenu = () => this.setState({ fixed: false })
@@ -75,8 +75,8 @@ class HomepageDesktopContainer extends Component {
   }
 }
 
-HomepageDesktopContainer.propTypes = {
+PageDesktopContainer.propTypes = {
   children: PropTypes.node,
 }
 
-export default HomepageDesktopContainer;
+export default PageDesktopContainer;

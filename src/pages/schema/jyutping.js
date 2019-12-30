@@ -389,9 +389,8 @@ class Jyutping extends Component {
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell negative>ep</Table.Cell>
-              <Table.Cell>et 坺</Table.Cell>
-              <Table.Cell></Table.Cell> 
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
             </Table.Row>
             <Table.Row>
               <Table.Cell><ipa>[ɛː]</ipa></Table.Cell>
@@ -401,8 +400,8 @@ class Jyutping extends Component {
               <Table.Cell>em 舐</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell>eng 鄭</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell negative>ep</Table.Cell>
+              <Table.Cell>et 坺</Table.Cell>
               <Table.Cell>ek 石</Table.Cell> 
             </Table.Row>
             <Table.Row>

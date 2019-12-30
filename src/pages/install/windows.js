@@ -458,7 +458,7 @@ class WindowsInstallPage extends Component {
             <Header textAlign='center' size="huge" as="h2">
               <Header.Content>小結</Header.Content>
             </Header>
-            至此，我們終於實現了在Windows系統下的漢語方言拼音輸入。所以以後如果需要添加其他漢語方言的輸入方案，只需要記住以下三步就可以了
+              至此，我們終於實現了在Windows系統下的漢語方言拼音輸入。所以以後如果需要添加其他漢語方言的輸入方案，只需要記住以下三步就可以了
             <Message positive>
               <Header size="small">
                 快捷方式（僅限部分語言）：
