@@ -86,6 +86,9 @@ class PageMobileContainer extends Component {
                     <Dropdown.Menu position='right' color='blue'>
                       <Dropdown.Item>普通話（國語）</Dropdown.Item>
                       <Dropdown.Item>粵語</Dropdown.Item>
+                      <Dropdown.Item>吳語</Dropdown.Item>
+                      <Dropdown.Item>客家話</Dropdown.Item>
+                      <Dropdown.Item>閩南語</Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
                 </Menu.Menu>

@@ -183,10 +183,10 @@ class Langjin extends Component {
           <Grid.Column>
             <Table celled unstackable textAlign='center' color='yellow'>
               <Table.Row>
-                <Table.Cell>-</Table.Cell>
-                <Table.Cell>i- <ipa>[j]</ipa></Table.Cell>
-                <Table.Cell>u- <ipa>[w]</ipa></Table.Cell>
-                <Table.Cell>ü- <ipa>[ɥ]</ipa></Table.Cell>
+                <Table.Cell>Ø</Table.Cell>
+                <Table.Cell>i <ipa>[j]</ipa></Table.Cell>
+                <Table.Cell>u <ipa>[w]</ipa></Table.Cell>
+                <Table.Cell>ü <ipa>[ɥ]</ipa></Table.Cell>
               </Table.Row>
             </Table>
             <Message warning><Icon name='info circle'/>本頁面遵循端木三 (2007) 對普通話介音的處理方法，即將南京話介音處理爲半元音<ipa>[j] [w] [ɥ]</ipa>，不同於部分學者將其視作元音<ipa>[i] [u] [y]</ipa>的處理方法。</Message>
@@ -228,7 +228,7 @@ class Langjin extends Component {
             <Message info>
               南京官話中共有16個韻腹，其中符號 r 亦可代表聲母 <ipa>[ʐ̩]</ipa>。
             </Message>
-            <Message warning><Icon name='info circle'/>本頁面遵循端木三 (2007) 對韻腹 y 和 r 的轉寫，即將「思」字的韻腹轉寫爲音節化輔音 <ipa>[ʐ̩]</ipa> 和 <ipa>[ʐ̩]</ipa>，不同於部分學者將其視作元音 <ipa>[ɿ]</ipa> 和 <ipa>[ʅ]</ipa> 的寫法。</Message>
+            <Message warning><Icon name='info circle'/>本頁面遵循端木三 (2007) 對韻腹 y 和 r 的轉寫方式，即將「思」字的韻腹轉寫爲音節化輔音 <ipa>[z̩]</ipa> 和 <ipa>[ʐ̩]</ipa>，不同於部分學者將其視作元音 <ipa>[ɿ]</ipa> 和 <ipa>[ʅ]</ipa> 的寫法。</Message>
             <Message positive>
               <Message.Header>音變規則</Message.Header>
               <p>
@@ -411,7 +411,7 @@ class Langjin extends Component {
               <Table.Cell>-i</Table.Cell>
               <Table.Cell>e</Table.Cell>
               <Table.Cell><ipa>[ə]</ipa></Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell>ei 眉</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell>uei 威</Table.Cell>
               <Table.Cell></Table.Cell>
@@ -433,15 +433,26 @@ class Langjin extends Component {
         </Header>
         <Grid columns={2} stackable>
           <Grid.Column>
-            <Table structured celled textAlign="center" color='violet'>
+            <Table definition celled structured textAlign="center" color='violet'>
+              <Table.Header>
+                <Table.Row textAlign='center'>
+                  <Table.HeaderCell />
+                  <Table.HeaderCell>平</Table.HeaderCell>
+                  <Table.HeaderCell>上</Table.HeaderCell>
+                  <Table.HeaderCell>去</Table.HeaderCell>
+                  <Table.HeaderCell>入</Table.HeaderCell>
+                </Table.Row>
+              </Table.Header>
               <Table.Row>
-                <Table.Cell>1 陰平 <ipa>[˧˩]</ipa> 衣</Table.Cell>
-                <Table.Cell rowSpan='2'>3 上 <ipa>[˨˩˨]</ipa> 已</Table.Cell>
-                <Table.Cell rowSpan='2'>4 去 <ipa>[˦˦]</ipa> 意</Table.Cell>
-                <Table.Cell rowSpan='2'>5 入 <ipa>[˥]</ipa> 一</Table.Cell>
+                <Table.Cell>陰</Table.Cell>
+                <Table.Cell>1 <ipa>[˧˩]</ipa> 衣</Table.Cell>
+                <Table.Cell rowSpan='2'>3 <ipa>[˨˩˨]</ipa> 已</Table.Cell>
+                <Table.Cell rowSpan='2'>4 <ipa>[˦˦]</ipa> 意</Table.Cell>
+                <Table.Cell rowSpan='2'>5 <ipa>[˥]</ipa> 一</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell>2 陽平 <ipa>[˩˧]</ipa> 移</Table.Cell>
+                <Table.Cell>陽</Table.Cell>
+                <Table.Cell>2 <ipa>[˩˧]</ipa> 移</Table.Cell>
               </Table.Row>
             </Table>
           </Grid.Column>

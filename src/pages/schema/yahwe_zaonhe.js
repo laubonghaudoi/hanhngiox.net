@@ -15,27 +15,27 @@ import { rhythm } from "../../utils/grandViewTypography"
 import SchemaPageLayout from '../../layouts/SchemaPageLayout'
 
 class Yahwe_zaonhe extends Component {
-  render(){
-    return(
+  render() {
+    return (
       <SchemaPageLayout
         activeItem='yahwe_zaonhe'
-        >
+      >
         <Header dividing size="huge" as="h1">
           吳語協會式上海話拼音方案
         </Header>
-        <Message 
+        <Message
           info
         >
           <Grid columns={2} stackable>
             <Divider vertical><Icon name="map"></Icon></Divider>
             <Grid.Column>
-              <Header 
+              <Header
                 size="big"
                 as="h2"
                 color="black"
                 textAlign="right"
                 style={{
-                  display:'inline-block',
+                  display: 'inline-block',
                   marginBottom: rhythm(0.5),
                 }}>
                 简介
@@ -48,29 +48,29 @@ class Yahwe_zaonhe extends Component {
                 <li>℞ 所屬配方名：<code>edward-martyr/rime-yahwe_zaonhe</code></li>
               </ul>
             </Grid.Column>
-            
+
             <Grid.Column>
-              <Header 
+              <Header
                 size="big"
                 as="h2"
                 // color="blue"
                 textAlign="right"
                 style={{
-                  display:'inline-block',
+                  display: 'inline-block',
                   marginBottom: rhythm(0.5),
                   paddingLeft: '1rem'
                 }}>
                 目錄
               </Header>
-              <List bulleted style={{paddingLeft: '2rem'}}>
+              <List bulleted style={{ paddingLeft: '2rem' }}>
                 <List.Item as={Link} to='/schema/yahwe_zaonhe/#onset'>聲母</List.Item>
                 <List.Item as={Link} to='/schema/yahwe_zaonhe/#final'>
                   韻母
-                  <List.List style={{paddingLeft: '2rem', paddingTop: '0.5rem', paddingBottom: '0.5rem'}}>
+                  <List.List style={{ paddingLeft: '2rem', paddingTop: '0.5rem', paddingBottom: '0.5rem' }}>
                     <List.Item>介音</List.Item>
                     <List.Item>韻腹</List.Item>
                     <List.Item>韻尾</List.Item>
-                  </List.List>  
+                  </List.List>
                 </List.Item>
                 <List.Item as={Link} to='/schema/yahwe_zaonhe/#final_table'>韻母表</List.Item>
                 <List.Item as={Link} to='/schema/yahwe_zaonhe/#tone'>聲調</List.Item>
@@ -102,21 +102,21 @@ class Yahwe_zaonhe extends Component {
           <Table.Body>
             <Table.Row>
               <Table.Cell>塞音</Table.Cell>
-              <Table.Cell>p <ipa>[p]</ipa> 幫<br/>ph <ipa>[pʰ]</ipa>  滂<br/>b <ipa>[b]</ipa> 並</Table.Cell>
+              <Table.Cell>p <ipa>[p]</ipa> 幫<br />ph <ipa>[pʰ]</ipa>  滂<br />b <ipa>[b]</ipa> 並</Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>t <ipa>[t]</ipa> 端<br/>th <ipa>[tʰ]</ipa>  透<br/>d <ipa>[d]</ipa> 定</Table.Cell>
+              <Table.Cell>t <ipa>[t]</ipa> 端<br />th <ipa>[tʰ]</ipa>  透<br />d <ipa>[d]</ipa> 定</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>k <ipa>[k]</ipa> 光<br/>kh  <ipa>[kʰ]</ipa>  框<br/>g <ipa>[g]</ipa> 狂</Table.Cell>
+              <Table.Cell>k <ipa>[k]</ipa> 光<br />kh  <ipa>[kʰ]</ipa>  框<br />g <ipa>[g]</ipa> 狂</Table.Cell>
               <Table.Cell>' <ipa>[ʔ]</ipa> 影</Table.Cell>
             </Table.Row>
             <Table.Row>
               <Table.Cell>塞擦音</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>ts <ipa>[t͡s]</ipa>  早<br/>tsh  <ipa>[t͡sʰ]</ipa>  草</Table.Cell>
+              <Table.Cell>ts <ipa>[t͡s]</ipa>  早<br />tsh  <ipa>[t͡sʰ]</ipa>  草</Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>c <ipa>[t͡ɕ]</ipa> 見<br/>ch <ipa>[t͡ɕʰ]</ipa> 溪<br/>j <ipa>[d͡ʑ]</ipa> 羣</Table.Cell>
+              <Table.Cell>c <ipa>[t͡ɕ]</ipa> 見<br />ch <ipa>[t͡ɕʰ]</ipa> 溪<br />j <ipa>[d͡ʑ]</ipa> 羣</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
             </Table.Row>
@@ -126,27 +126,27 @@ class Yahwe_zaonhe extends Component {
               <Table.Cell></Table.Cell>
               <Table.Cell>n <ipa>[n]</ipa> 那</Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>ny <ipa>[ɲ]</ipa> 拈</Table.Cell>
+              <Table.Cell>ny <ipa>[nʲ]</ipa> 日<sup><Icon name='info circle' /></sup></Table.Cell>
               <Table.Cell>ng  <ipa>[ŋ]</ipa> 牙</Table.Cell>
               <Table.Cell></Table.Cell>
             </Table.Row>
             <Table.Row>
               <Table.Cell>擦音</Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>f <ipa>[f]</ipa> 敷<br/>v <ipa>[v]</ipa> 奉</Table.Cell>
-              <Table.Cell>s <ipa>[s]</ipa> 燒<br/>z <ipa>[z]</ipa> 曹</Table.Cell>
+              <Table.Cell>f <ipa>[f]</ipa> 敷<br />v <ipa>[v]</ipa> 奉</Table.Cell>
+              <Table.Cell>s <ipa>[s]</ipa> 燒<br />z <ipa>[z]</ipa> 曹</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell>sh <ipa>[ɕ]</ipa> 曉</Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>h <ipa>[h]</ipa> 好<br/>gh <ipa>[ɦ]</ipa> 匣</Table.Cell>
+              <Table.Cell>h <ipa>[h]</ipa> 好<br />gh <ipa>[ɦ]</ipa> 匣</Table.Cell>
             </Table.Row>
             <Table.Row>
               <Table.Cell>近音</Table.Cell>
+              <Table.Cell><ipa>[w]</ipa></Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell><ipa>[j]</ipa></Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
             </Table.Row>
@@ -162,7 +162,26 @@ class Yahwe_zaonhe extends Component {
             </Table.Row>
           </Table.Body>
         </Table>
-        
+        <Message warning>
+          <Icon name='info circle' />
+          此處根據 Chen 2015 將日母轉寫爲顎化鼻音 <ipa>[nʲ]</ipa> ，不同於部分學者的轉寫 <ipa>[ɲ]</ipa> 。
+        </Message>
+
+        <Header dividing size="big" as="h3">
+          鼻音單獨成韻
+        </Header>
+        <Grid columns={2} stackable>
+          <Grid.Column>
+            <Table textAlign="center" color='teal'>
+              <Table.Row>
+                <Table.Cell>m <ipa>[m]</ipa> 毋</Table.Cell>
+                <Table.Cell>ng <ipa>[ŋ]</ipa> 魚</Table.Cell>
+              </Table.Row>
+            </Table>
+          </Grid.Column>
+        </Grid>
+
+
         <Header dividing size="large" as="h2" id="final" style={{ paddingTop: '5rem' }}>
           韻母
         </Header>
@@ -172,7 +191,11 @@ class Yahwe_zaonhe extends Component {
         <Grid columns={2} stackable>
           <Grid.Column>
             <Table celled unstackable textAlign='center' color='yellow'>
-
+              <Table.Row>
+                <Table.Cell>Ø</Table.Cell>
+                <Table.Cell>i <ipa>[j]</ipa></Table.Cell>
+                <Table.Cell>u <ipa>[w]</ipa></Table.Cell>
+              </Table.Row>
             </Table>
           </Grid.Column>
           <Grid.Column>
@@ -187,38 +210,53 @@ class Yahwe_zaonhe extends Component {
           <Grid.Column>
             <Table celled unstackable textAlign='center' color='orange'>
               <Table.Row>
-                <Table.Cell>i <ipa>[i]</ipa> 詩<br/><allophone>i<sub>後接 -ng,-k</sub><ipa>[ɪ̞]</ipa> 識</allophone><br/>yu <ipa>[y]</ipa> 書</Table.Cell>
+                <Table.Cell>
+                  i <ipa>[i]</ipa> 衣<br />
+                  i<sub><allophone>後接 -n,-h</allophone></sub> <ipa>[ɪ]</ipa> 滴<br />
+                  iu <ipa>[y]</ipa> 驢<br />
+                  iu<sub><allophone>後接 -n,-h</allophone></sub> <ipa>[ʏ]</ipa> 軍<br />
+                  y <ipa>[z̩]</ipa> 詩<br />
+                </Table.Cell>
                 <Table.Cell></Table.Cell>
-                <Table.Cell>u <ipa>[u]</ipa> 夫<br/><allophone>u<sub>後接 -ng,-k</sub><ipa>[ʊ̞]</ipa> 風</allophone></Table.Cell>
+                <Table.Cell>u <ipa>[u]</ipa> 污</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell><allophone>e<sub>後接 -i</sub> <ipa>[e]</ipa> 未</allophone></Table.Cell>
-                <Table.Cell>eo <ipa>[ɵ]</ipa> 水</Table.Cell>
-                <Table.Cell><allophone>o<sub>後接 -u</sub> <ipa>[o]</ipa> 高</allophone></Table.Cell>
+                <Table.Cell>oe <ipa>[ø]</ipa> 看</Table.Cell>
+                <Table.Cell>e<sub><allophone>後接 -n,-h</allophone></sub> <ipa>[ə]</ipa> 跟<br /></Table.Cell>
+                <Table.Cell>
+                  o <ipa>[o]</ipa> 瓜<br />
+                  o<sub><allophone>後接 -n,-h</allophone></sub> <ipa>[ʊ]</ipa> 公<br />
+                  eu <ipa>[ɤ]</ipa> 溝</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell>e <ipa>[ɛ]</ipa> 姐<br/>oe <ipa>[œ]</ipa> 削</Table.Cell>
-                <Table.Cell>a <ipa>[ɐ]</ipa> 不</Table.Cell>
-                <Table.Cell>o <ipa>[ɔ]</ipa> 波</Table.Cell>
+                <Table.Cell>e <ipa>[ɛ]</ipa> 該</Table.Cell>
+                <Table.Cell></Table.Cell>
+                <Table.Cell>au <ipa>[ɔ]</ipa> 高</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell></Table.Cell>
-                <Table.Cell>aa <ipa>[a]</ipa> 花</Table.Cell>
-                <Table.Cell></Table.Cell>
+                <Table.Cell>ae <ipa>[æ]</ipa> 藍<sup><Icon name='info circle' /></sup></Table.Cell>
+                <Table.Cell>
+                  a <ipa>[a]</ipa> 街<br />
+                  a<sub><allophone>後接 -n,-h</allophone></sub> <ipa>[ɐ]</ipa> 甲
+                </Table.Cell>
+                <Table.Cell>ao<sub><allophone>後接 -n</allophone></sub> <ipa>[ɑ]</ipa> 剛</Table.Cell>
               </Table.Row>
             </Table>
           </Grid.Column>
           <Grid.Column>
             <Message info>
-              <p>上海話共有9個韻腹，與韻尾的具體搭配詳見下方<Link to='/schema/yahwe_zaonhe/#final_table'>韻母表</Link>。</p>
+              <p>上海話共有17個韻腹，與韻尾的具體搭配詳見下方<Link to='/schema/yahwe_zaonhe/#final_table'>韻母表</Link>。</p>
             </Message>
             <Message positive>
               <Message.Header>音變規則</Message.Header>
               <p>
                 <ul>
-                  <li></li>
+                  <li>在輸入法當中，nyiu 簡寫爲 nyu</li>
                 </ul>
               </p>
+            </Message>
+            <Message warning>
+              <Icon name='info circle' />Chen (2015) 中所記錄的爲新派上海話，ae 已歸併到 e。
             </Message>
           </Grid.Column>
         </Grid>
@@ -227,30 +265,17 @@ class Yahwe_zaonhe extends Component {
         </Header>
         <Grid columns={2} stackable>
           <Grid.Column>
-          <Table celled definition unstackable textAlign='center' color='olive'>
-            <Table.Row>
-              <Table.Cell>塞音</Table.Cell>
-              <Table.Cell>p <ipa>[p̚]</ipa> 溼</Table.Cell>
-              <Table.Cell>t <ipa>[t̚]</ipa> 失</Table.Cell>
-              <Table.Cell>k <ipa>[k̚]</ipa> 塞</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-            <Table.Cell>鼻音</Table.Cell>
-              <Table.Cell>m <ipa>[m]</ipa> 心</Table.Cell>
-              <Table.Cell>n <ipa>[n]</ipa> 身</Table.Cell>
-              <Table.Cell>ng <ipa>[ŋ]</ipa> 生</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>元音</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell>i <ipa>[i]</ipa> 西<br/><allophone>i<sub>前接 eo-, u-</sub> <ipa>[y]</ipa> 水</allophone></Table.Cell>
-              <Table.Cell>u <ipa>[u]</ipa> 收</Table.Cell>
-            </Table.Row>
-          </Table>
+            <Table celled definition unstackable textAlign='center' color='olive'>
+              <Table.Row>
+                <Table.Cell>Ø</Table.Cell>
+                <Table.Cell>n <ipa>[ŋ]</ipa></Table.Cell>
+                <Table.Cell>h <ipa>[ʔ]</ipa></Table.Cell>
+              </Table.Row>
+            </Table>
           </Grid.Column>
           <Grid.Column>
             <Message info>
-              粵拼共有8個韻尾，其中三個塞音韻尾（入聲韻）均爲不除阻。
+              上海話共有2個韻尾，一個塞音韻尾（入聲韻），一個鼻音韻尾（不區分前後鼻音）。
             </Message>
             <Message positive>
               <Message.Header>音變規則</Message.Header>
@@ -266,221 +291,227 @@ class Yahwe_zaonhe extends Component {
         <Header dividing size="large" as="h2" id="final_table" style={{ paddingTop: '5rem' }}>
           韻母表
         </Header>
-        <Table celled definition unstackable textAlign='center' color='red'>
+        <Table celled structured unstackable textAlign='center' color='red'>
           <Table.Header>
             <Table.Row textAlign='center'>
-              <Table.HeaderCell>介音</Table.HeaderCell>
-              <Table.HeaderCell colSpan='3'>-</Table.HeaderCell>
-              <Table.HeaderCell colSpan='3'>u-</Table.HeaderCell>
-              <Table.HeaderCell colSpan='3'>i-</Table.HeaderCell>
-              <Table.HeaderCell colSpan='3'>iu-</Table.HeaderCell>
+              <Table.HeaderCell rowSpan='2'>韻尾</Table.HeaderCell>
+              <Table.HeaderCell colSpan='2' rowSpan='2'>韻腹</Table.HeaderCell>
+              <Table.HeaderCell colSpan='4'>介音</Table.HeaderCell>
             </Table.Row>
             <Table.Row textAlign='center'>
-              <Table.HeaderCell>韻尾</Table.HeaderCell>
-              <Table.HeaderCell>-</Table.HeaderCell>
-              <Table.HeaderCell>-n</Table.HeaderCell>
-              <Table.HeaderCell>-h</Table.HeaderCell>
-              <Table.HeaderCell>-</Table.HeaderCell>
-              <Table.HeaderCell>-n</Table.HeaderCell>
-              <Table.HeaderCell>-h</Table.HeaderCell>
-              <Table.HeaderCell>-</Table.HeaderCell>
-              <Table.HeaderCell>-n</Table.HeaderCell>
-              <Table.HeaderCell>-h</Table.HeaderCell>
-              <Table.HeaderCell>-</Table.HeaderCell>
-              <Table.HeaderCell>-n</Table.HeaderCell>
-              <Table.HeaderCell>-h</Table.HeaderCell>
+              <Table.HeaderCell>Ø-</Table.HeaderCell>
+              <Table.HeaderCell>i-</Table.HeaderCell>
+              <Table.HeaderCell>u-</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
           <Table.Body>
-            <Table.Row>
-              <Table.Cell>-</Table.Cell>
+            <Table.Row textAlign='center'>
+              <Table.Cell rowSpan='11'>-Ø</Table.Cell>
+              <Table.Cell>i</Table.Cell>
+              <Table.Cell><ipa>[i]</ipa></Table.Cell>
+              <Table.Cell>i 衣</Table.Cell>
+              <Table.Cell active></Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell>u 乌</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell>i 移</Table.Cell>
-              <Table.Cell>in 清</Table.Cell>
-              <Table.Cell>ih 立</Table.Cell>
-              <Table.Cell>iu 遇</Table.Cell>
-              <Table.Cell>iuin 君</Table.Cell>
-              <Table.Cell>iuih 决</Table.Cell>
             </Table.Row>
-            <Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell>iu</Table.Cell>
+              <Table.Cell><ipa>[y]</ipa></Table.Cell>
+              <Table.Cell>iu 驢</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell></Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
               <Table.Cell>y</Table.Cell>
-              <Table.Cell>y 斯</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell><ipa>[z̩]</ipa></Table.Cell>
+              <Table.Cell>y 詩</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
             </Table.Row>
-            <Table.Row>
-              <Table.Cell>e</Table.Cell>
-              <Table.Cell>e 爱</Table.Cell>
-              <Table.Cell>en 真</Table.Cell>
-              <Table.Cell>eh 黑</Table.Cell>
-              <Table.Cell>ue 回</Table.Cell>
-              <Table.Cell>uen 昆</Table.Cell>
-              <Table.Cell>ueh 阔</Table.Cell>
-              <Table.Cell>ie 先</Table.Cell>
+            <Table.Row textAlign='center'>
+              <Table.Cell>u</Table.Cell>
+              <Table.Cell><ipa>[u]</ipa></Table.Cell>
+              <Table.Cell>u 污</Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell active></Table.Cell>
             </Table.Row>
-            <Table.Row>
-              <Table.Cell>eu</Table.Cell>
-              <Table.Cell>eu 勾</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell>ieu 旧</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>o</Table.Cell>
-              <Table.Cell>o 沙</Table.Cell>
-              <Table.Cell>on 东</Table.Cell>
-              <Table.Cell>oh 读</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell>io 靴</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell>ioh 局</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-            </Table.Row>
-            <Table.Row>
+            <Table.Row textAlign='center'>
               <Table.Cell>oe</Table.Cell>
-              <Table.Cell>oe 干</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell>uoe 碗</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell>ion 兄</Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell><ipa>[ø]</ipa> </Table.Cell>
+              <Table.Cell>oe 看</Table.Cell>
               <Table.Cell>ioe 捐</Table.Cell>
+              <Table.Cell>uoe 碗</Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell>o</Table.Cell>
+              <Table.Cell><ipa>[o]</ipa></Table.Cell>
+              <Table.Cell>o 瓜</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
             </Table.Row>
-            <Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell>eu</Table.Cell>
+              <Table.Cell><ipa>[ɤ]</ipa></Table.Cell>
+              <Table.Cell>eu 溝</Table.Cell>
+              <Table.Cell>ieu 舊</Table.Cell>
+              <Table.Cell></Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell>e</Table.Cell>
+              <Table.Cell><ipa>[ɛ] </ipa></Table.Cell>
+              <Table.Cell>e 該</Table.Cell>
+              <Table.Cell>ie 點<sup><Icon name='info circle' /></sup></Table.Cell>
+              <Table.Cell></Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
               <Table.Cell>au</Table.Cell>
-              <Table.Cell>au 包</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell><ipa>[ɔ]</ipa></Table.Cell>
+              <Table.Cell>au 高</Table.Cell>
               <Table.Cell>iau 萧</Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
             </Table.Row>
-            <Table.Row>
+            <Table.Row textAlign='center'>
               <Table.Cell>ae</Table.Cell>
-              <Table.Cell>ae 山</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell>uae 关</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell><ipa>[æ]</ipa></Table.Cell>
+              <Table.Cell>ae 藍</Table.Cell>
               <Table.Cell>iae 廿</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell>uae 关</Table.Cell>
             </Table.Row>
-            <Table.Row>
+            <Table.Row textAlign='center'>
               <Table.Cell>a</Table.Cell>
-              <Table.Cell>a 蟹</Table.Cell>
-              <Table.Cell>an 梗</Table.Cell>
-              <Table.Cell>ah 鸭</Table.Cell>
+              <Table.Cell><ipa>[a]</ipa></Table.Cell>
+              <Table.Cell>a 街</Table.Cell>
+              <Table.Cell></Table.Cell>
               <Table.Cell>ua 怪</Table.Cell>
-              <Table.Cell>uan 横</Table.Cell>
-              <Table.Cell>uah 刮</Table.Cell>
-              <Table.Cell>ia 写</Table.Cell>
-              <Table.Cell>ian 阳</Table.Cell>
-              <Table.Cell>iah 脚</Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell rowSpan='6'>-n</Table.Cell>
+              <Table.Cell>i</Table.Cell>
+              <Table.Cell><ipa>[ɪ]</ipa></Table.Cell>
+              <Table.Cell>in 清</Table.Cell>
+              <Table.Cell active></Table.Cell>
+              <Table.Cell></Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell>iu</Table.Cell>
+              <Table.Cell><ipa>[ʏ]</ipa></Table.Cell>
+              <Table.Cell>iun 軍</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
             </Table.Row>
-            <Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell>e</Table.Cell>
+              <Table.Cell><ipa>[ə]</ipa></Table.Cell>
+              <Table.Cell>en 跟</Table.Cell>
+              <Table.Cell></Table.Cell>
+              <Table.Cell>uen 溫</Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell>o</Table.Cell>
+              <Table.Cell><ipa>[ʊ]</ipa></Table.Cell>
+              <Table.Cell>on 公</Table.Cell>
+              <Table.Cell>ion 兄</Table.Cell>
+              <Table.Cell></Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell>a</Table.Cell>
+              <Table.Cell><ipa>[ɐ]</ipa></Table.Cell>
+              <Table.Cell>an 梗</Table.Cell>
+              <Table.Cell>ian 陽</Table.Cell>
+              <Table.Cell>uan 橫</Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
               <Table.Cell>ao</Table.Cell>
+              <Table.Cell><ipa>[ɑ]</ipa></Table.Cell>
+              <Table.Cell>aon 剛</Table.Cell>
+              <Table.Cell>iaon 煬</Table.Cell>
+              <Table.Cell>uaon 黃</Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell rowSpan='5'>-h</Table.Cell>
+              <Table.Cell>i</Table.Cell>
+              <Table.Cell><ipa>[ɪ]</ipa></Table.Cell>
+              <Table.Cell>ih 滴</Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>aon 刚</Table.Cell>
+              <Table.Cell></Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell>iu</Table.Cell>
+              <Table.Cell><ipa>[ʏ]</ipa></Table.Cell>
+              <Table.Cell>iuh 決</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>uaon 黄</Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell>e</Table.Cell>
+              <Table.Cell><ipa>[ə]</ipa></Table.Cell>
+              <Table.Cell>eh 黑</Table.Cell>
               <Table.Cell></Table.Cell>
+              <Table.Cell>ueh 阔</Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell>o</Table.Cell>
+              <Table.Cell><ipa>[ʊ]</ipa></Table.Cell>
+              <Table.Cell>oh 读</Table.Cell>
+              <Table.Cell>ioh 局</Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>iaon 炀</Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
-              <Table.Cell></Table.Cell>
+            </Table.Row>
+            <Table.Row textAlign='center'>
+              <Table.Cell>a</Table.Cell>
+              <Table.Cell><ipa>[ɐ]</ipa></Table.Cell>
+              <Table.Cell>ah 鸭</Table.Cell>
+              <Table.Cell>iah 脚</Table.Cell>
+              <Table.Cell>uah 刮</Table.Cell>
             </Table.Row>
           </Table.Body>
         </Table>
         <Grid columns={2} stackable>
           <Grid.Column>
-            <Message negative>
-              um, up, ep 爲邊緣韻母，僅存在於擬聲詞或外來借詞中，一般情況下可忽略。
+            <Message positive>
+              韻母 iuh 在輸入法中也可拼爲 iuih。
             </Message>
           </Grid.Column>
           <Grid.Column>
             <Message warning>
-              <Icon name='info circle'/> a 和 oet 爲新增韻母，詳見<Link to='https://e40058f5-5f04-4db7-8d70-4650bee22b88.filesusr.com/ugd/508b98_8bead2fef24f46e79eba9bc86faf3075.pdf'>粵拼增韻建議</Link>
+              <Icon name='info circle' />
+              韻母 ie 在新派上海話中已歸併到 i。
             </Message>
           </Grid.Column>
         </Grid>
+
 
         <Header dividing size="large" as="h3" id="tone" style={{ paddingTop: '5rem' }}>
           聲調
         </Header>
         <Grid columns={2} stackable>
           <Grid.Column>
-            <Table textAlign="center" color='violet'>
+            <Table definition celled structured textAlign="center" color='violet'>
+              <Table.Header>
+                <Table.Row textAlign='center'>
+                  <Table.HeaderCell />
+                  <Table.HeaderCell>平</Table.HeaderCell>
+                  <Table.HeaderCell>上</Table.HeaderCell>
+                  <Table.HeaderCell>去</Table.HeaderCell>
+                  <Table.HeaderCell>入</Table.HeaderCell>
+                </Table.Row>
+              </Table.Header>
               <Table.Row>
-                <Table.Cell>1 陰平 <ipa>[˥˥]</ipa> 詩</Table.Cell>
-                <Table.Cell>2 陰上 <ipa>[˧˥]</ipa> 史</Table.Cell>
-                <Table.Cell>3 陰去 <ipa>[˧˧]</ipa> 試</Table.Cell>
+                <Table.Cell>陰</Table.Cell>
+                <Table.Cell>1 <ipa>[˥˩]</ipa> 高</Table.Cell>
+                <Table.Cell></Table.Cell>
+                <Table.Cell>2 <ipa>[˦˦˥]</ipa> 講</Table.Cell>
+                <Table.Cell>4 <ipa>[˦˦]</ipa> 則</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell>4 陽平 <ipa>[˨˩]</ipa> 時</Table.Cell>
-                <Table.Cell>5 陽上 <ipa>[˩˧]</ipa> 市</Table.Cell>
-                <Table.Cell>6 陽去 <ipa>[˨˨]</ipa> 事</Table.Cell>
+                <Table.Cell>陽</Table.Cell>
+                <Table.Cell></Table.Cell>
+                <Table.Cell></Table.Cell>
+                <Table.Cell>3 <ipa>[˩˩˧]</ipa> 我</Table.Cell>
+                <Table.Cell>5 <ipa>[˨˧]</ipa> 達</Table.Cell>
               </Table.Row>
             </Table>
           </Grid.Column>
           <Grid.Column>
-            <Message positive>
-              <Message.Header>音變規則</Message.Header>
-              <p>
-                <ul>
-                  <li>廣州音中陰平調已分化成<ipa>[˥˥]</ipa>和<ipa>[˥˧]</ipa>兩調，粵拼中不作區分。</li>
-                </ul>
-              </p>
-            </Message>
+            <Message info>上海話共有5個聲調，其中陽平和上聲已歸併到去聲。</Message>
           </Grid.Column>
         </Grid>
 

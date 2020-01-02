@@ -47,11 +47,11 @@ const Navbar = () => (
             </Menu.Item>
             <Dropdown item simple direction='left' text='界面語言'>
                 <Dropdown.Menu color='blue'>
-                    <Dropdown.Item>國語（普通話）繁體</Dropdown.Item>
-                    <Dropdown.Item>国语（普通话）简体</Dropdown.Item>
-                    <Dropdown.Divider />
-                    <Dropdown.Item>粵語 繁體</Dropdown.Item>
-                    <Dropdown.Item>粤语 简体</Dropdown.Item>
+                    <Dropdown.Item>普通話（國語）</Dropdown.Item>
+                    <Dropdown.Item>粵語</Dropdown.Item>
+                    <Dropdown.Item>吳語</Dropdown.Item>
+                    <Dropdown.Item>客家話</Dropdown.Item>
+                    <Dropdown.Item>閩南語</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
         </Menu.Menu>
