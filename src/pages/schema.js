@@ -18,7 +18,7 @@ class SchemaPage extends Component {
     }
   };
 
-  render(){
+  render() {
     return (
       <SchemaPageLayout>
         <Grid padded>
@@ -27,6 +27,67 @@ class SchemaPage extends Component {
               拼音方案一覽
             </Header>
           </Grid.Row>
+          <Grid.Row stretched columns={3}>
+            <Grid.Column>
+              <Card
+                href='/schema/jyutping'
+              >
+                {/* <Image src='/card/jyutping.png'/> */}
+                <Card.Content>
+                  <Card.Header>LSHK粵拼</Card.Header>
+                  <Card.Meta>香港語言學學會</Card.Meta>
+                  <Card.Description>
+                    粵語拼音方案
+                  </Card.Description>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>
+              <Card
+                href='schema/langjin'
+              >
+                {/* <Image src='/card/lower_yangtze_mandarin.png'/> */}
+                <Card.Content>
+                  <Card.Header>南京官話拼音方案</Card.Header>
+                  <Card.Meta>LSHK</Card.Meta>
+                  <Card.Description>
+                    香港語言學學會粵語拼音方案
+                </Card.Description>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>
+              <Card
+                href='schema/yahwe_zaonhe'
+              >
+                {/* <Image src='/card/lower_yangtze_mandarin.png'/> */}
+                <Card.Content>
+                  <Card.Header>吳語協會式上海話拼音</Card.Header>
+                  <Card.Meta>吳語協會</Card.Meta>
+                  <Card.Description>
+                    吳協式上海言話
+                </Card.Description>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column>
+              <Card
+                href='schema/hakka'
+              >
+                {/* <Image src='/card/lower_yangtze_mandarin.png'/> */}
+                <Card.Content>
+                  <Card.Header>臺灣教育部客家話拼音方案</Card.Header>
+                  <Card.Meta>LSHK</Card.Meta>
+                  <Card.Description>
+                    香港語言學學會粵語拼音方案
+                </Card.Description>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+          </Grid.Row>
+          <Divider section hidden />
           <Message info>
             <Message.Header>拼音與音位</Message.Header>
             <List bulleted>
@@ -40,41 +101,11 @@ class SchemaPage extends Component {
             <Message.Header>邊緣音節</Message.Header>
             <List bulleted>
               <List.Item>每一門漢語都不可避免有一些邊緣音節和罕見音，例如普通話中的 fai 和 duang </List.Item>
-              
+              <List.Item>You, Rujie, Nairong Qian & Zhengxia Gao. 1980. Lun Putonghua de yinwei xitong [On the
+phonemic system of Standard Chinese]. Zhongguo Yuwen 1980.5 (158): 328-334.</List.Item>
               <List.Item>Hashimoto, M. (1970). Notes on Mandarin phonology. Jakobson, Roman; Kawamoto, Shigeo. Studies in General and Oriental Linguistics. Tokyo: TEC, 207-220.</List.Item>
             </List>
           </Message>
-          <Grid.Row stretched columns={3}>
-            <Grid.Column>
-              <Card
-                href='/schema/jyutping'
-              >
-                <Image src='/card/jyutping.png'/>
-                <Card.Content>
-                  <Card.Header>粵拼</Card.Header>
-                  <Card.Meta>LSHK</Card.Meta>
-                  <Card.Description>
-                    香港語言學學會粵語拼音方案
-                  </Card.Description>
-                </Card.Content>
-              </Card>
-            </Grid.Column>
-            <Grid.Column>
-            <Card
-              href='schema/langjin'
-            >
-              <Image src='/card/lower_yangtze_mandarin.png'/>
-              <Card.Content>
-                <Card.Header>南京官話拼音方案</Card.Header>
-                <Card.Meta>LSHK</Card.Meta>
-                <Card.Description>
-                  香港語言學學會粵語拼音方案
-                </Card.Description>
-              </Card.Content>
-            </Card>
-            </Grid.Column>
-          </Grid.Row>
-          <Divider section hidden />
         </Grid>
       </SchemaPageLayout>
     )

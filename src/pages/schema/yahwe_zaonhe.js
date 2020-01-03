@@ -199,7 +199,15 @@ class Yahwe_zaonhe extends Component {
             </Table>
           </Grid.Column>
           <Grid.Column>
-            <Message info>上海話有開合齊撮四呼</Message>
+            <Message info>上海話共有兩個介音（不含零介音）。</Message>
+            <Message positive>
+              <Message.Header>音變規則</Message.Header>
+              <p>
+                <ul>
+                  <li>當介音 i- 拼寫爲韻母 ioe 時，的韻尾，會受韻腹 oe 影響產生圓唇化，實際音值爲<ipa>[ʏ]</ipa>。</li>
+                </ul>
+              </p>
+            </Message>
           </Grid.Column>
         </Grid>
 
@@ -265,7 +273,7 @@ class Yahwe_zaonhe extends Component {
         </Header>
         <Grid columns={2} stackable>
           <Grid.Column>
-            <Table celled definition unstackable textAlign='center' color='olive'>
+            <Table celled structured unstackable textAlign='center' color='olive'>
               <Table.Row>
                 <Table.Cell>Ø</Table.Cell>
                 <Table.Cell>n <ipa>[ŋ]</ipa></Table.Cell>
@@ -276,14 +284,6 @@ class Yahwe_zaonhe extends Component {
           <Grid.Column>
             <Message info>
               上海話共有2個韻尾，一個塞音韻尾（入聲韻），一個鼻音韻尾（不區分前後鼻音）。
-            </Message>
-            <Message positive>
-              <Message.Header>音變規則</Message.Header>
-              <p>
-                <ul>
-                  <li>拼寫作 -i 的韻尾，會受 eo 和 u 韻腹影響產生圓唇化，詳見表中IPA。</li>
-                </ul>
-              </p>
             </Message>
           </Grid.Column>
         </Grid>
@@ -380,7 +380,7 @@ class Yahwe_zaonhe extends Component {
               <Table.Cell>a</Table.Cell>
               <Table.Cell><ipa>[a]</ipa></Table.Cell>
               <Table.Cell>a 街</Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell>ia 写</Table.Cell>
               <Table.Cell>ua 怪</Table.Cell>
             </Table.Row>
             <Table.Row textAlign='center'>
@@ -431,7 +431,7 @@ class Yahwe_zaonhe extends Component {
               <Table.Cell>i</Table.Cell>
               <Table.Cell><ipa>[ɪ]</ipa></Table.Cell>
               <Table.Cell>ih 滴</Table.Cell>
-              <Table.Cell></Table.Cell>
+              <Table.Cell active></Table.Cell>
               <Table.Cell></Table.Cell>
             </Table.Row>
             <Table.Row textAlign='center'>
@@ -467,7 +467,17 @@ class Yahwe_zaonhe extends Component {
         <Grid columns={2} stackable>
           <Grid.Column>
             <Message positive>
-              韻母 iuh 在輸入法中也可拼爲 iuih。
+              <Message.Header>
+                拼寫規則
+              </Message.Header>
+              <Message.Content>
+                <p>
+                  <List bulleted>
+                    <List.Item>韻母 iuh 在輸入法中也可拼爲 iuih。</List.Item>
+                    <List.Item>ghiu簡寫爲yu</List.Item>
+                  </List>
+                </p>
+              </Message.Content>
             </Message>
           </Grid.Column>
           <Grid.Column>

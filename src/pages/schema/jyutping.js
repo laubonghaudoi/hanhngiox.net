@@ -119,19 +119,19 @@ class Jyutping extends Component {
           <Table.Body>
             <Table.Row>
               <Table.Cell>塞音</Table.Cell>
-              <Table.Cell>b <ipa>[p]</ipa> 巴<br />p <ipa>[pʰ]</ipa>  怕</Table.Cell>
+              <Table.Cell>b <ipa>[p]</ipa> 巴<br/>p <ipa>[pʰ]</ipa>  怕</Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>d <ipa>[t]</ipa> 打<br />t <ipa>[tʰ]</ipa>  他</Table.Cell>
+              <Table.Cell>d <ipa>[t]</ipa> 打<br/>t <ipa>[tʰ]</ipa>  他</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>g <ipa>[k]</ipa> 家<br />k  <ipa>[kʰ]</ipa>  卡<br />gw <ipa>[kʷ]</ipa> 瓜<br />kw  <ipa>[kʷʰ]</ipa> 夸</Table.Cell>
+              <Table.Cell>g <ipa>[k]</ipa> 家<br/>k  <ipa>[kʰ]</ipa>  卡<br/>gw <ipa>[kʷ]</ipa> 瓜<br/>kw  <ipa>[kʷʰ]</ipa> 夸</Table.Cell>
               <Table.Cell>' <ipa>[ʔ]</ipa></Table.Cell>
             </Table.Row>
             <Table.Row>
               <Table.Cell>塞擦音</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
-              <Table.Cell>z <ipa>[t͡s]</ipa>  渣<br />c  <ipa>[t͡sʰ]</ipa>  叉</Table.Cell>
+              <Table.Cell>z <ipa>[t͡s]</ipa>  渣<br/>c  <ipa>[t͡sʰ]</ipa>  叉</Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
               <Table.Cell></Table.Cell>
@@ -214,9 +214,9 @@ class Jyutping extends Component {
           <Grid.Column>
             <Table celled unstackable textAlign='center' color='orange'>
               <Table.Row>
-                <Table.Cell>i <ipa>[iː]</ipa> 詩<br />i<sub><allophone>後接 -ng,-k</allophone></sub> <ipa>[ɪ̞]</ipa> 識<br />yu <ipa>[y]</ipa> 書</Table.Cell>
+                <Table.Cell>i <ipa>[iː]</ipa> 詩<br/>i<sub><allophone>後接 -ng,-k</allophone></sub> <ipa>[ɪ̞]</ipa> 識<br/>yu <ipa>[y]</ipa> 書</Table.Cell>
                 <Table.Cell></Table.Cell>
-                <Table.Cell>u <ipa>[uː]</ipa> 夫<br />u<sub><allophone>後接 -ng,-k</allophone></sub> <ipa>[ʊ̞]</ipa> 風</Table.Cell>
+                <Table.Cell>u <ipa>[uː]</ipa> 夫<br/>u<sub><allophone>後接 -ng,-k</allophone></sub> <ipa>[ʊ̞]</ipa> 風</Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell>e<sub><allophone>後接 -i</allophone></sub> <ipa>[e]</ipa> 未</Table.Cell>
@@ -224,7 +224,7 @@ class Jyutping extends Component {
                 <Table.Cell>o<sub><allophone>後接 -u</allophone></sub> <ipa>[o]</ipa> 高</Table.Cell>
               </Table.Row>
               <Table.Row>
-                <Table.Cell>e <ipa>[ɛː]</ipa> 姐<br />oe <ipa>[œː]</ipa> 削</Table.Cell>
+                <Table.Cell>e <ipa>[ɛː]</ipa> 姐<br/>oe <ipa>[œː]</ipa> 削</Table.Cell>
                 <Table.Cell>a <ipa>[ɐ]</ipa> 不</Table.Cell>
                 <Table.Cell>o <ipa>[ɔː]</ipa> 波</Table.Cell>
               </Table.Row>
@@ -297,14 +297,13 @@ class Jyutping extends Component {
         <Table celled structured unstackable textAlign='center' color='red'>
           <Table.Header>
             <Table.Row textAlign='center'>
-              <Table.HeaderCell colSpan='2'>韻尾</Table.HeaderCell>
+              <Table.HeaderCell rowSpan='2' colSpan='2'>韻腹</Table.HeaderCell>
               <Table.HeaderCell>單元音</Table.HeaderCell>
               <Table.HeaderCell colSpan='2'>複元音</Table.HeaderCell>
-              <Table.HeaderCell colSpan='3'>鼻音</Table.HeaderCell>
-              <Table.HeaderCell colSpan='3'>塞音（入聲韻）</Table.HeaderCell>
+              <Table.HeaderCell colSpan='3'>鼻音韻尾</Table.HeaderCell>
+              <Table.HeaderCell colSpan='3'>塞音韻尾（入聲韻）</Table.HeaderCell>
             </Table.Row>
             <Table.Row textAlign='center'>
-              <Table.HeaderCell colSpan='2'>韻腹</Table.HeaderCell>
               <Table.HeaderCell>-</Table.HeaderCell>
               <Table.HeaderCell>-i</Table.HeaderCell>
               <Table.HeaderCell>-u</Table.HeaderCell>
@@ -518,7 +517,7 @@ class Jyutping extends Component {
                 <Table.Cell>1 <ipa>[˥]</ipa> 詩</Table.Cell>
                 <Table.Cell>2 <ipa>[˧˥]</ipa> 史</Table.Cell>
                 <Table.Cell>3 <ipa>[˧]</ipa> 試</Table.Cell>
-                <Table.Cell>1 <ipa>[˥]</ipa> 識<br />3 <ipa>[˧]</ipa> 洩</Table.Cell>
+                <Table.Cell>1 <ipa>[˥]</ipa> 識<br/>3 <ipa>[˧]</ipa> 洩</Table.Cell>
               </Table.Row>
               <Table.Row>
                 <Table.Cell>陽</Table.Cell>
